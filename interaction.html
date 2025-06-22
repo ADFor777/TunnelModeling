@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SWRL推理系统 - 参数输入</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.js"></script>
+    <style>
+        body { font-family: 'Microsoft YaHei', sans-serif; }
+        .animate-spin { animation: spin 1s linear infinite; }
+        @keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+        .animate-pulse { animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite; }
+        @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: .5; } }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <div id="app" class="max-w-6xl mx-auto p-6 bg-gray-50 min-h-screen">
+        <div class="bg-white rounded-lg shadow-lg p-6 mb-6">
+            <div class="flex items-center gap-3 mb-6">
+                <div class="w-8 h-8 bg-blue-600 rounded flex items-center justify-center">
+                    <span class="text-white font-bold">DB</span>
+                </div>
+                <h1 class="text-2xl font-bold text-gray-800">SWRL推理系统 - 参数输入</h1>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- 输入表单 -->
+                <div class="space-y-6">
+                    <div class="bg-blue-50 p-4 rounded-lg">
+                        <h2 class="text-lg font-semibold text-blue-800 mb-4">⚙️ 基本参数设置</h2>
+                        
+                        <div class="space-y-4">
+                            <!-- 实例名称 -->
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1">
+                                    实例名称 (Individual Name)
+                                </label>
+                                <input type="text" id="instanceName" value="TunnelProject_001" 
+                                       class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            </div>
+
+                            <!-- 岩石等级 -->
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1">
+                                    岩石等级 (hasRockGrade)
+                                </label>
+                                <select id="rockGrade" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                    <option value="I">等级 I</option>
+                                    <option value="II">等级 II</option>
+                                    <option value="III">等级 III</option>
+                                    <option value="IV">等级 IV</option>
+                                    <option value="V" selected>等级 V</option>
+                                    <option value="VI">等级 VI</option>
+                                </select>
+                            </div>
+
+                            <!-- 隧道直径 -->
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1">
+                                    隧道直径 (hasDiameter) - 米
+                                </label>
+                                <input type="number" id="tunnelDiameter" value="12" min="1" max="20"
+                                       class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            </div>
+
+                            <!-- 土壤类型 -->
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1">
+                                    土壤类型 (hasSoilType)
+                                </label>
+                                <select id="soilType" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                    <option value="clay" selected>clay</option>
+                                    <option value="sand">sand</option>
+                                    <option value="gravel">gravel</option>
+                                    <option value="rock">rock</option>
+                                    <option value="mixed">mixed</option>
+                                </select>
+                            </div>
+
+                            <!-- 地下水位 -->
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1">
+                                    地下水位 (hasWaterLevel)
+                                </label>
+                                <select id="waterLevel" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                    <option value="low">low</option>
+                                    <option value="medium">medium</option>
+                                    <option value="high" selected>high</option>
+                                </select>
+                            </div>
+
+                            <!-- 埋深 -->
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1">
+                                    埋深 (hasDepth) - 米
+                                </label>
+                                <input type="number" id="depth" value="30" min="1" max="100"
+                                       class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 自定义参数 -->
+                    <div class="bg-green-50 p-4 rounded-lg">
+                        <h3 class="text-md font-semibold text-green-800 mb-3">自定义参数</h3>
+                        
+                        <div class="flex gap-2 mb-3">
+                            <input type="text" id="customProperty" placeholder="属性名 (如: hasTemperature)"
+                                   class="flex-1 px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500">
+                            <input type="text" id="customValue" placeholder="属性值"
+                                   class="flex-1 px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500">
+                            <button onclick="addCustomParam()" class="px-4 py-2 bg-green-600 text-white rounded-md hover:bg-green-700 transition-colors">
+                                添加
+                            </button>
+                        </div>
+
+                        <div id="customParams" class="space-y-2"></div>
+                    </div>
+
+                    <!-- 推理按钮 -->
+                    <button onclick="runInference()" id="inferenceBtn" 
+                            class="w-full bg-blue-600 text-white py-3 px-6 rounded-lg hover:bg-blue-700 transition-colors flex items-center justify-center gap-2">
+                        ▶️ 运行Pellet推理
+                    </button>
+                </div>
+
+                <!-- 推理结果 -->
+                <div class="space-y-6">
+                    <div class="bg-purple-50 p-4 rounded-lg">
+                        <h2 class="text-lg font-semibold text-purple-800 mb-4">➡️ 推理流程</h2>
+                        
+                        <div class="space-y-3" id="inferenceSteps">
+                            <div class="flex items-center gap-3 p-2 bg-white rounded border-l-4 border-blue-500">
+                                <span class="text-green-600">✅</span>
+                                <span class="text-sm">1. 创建实例: <span id="currentInstance">TunnelProject_001</span></span>
+                            </div>
+                            <div class="flex items-center gap-3 p-2 bg-white rounded border-l-4 border-blue-500">
+                                <span class="text-green-600">✅</span>
+                                <span class="text-sm">2. 设置属性: hasRockGrade = <span id="currentGrade">V</span></span>
+                            </div>
+                            <div class="flex items-center gap-3 p-2 bg-white rounded border-l-4 border-yellow-500">
+                                <div class="w-4 h-4 border-2 border-yellow-500 rounded-full animate-pulse"></div>
+                                <span class="text-sm">3. 执行SWRL规则推理</span>
+                            </div>
+                            <div class="flex items-center gap-3 p-2 bg-white rounded border-l-4 border-gray-300">
+                                <div class="w-4 h-4 border-2 border-gray-300 rounded-full"></div>
+                                <span class="text-sm">4. 输出推理结果</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 结果显示 -->
+                    <div id="resultsSection" class="bg-green-50 p-4 rounded-lg" style="display:none;">
+                        <h2 class="text-lg font-semibold text-green-800 mb-4">✅ 推理结果</h2>
+                        <div id="resultsContent" class="space-y-3"></div>
+                    </div>
+
+                    <!-- 当前参数摘要 -->
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <h3 class="text-md font-semibold text-gray-800 mb-3">当前参数摘要</h3>
+                        <div id="paramSummary" class="text-sm space-y-1">
+                            <div><strong>实例:</strong> <span id="summaryInstance">TunnelProject_001</span></div>
+                            <div><strong>岩石等级:</strong> <span id="summaryGrade">V</span></div>
+                            <div><strong>直径:</strong> <span id="summaryDiameter">12</span>m</div>
+                            <div><strong>土壤:</strong> <span id="summarySoil">clay</span></div>
+                            <div><strong>水位:</strong> <span id="summaryWater">high</span></div>
+                            <div><strong>埋深:</strong> <span id="summaryDepth">30</span>m</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let customParams = [];
+
+        // 添加自定义参数
+        function addCustomParam() {
+            const property = document.getElementById('customProperty').value;
+            const value = document.getElementById('customValue').value;
+            
+            if (property && value) {
+                const param = { id: Date.now(), property, value };
+                customParams.push(param);
+                
+                document.getElementById('customProperty').value = '';
+                document.getElementById('customValue').value = '';
+                
+                updateCustomParamsDisplay();
+            }
+        }
+
+        // 删除自定义参数
+        function removeCustomParam(id) {
+            customParams = customParams.filter(param => param.id !== id);
+            updateCustomParamsDisplay();
+        }
+
+        // 更新自定义参数显示
+        function updateCustomParamsDisplay() {
+            const container = document.getElementById('customParams');
+            container.innerHTML = customParams.map(param => `
+                <div class="flex items-center justify-between bg-white p-2 rounded border">
+                    <span class="text-sm">
+                        <strong>${param.property}</strong>: ${param.value}
+                    </span>
+                    <button onclick="removeCustomParam(${param.id})" class="text-red-600 hover:text-red-800 text-sm">
+                        删除
+                    </button>
+                </div>
+            `).join('');
+        }
+
+        // 更新参数摘要
+        function updateSummary() {
+            document.getElementById('summaryInstance').textContent = document.getElementById('instanceName').value;
+            document.getElementById('summaryGrade').textContent = document.getElementById('rockGrade').value;
+            document.getElementById('summaryDiameter').textContent = document.getElementById('tunnelDiameter').value;
+            document.getElementById('summarySoil').textContent = document.getElementById('soilType').value;
+            document.getElementById('summaryWater').textContent = document.getElementById('waterLevel').value;
+            document.getElementById('summaryDepth').textContent = document.getElementById('depth').value;
+            
+            document.getElementById('currentInstance').textContent = document.getElementById('instanceName').value;
+            document.getElementById('currentGrade').textContent = document.getElementById('rockGrade').value;
+        }
+
+        // 监听输入变化
+        document.addEventListener('change', updateSummary);
+        document.addEventListener('input', updateSummary);
+
+        // 推理函数
+        async function runInference() {
+            const btn = document.getElementById('inferenceBtn');
+            btn.innerHTML = '<div class="animate-spin w-5 h-5 border-2 border-white border-t-transparent rounded-full"></div> 推理中...';
+            btn.disabled = true;
+
+            // 模拟推理过程
+            await new Promise(resolve => setTimeout(resolve, 2000));
+
+            // 获取参数
+            const rockGrade = document.getElementById('rockGrade').value;
+            const diameter = parseInt(document.getElementById('tunnelDiameter').value);
+            const soilType = document.getElementById('soilType').value;
+            const waterLevel = document.getElementById('waterLevel').value;
+            const depth = parseInt(document.getElementById('depth').value);
+
+            // 计算结果
+            const results = {
+                archSpacing: calculateArchSpacing(rockGrade, diameter),
+                supportDensity: calculateSupportDensity(soilType, waterLevel),
+                reinforcementType: determineReinforcement(rockGrade, depth),
+                safetyFactor: calculateSafetyFactor(rockGrade, waterLevel),
+                excavationMethod: determineExcavationMethod(soilType, diameter)
+            };
+
+            // 显示结果
+            displayResults(results);
+
+            btn.innerHTML = '▶️ 运行Pellet推理';
+            btn.disabled = false;
+        }
+
+        // 计算函数
+        function calculateArchSpacing(grade, diameter) {
+            const baseSpacing = { 'I': 1200, 'II': 1000, 'III': 800, 'IV': 700, 'V': 600, 'VI': 400 };
+            const adjustment = diameter > 10 ? 0.8 : 1.0;
+            return Math.round(baseSpacing[grade] * adjustment) + 'mm';
+        }
+
+        function calculateSupportDensity(soil, water) {
+            const baseDensity = { 'clay': 0.8, 'sand': 1.0, 'gravel': 0.7, 'rock': 0.5, 'mixed': 0.9 };
+            const waterFactor = { 'low': 1.0, 'medium': 1.2, 'high': 1.5 };
+            return (baseDensity[soil] * waterFactor[water]).toFixed(2) + ' supports/m';
+        }
+
+        function determineReinforcement(grade, depth) {
+            if (depth > 25 && ['V', 'VI'].includes(grade)) return '重型钢支撑';
+            if (depth > 15 && ['IV', 'V'].includes(grade)) return '中型钢支撑';
+            return '轻型支撑';
+        }
+
+        function calculateSafetyFactor(grade, water) {
+            const gradeFactors = { 'I': 2.5, 'II': 2.2, 'III': 2.0, 'IV': 1.8, 'V': 1.5, 'VI': 1.3 };
+            const waterAdjustment = { 'low': 1.0, 'medium': 0.9, 'high': 0.8 };
+            return (gradeFactors[grade] * waterAdjustment[water]).toFixed(1);
+        }
+
+        function determineExcavationMethod(soil, diameter) {
+            if (diameter > 15) return 'TBM';
+            if (soil === 'rock') return '钻爆法';
+            return '盾构法';
+        }
+
+        // 显示结果
+        function displayResults(results) {
+            const resultsHtml = `
+                <div class="bg-white p-3 rounded border-l-4 border-green-500">
+                    <div class="text-sm text-gray-600">拱架间距 (archSpacing)</div>
+                    <div class="text-lg font-semibold text-gray-800">${results.archSpacing}</div>
+                </div>
+                <div class="bg-white p-3 rounded border-l-4 border-green-500">
+                    <div class="text-sm text-gray-600">支护密度 (supportDensity)</div>
+                    <div class="text-lg font-semibold text-gray-800">${results.supportDensity}</div>
+                </div>
+                <div class="bg-white p-3 rounded border-l-4 border-green-500">
+                    <div class="text-sm text-gray-600">加固类型 (reinforcementType)</div>
+                    <div class="text-lg font-semibold text-gray-800">${results.reinforcementType}</div>
+                </div>
+                <div class="bg-white p-3 rounded border-l-4 border-green-500">
+                    <div class="text-sm text-gray-600">安全系数 (safetyFactor)</div>
+                    <div class="text-lg font-semibold text-gray-800">${results.safetyFactor}</div>
+                </div>
+                <div class="bg-white p-3 rounded border-l-4 border-green-500">
+                    <div class="text-sm text-gray-600">开挖方法 (excavationMethod)</div>
+                    <div class="text-lg font-semibold text-gray-800">${results.excavationMethod}</div>
+                </div>
+            `;
+            
+            document.getElementById('resultsContent').innerHTML = resultsHtml;
+            document.getElementById('resultsSection').style.display = 'block';
+        }
+
+        // 初始化
+        updateSummary();
+    </script>
+</body>
+</html>
