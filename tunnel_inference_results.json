@@ -1,0 +1,38 @@
+{
+  "tunnel_001": {
+    "support_type": null,
+    "excavation_method": null,
+    "waterproof_grade": null,
+    "ventilation_system": null,
+    "safety_grade": null,
+    "drainage_system": null,
+    "monitoring_system": null,
+    "special_requirements": [
+      "noise_control",
+      "waterproof_construction"
+    ]
+  },
+  "tunnel_002": {
+    "support_type": null,
+    "excavation_method": null,
+    "waterproof_grade": null,
+    "ventilation_system": null,
+    "safety_grade": null,
+    "drainage_system": null,
+    "monitoring_system": null,
+    "special_requirements": []
+  },
+  "tunnel_003": {
+    "support_type": null,
+    "excavation_method": null,
+    "waterproof_grade": null,
+    "ventilation_system": null,
+    "safety_grade": null,
+    "drainage_system": null,
+    "monitoring_system": null,
+    "special_requirements": [
+      "waterproof_construction",
+      "emergency_facilities"
+    ]
+  }
+}
