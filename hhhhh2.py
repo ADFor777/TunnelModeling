@@ -4,7 +4,7 @@ import sys
 from pathlib import Path
 
 # 配置文件路径
-OWL_FILE_PATH = r"G:\TUNNEL\Tunnel_RDF.owl"
+OWL_FILE_PATH = r"G:\TUNNEL\Tunnel.owl"
 
 def create_clean_world():
     """创建一个干净的世界环境"""
