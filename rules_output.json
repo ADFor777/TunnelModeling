@@ -1,0 +1,1767 @@
+[
+  {
+    "label": "S09-0",
+    "enabled": true,
+    "comment": "深埋 + RockGrade I + 干燥 → 25.0 cm",
+    "body": [
+      "DeepTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasGeologicalCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc)",
+      "hasRockGrade(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, RockGrade_I)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, Dry)"
+    ],
+    "head": []
+  },
+  {
+    "label": "S09-1",
+    "enabled": true,
+    "comment": "深埋 + RockGrade I + 富水 → 27.5 cm",
+    "body": [
+      "DeepTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasGeologicalCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc)",
+      "hasRockGrade(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, RockGrade_I)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, WaterRich)"
+    ],
+    "head": []
+  },
+  {
+    "label": "S03-5",
+    "enabled": true,
+    "comment": "软弱围岩（V级）：锚杆长度 约为洞身宽度的一半（L = 0.5 × B）",
+    "body": [
+      "TunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasGeologicalCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, RockGrade_V)",
+      "hasTunnelDiameter(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/d)",
+      "UnknownPredicate(?x, ?y)",
+      "hasBoltLength(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/len)"
+    ],
+    "head": []
+  },
+  {
+    "label": "S04-0",
+    "enabled": true,
+    "comment": "锚杆间距与岩石等级的关系，结合岩体质量和长度推荐: 锚杆间距 =锚杆长度/2，规范建议锚杆间距应为锚杆长度的一半或更密集(IS 15026规则)",
+    "body": [
+      "TunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasBoltLength(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/len)",
+      "UnknownPredicate(?x, ?y)"
+    ],
+    "head": []
+  },
+  {
+    "label": "S04-2",
+    "enabled": true,
+    "comment": "计算列数（圆弧长度 / 间距）",
+    "body": [
+      "TunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasTunnelDiameter(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/D)",
+      "hasBoltSpacing(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/S)",
+      "UnknownPredicate(?x, ?y)",
+      "UnknownPredicate(?x, ?y)",
+      "UnknownPredicate(?x, ?y)"
+    ],
+    "head": []
+  },
+  {
+    "label": "S04-1",
+    "enabled": true,
+    "comment": "计算行数（隧道长度 / 锚杆间距）《岩土锚杆技术规程》（JGJ 120）",
+    "body": [
+      "TunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasTunnelLength(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/L)",
+      "hasBoltSpacing(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/S)",
+      "UnknownPredicate(?x, ?y)",
+      "UnknownPredicate(?x, ?y)"
+    ],
+    "head": []
+  },
+  {
+    "label": "S15-0",
+    "enabled": true,
+    "comment": "钢拱架数量 = 长度 / 间距，四舍五入",
+    "body": [
+      "TunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasTunnelLength(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/len)",
+      "hasSteelArchSpacing(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/spacing)",
+      "UnknownPredicate(?x, ?y)",
+      "UnknownPredicate(?x, ?y)"
+    ],
+    "head": []
+  },
+  {
+    "label": "S01",
+    "enabled": true,
+    "comment": "隧道长度大于3000m选择钻爆法",
+    "body": [
+      "TunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasTunnelLength(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/len)",
+      "UnknownPredicate(?x, ?y)"
+    ],
+    "head": []
+  },
+  {
+    "label": "S02",
+    "enabled": true,
+    "comment": "隧道长度 ≤ 3000 → 使用盾构法（TBM_001）",
+    "body": [
+      "TunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasTunnelLength(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/len)",
+      "UnknownPredicate(?x, ?y)"
+    ],
+    "head": []
+  },
+  {
+    "label": "S07-0",
+    "enabled": true,
+    "comment": "水下 + RockGrade I + 干燥 → 25.0 cm",
+    "body": [
+      "UnderwaterTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasGeologicalCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc)",
+      "hasRockGrade(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, RockGrade_I)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, Dry)"
+    ],
+    "head": []
+  },
+  {
+    "label": "S14-1",
+    "enabled": true,
+    "comment": "深埋隧道 + RockGrade_I + 富水 → 钢拱架间距 1.0m// 深埋富水提高支护密度，防止突水及渗压破坏",
+    "body": [
+      "DeepTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasGeologicalCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc)",
+      "hasRockGrade(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, RockGrade_I)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, WaterRich)"
+    ],
+    "head": []
+  },
+  {
+    "label": "S12-0",
+    "enabled": true,
+    "comment": "水下隧道 + RockGrade_I + 干燥 → 钢拱架间距 1.2m（水下但地质好且干燥，常规支护即可）",
+    "body": [
+      "UnderwaterTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasGeologicalCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc)",
+      "hasRockGrade(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, RockGrade_I)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, Dry)"
+    ],
+    "head": []
+  },
+  {
+    "label": "S07-2",
+    "enabled": true,
+    "comment": "水下 + RockGrade II + 干燥 → 27.5 cm",
+    "body": [
+      "UnderwaterTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasGeologicalCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc)",
+      "hasRockGrade(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, RockGrade_II)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, Dry)"
+    ],
+    "head": []
+  },
+  {
+    "label": "S12-2",
+    "enabled": true,
+    "comment": "水下隧道 + RockGrade_II + 干燥 → 钢拱架间距 1.0m（ II类围岩下常规布置）",
+    "body": [
+      "UnderwaterTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasGeologicalCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc)",
+      "hasRockGrade(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, RockGrade_II)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, Dry)"
+    ],
+    "head": []
+  },
+  {
+    "label": "S07-4",
+    "enabled": true,
+    "comment": "水下 + RockGrade III + 干燥 → 30.0 cm",
+    "body": [
+      "UnderwaterTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasGeologicalCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc)",
+      "hasRockGrade(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, RockGrade_III)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, Dry)"
+    ],
+    "head": []
+  },
+  {
+    "label": "S12-4",
+    "enabled": true,
+    "comment": "水下隧道 + RockGrade_III + 干燥 → 钢拱架间距 0.8m(III类围岩较差但干燥，常规支护密度)",
+    "body": [
+      "UnderwaterTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasGeologicalCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc)",
+      "hasRockGrade(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, RockGrade_III)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, Dry)"
+    ],
+    "head": []
+  },
+  {
+    "label": "S07-6",
+    "enabled": true,
+    "comment": "水下 + RockGrade IV + 干燥 → 32.5 cm",
+    "body": [
+      "UnderwaterTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasGeologicalCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc)",
+      "hasRockGrade(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, RockGrade_IV)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, Dry)"
+    ],
+    "head": []
+  },
+  {
+    "label": "S12-6",
+    "enabled": true,
+    "comment": "水下隧道 + RockGrade_IV + 干燥 → 钢拱架间距 0.6m( IV类围岩稳定性差，建议加密支护)",
+    "body": [
+      "UnderwaterTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasGeologicalCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc)",
+      "hasRockGrade(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, RockGrade_IV)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, Dry)"
+    ],
+    "head": []
+  },
+  {
+    "label": "S07-8",
+    "enabled": true,
+    "comment": "水下 + RockGrade V + 干燥 → 35.0 cm",
+    "body": [
+      "UnderwaterTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasGeologicalCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc)",
+      "hasRockGrade(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, RockGrade_V)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, Dry)"
+    ],
+    "head": []
+  },
+  {
+    "label": "S14-0",
+    "enabled": true,
+    "comment": "深埋隧道 + RockGrade_I + 干燥 → 钢拱架间距 1.2m// 深埋稳定围岩，干燥条件支护要求相对宽松",
+    "body": [
+      "DeepTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasGeologicalCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc)",
+      "hasRockGrade(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, RockGrade_I)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, Dry)"
+    ],
+    "head": []
+  },
+  {
+    "label": "S12-8",
+    "enabled": true,
+    "comment": "水下隧道 + RockGrade_V + 干燥 → 钢拱架间距 0.5m(极差围岩，需密集钢拱架支护)",
+    "body": [
+      "UnderwaterTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasGeologicalCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc)",
+      "hasRockGrade(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, RockGrade_V)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, Dry)"
+    ],
+    "head": []
+  },
+  {
+    "label": "S07-1",
+    "enabled": true,
+    "comment": "水下 + RockGrade I + 富水 → 27.5 cm",
+    "body": [
+      "UnderwaterTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasGeologicalCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc)",
+      "hasRockGrade(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, RockGrade_I)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, WaterRich)"
+    ],
+    "head": []
+  },
+  {
+    "label": "S09-3",
+    "enabled": true,
+    "comment": "深埋 + RockGrade II + 富水 → 30.0 cm",
+    "body": [
+      "DeepTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasGeologicalCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc)",
+      "hasRockGrade(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, RockGrade_II)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, WaterRich)"
+    ],
+    "head": []
+  },
+  {
+    "label": "S12-1",
+    "enabled": true,
+    "comment": "水下隧道 + RockGrade_I + 富水 → 钢拱架间距 1.0m（富水条件下增加支护稳定性）",
+    "body": [
+      "UnderwaterTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasGeologicalCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc)",
+      "hasRockGrade(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, RockGrade_I)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, WaterRich)"
+    ],
+    "head": []
+  },
+  {
+    "label": "S07-3",
+    "enabled": true,
+    "comment": "水下 + RockGrade II + 富水 → 30.0 cm",
+    "body": [
+      "UnderwaterTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasGeologicalCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc)",
+      "hasRockGrade(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, RockGrade_II)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, WaterRich)"
+    ],
+    "head": []
+  },
+  {
+    "label": "S12-3",
+    "enabled": true,
+    "comment": "水下隧道 + RockGrade_II + 富水 → 钢拱架间距 0.8m（富水段支护加密防止掉块涌水）",
+    "body": [
+      "UnderwaterTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasGeologicalCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc)",
+      "hasRockGrade(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, RockGrade_II)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, WaterRich)"
+    ],
+    "head": []
+  },
+  {
+    "label": "S07-5",
+    "enabled": true,
+    "comment": "水下 + RockGrade III + 富水 → 32.5 cm",
+    "body": [
+      "UnderwaterTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasGeologicalCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc)",
+      "hasRockGrade(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, RockGrade_III)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, WaterRich)"
+    ],
+    "head": []
+  },
+  {
+    "label": "S12-5",
+    "enabled": true,
+    "comment": "水下隧道 + RockGrade_III + 富水 → 钢拱架间距 0.6m",
+    "body": [
+      "UnderwaterTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasGeologicalCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc)",
+      "hasRockGrade(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, RockGrade_III)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, WaterRich)"
+    ],
+    "head": []
+  },
+  {
+    "label": "S07-7",
+    "enabled": true,
+    "comment": "水下 + RockGrade IV + 富水 → 35.0 cm",
+    "body": [
+      "UnderwaterTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasGeologicalCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc)",
+      "hasRockGrade(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, RockGrade_IV)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, WaterRich)"
+    ],
+    "head": []
+  },
+  {
+    "label": "S12-7",
+    "enabled": true,
+    "comment": "水下隧道 + RockGrade_IV + 富水 → 钢拱架间距 0.5m(富水破碎区，支护接近极限密度)",
+    "body": [
+      "UnderwaterTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasGeologicalCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc)",
+      "hasRockGrade(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, RockGrade_IV)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, WaterRich)"
+    ],
+    "head": []
+  },
+  {
+    "label": "S07-9",
+    "enabled": true,
+    "comment": "水下 + RockGrade V + 富水 → 37.5 cm",
+    "body": [
+      "UnderwaterTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasGeologicalCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc)",
+      "hasRockGrade(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, RockGrade_V)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, WaterRich)"
+    ],
+    "head": []
+  },
+  {
+    "label": "S12-9",
+    "enabled": true,
+    "comment": "水下隧道 + RockGrade_V + 富水 → 钢拱架间距 0.5m(最差工况，采用最密支护方案)",
+    "body": [
+      "UnderwaterTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasGeologicalCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc)",
+      "hasRockGrade(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, RockGrade_V)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, WaterRich)"
+    ],
+    "head": []
+  },
+  {
+    "label": "W03-0",
+    "enabled": true,
+    "comment": "mediumSoil + WaterRich + UnderwaterTunnelProject → 5.5mm// 中等土体水压大，需加厚防水层",
+    "body": [
+      "UnderwaterTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasSoilType(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, MediumSoil)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, WaterRich)"
+    ],
+    "head": []
+  },
+  {
+    "label": "S14-3",
+    "enabled": true,
+    "comment": "深埋隧道 + RockGrade_II + 富水 → 钢拱架间距// 深部富水 II 级围岩支护需加密，保障开挖安全",
+    "body": [
+      "DeepTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasGeologicalCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc)",
+      "hasRockGrade(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, RockGrade_II)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, WaterRich)"
+    ],
+    "head": []
+  },
+  {
+    "label": "W03-1",
+    "enabled": true,
+    "comment": "strongSoil + WaterRich + UnderwaterTunnelProject → 5mm // 强土抗渗性好，但水压大仍需增强防护",
+    "body": [
+      "UnderwaterTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasSoilType(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, StrongSoil)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, WaterRich)"
+    ],
+    "head": []
+  },
+  {
+    "label": "W03-2",
+    "enabled": true,
+    "comment": "weakSoil + WaterRich + UnderwaterTunnelProject → 6mm // 弱土+水下工况最为恶劣，设定最大厚度",
+    "body": [
+      "UnderwaterTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasSoilType(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, WeakSoil)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, WaterRich)"
+    ],
+    "head": []
+  },
+  {
+    "label": "S05-1",
+    "enabled": true,
+    "comment": "城市 + RockGrade I + 干燥 → 22.5 cm",
+    "body": [
+      "UrbanTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasGeologicalCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc)",
+      "hasRockGrade(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, RockGrade_I)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, Dry)"
+    ],
+    "head": []
+  },
+  {
+    "label": "S10-0",
+    "enabled": true,
+    "comment": "城市隧道 + RockGrade_I + 干燥 → 钢拱架间距 1.2m",
+    "body": [
+      "UrbanTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasGeologicalCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc)",
+      "hasRockGrade(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, RockGrade_I)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, Dry)"
+    ],
+    "head": []
+  },
+  {
+    "label": "S05-3",
+    "enabled": true,
+    "comment": "城市 + RockGrade II + 干燥 → 25.0 cm",
+    "body": [
+      "UrbanTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasGeologicalCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc)",
+      "hasRockGrade(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, RockGrade_II)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, Dry)"
+    ],
+    "head": []
+  },
+  {
+    "label": "S10-2",
+    "enabled": true,
+    "comment": "城市隧道 + RockGrade_II + 干燥 → 钢拱架间距 1.0m",
+    "body": [
+      "UrbanTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasGeologicalCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc)",
+      "hasRockGrade(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, RockGrade_II)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, Dry)"
+    ],
+    "head": []
+  },
+  {
+    "label": "S05-5",
+    "enabled": true,
+    "comment": "城市 + RockGrade III + 干燥 -> 27.5 cm",
+    "body": [
+      "UrbanTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasGeologicalCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc)",
+      "hasRockGrade(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, RockGrade_III)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, Dry)"
+    ],
+    "head": []
+  },
+  {
+    "label": "S10-4",
+    "enabled": true,
+    "comment": "城市隧道 + RockGrade_III + 干燥 → 钢拱架间距 0.8m",
+    "body": [
+      "UrbanTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasGeologicalCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc)",
+      "hasRockGrade(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, RockGrade_III)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, Dry)"
+    ],
+    "head": []
+  },
+  {
+    "label": "S05-7",
+    "enabled": true,
+    "comment": "城市 + RockGrade IV + 干燥 -> 30.0 cm",
+    "body": [
+      "UrbanTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasGeologicalCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc)",
+      "hasRockGrade(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, RockGrade_IV)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, Dry)"
+    ],
+    "head": []
+  },
+  {
+    "label": "S10-6",
+    "enabled": true,
+    "comment": "城市隧道 + RockGrade_IV + 干燥 → 钢拱架间距 0.5m",
+    "body": [
+      "UrbanTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasGeologicalCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc)",
+      "hasRockGrade(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, RockGrade_IV)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, Dry)"
+    ],
+    "head": []
+  },
+  {
+    "label": "S09-5",
+    "enabled": true,
+    "comment": "深埋 + RockGrade III + 富水 → 32.5 cm",
+    "body": [
+      "DeepTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasGeologicalCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc)",
+      "hasRockGrade(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, RockGrade_III)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, WaterRich)"
+    ],
+    "head": []
+  },
+  {
+    "label": "S10-8",
+    "enabled": true,
+    "comment": "城市隧道 + RockGrade_V + 干燥 → 钢拱架间距 0.5m（按规范 TB 10003 调整）",
+    "body": [
+      "UrbanTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasGeologicalCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc)",
+      "hasRockGrade(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, RockGrade_V)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, Dry)"
+    ],
+    "head": []
+  },
+  {
+    "label": "S05-9",
+    "enabled": true,
+    "comment": "城市 + RockGrade V + 干燥 -> 32.5 cm",
+    "body": [
+      "UrbanTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasGeologicalCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc)",
+      "hasRockGrade(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, RockGrade_V)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, Dry)"
+    ],
+    "head": []
+  },
+  {
+    "label": "S05-2",
+    "enabled": true,
+    "comment": "城市 + RockGrade I + 富水 → 25.0 cm",
+    "body": [
+      "UrbanTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasGeologicalCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc)",
+      "hasRockGrade(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, RockGrade_I)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, WaterRich)"
+    ],
+    "head": []
+  },
+  {
+    "label": "S10-1",
+    "enabled": true,
+    "comment": "城市隧道 + RockGrade_I + 富水 → 钢拱架间距 1.0m",
+    "body": [
+      "UrbanTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasGeologicalCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc)",
+      "hasRockGrade(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, RockGrade_I)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, WaterRich)"
+    ],
+    "head": []
+  },
+  {
+    "label": "S05-4",
+    "enabled": true,
+    "comment": "城市 + RockGrade II + 富水 → 27.5 cm",
+    "body": [
+      "UrbanTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasGeologicalCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc)",
+      "hasRockGrade(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, RockGrade_II)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, WaterRich)"
+    ],
+    "head": []
+  },
+  {
+    "label": "S10-3",
+    "enabled": true,
+    "comment": "城市隧道 + RockGrade_II + 富水 → 钢拱架间距 0.8m",
+    "body": [
+      "UrbanTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasGeologicalCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc)",
+      "hasRockGrade(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, RockGrade_II)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, WaterRich)"
+    ],
+    "head": []
+  },
+  {
+    "label": "S05-6",
+    "enabled": true,
+    "comment": "城市 + RockGrade III + 富水 -> 30.0 cm",
+    "body": [
+      "UrbanTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasGeologicalCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc)",
+      "hasRockGrade(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, RockGrade_III)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, WaterRich)"
+    ],
+    "head": []
+  },
+  {
+    "label": "S10-5",
+    "enabled": true,
+    "comment": "城市隧道 + RockGrade_III + 富水 → 钢拱架间距 0.6m",
+    "body": [
+      "UrbanTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasGeologicalCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc)",
+      "hasRockGrade(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, RockGrade_III)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, WaterRich)"
+    ],
+    "head": []
+  },
+  {
+    "label": "S05-8",
+    "enabled": true,
+    "comment": "城市 + RockGrade IV + 富水 -> 32.5 cm",
+    "body": [
+      "UrbanTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasGeologicalCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc)",
+      "hasRockGrade(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, RockGrade_IV)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, WaterRich)"
+    ],
+    "head": []
+  },
+  {
+    "label": "S10-7",
+    "enabled": true,
+    "comment": "城市隧道 + RockGrade_IV + 富水 → 钢拱架间距 0.5m（按规范 TB 10003 调整）",
+    "body": [
+      "UrbanTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasGeologicalCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc)",
+      "hasRockGrade(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, RockGrade_IV)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, WaterRich)"
+    ],
+    "head": []
+  },
+  {
+    "label": "S14-5",
+    "enabled": true,
+    "comment": "深埋隧道 + RockGrade_III + 富水 → 钢拱架间距 0.6m // 深埋+富水+中差围岩，需增强支护强度",
+    "body": [
+      "DeepTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasGeologicalCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc)",
+      "hasRockGrade(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, RockGrade_III)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, WaterRich)"
+    ],
+    "head": []
+  },
+  {
+    "label": "S05-91",
+    "enabled": true,
+    "comment": "城市 + RockGrade V + 富水 -> 35.0 cm",
+    "body": [
+      "UrbanTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasGeologicalCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc)",
+      "hasRockGrade(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, RockGrade_V)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, WaterRich)"
+    ],
+    "head": []
+  },
+  {
+    "label": "S10-9",
+    "enabled": true,
+    "comment": "城市隧道 + RockGrade_V + 富水 → 钢拱架间距  0.5m（按规范调整，不推荐小于 0.5m）过密支护施工困难，依规范 TB 10003 不推荐低于 0.5m",
+    "body": [
+      "UrbanTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasGeologicalCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc)",
+      "hasRockGrade(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, RockGrade_V)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, WaterRich)"
+    ],
+    "head": []
+  },
+  {
+    "label": "W01-0",
+    "enabled": true,
+    "comment": "mediumSoil + Dry + UrbanTunnelProject → 3mm// 中等土质，干燥环境，采用常规防水层厚度",
+    "body": [
+      "UrbanTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasSoilType(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, MediumSoil)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, Dry)"
+    ],
+    "head": []
+  },
+  {
+    "label": "W01-2",
+    "enabled": true,
+    "comment": "strongSoil + Dry + UrbanTunnelProject → 2.5mm // 强土体具有较强自防水能力，厚度可控",
+    "body": [
+      "UrbanTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasSoilType(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, StrongSoil)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, Dry)"
+    ],
+    "head": []
+  },
+  {
+    "label": "W01-4",
+    "enabled": true,
+    "comment": "weakSoil + Dry + UrbanTunnelProject → 4mm// 弱土体易渗水，即便干燥亦应提高防护",
+    "body": [
+      "UrbanTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasSoilType(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, WeakSoil)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, Dry)"
+    ],
+    "head": []
+  },
+  {
+    "label": "W01-1",
+    "enabled": true,
+    "comment": "mediumSoil + WaterRich + UrbanTunnelProject → 4mm// 富水环境需提高防水层厚度",
+    "body": [
+      "UrbanTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasSoilType(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, MediumSoil)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, WaterRich)"
+    ],
+    "head": []
+  },
+  {
+    "label": "W01-3",
+    "enabled": true,
+    "comment": "strongSoil + WaterRich + UrbanTunnelProject → 3.5mm",
+    "body": [
+      "UrbanTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasSoilType(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, StrongSoil)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, WaterRich)"
+    ],
+    "head": []
+  },
+  {
+    "label": "W01-5",
+    "enabled": true,
+    "comment": "weakSoil + WaterRich + UrbanTunnelProject → 5mm// 弱土+富水，采取最大厚度加强防渗安全",
+    "body": [
+      "UrbanTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasSoilType(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, WeakSoil)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, WaterRich)"
+    ],
+    "head": []
+  },
+  {
+    "label": "S09-6",
+    "enabled": true,
+    "comment": "深埋 + RockGrade IV + 富水 → 35.0 cm",
+    "body": [
+      "DeepTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasGeologicalCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc)",
+      "hasRockGrade(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, RockGrade_IV)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, WaterRich)"
+    ],
+    "head": []
+  },
+  {
+    "label": "S09-7",
+    "enabled": true,
+    "comment": "深埋 + RockGrade IV + 富水 → 35.0 cm",
+    "body": [
+      "DeepTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasGeologicalCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc)",
+      "hasRockGrade(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, RockGrade_IV)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, WaterRich)"
+    ],
+    "head": []
+  },
+  {
+    "label": "S14-7",
+    "enabled": true,
+    "comment": "深埋隧道 + RockGrade_IV + 富水 → 钢拱架间距 0.5m// 富水条件下 IV 类围岩稳定性差，最小间距",
+    "body": [
+      "DeepTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasGeologicalCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc)",
+      "hasRockGrade(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, RockGrade_IV)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, WaterRich)"
+    ],
+    "head": []
+  },
+  {
+    "label": "S09-8",
+    "enabled": true,
+    "comment": "深埋 + RockGrade V + 富水 → 37.5 cm",
+    "body": [
+      "DeepTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasGeologicalCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc)",
+      "hasRockGrade(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, RockGrade_V)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, WaterRich)"
+    ],
+    "head": []
+  },
+  {
+    "label": "S14-9",
+    "enabled": true,
+    "comment": "深埋隧道 + RockGrade_V + 富水 → 钢拱架间距0.5m // 极端条件最小间距，参考规范不建议再减小",
+    "body": [
+      "DeepTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasGeologicalCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc)",
+      "hasRockGrade(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, RockGrade_V)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, WaterRich)"
+    ],
+    "head": []
+  },
+  {
+    "label": "S06-0",
+    "enabled": true,
+    "comment": "山岭 + RockGrade I + 干燥 → 20.0 cm",
+    "body": [
+      "MountainTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasGeologicalCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc)",
+      "hasRockGrade(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, RockGrade_I)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, Dry)"
+    ],
+    "head": []
+  },
+  {
+    "label": "S09-2",
+    "enabled": true,
+    "comment": "深埋 + RockGrade II + 干燥 → 27.5 cm",
+    "body": [
+      "DeepTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasGeologicalCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc)",
+      "hasRockGrade(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, RockGrade_II)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, Dry)"
+    ],
+    "head": []
+  },
+  {
+    "label": "S11-0",
+    "enabled": true,
+    "comment": "山岭隧道 + RockGrade_I + 干燥 → 钢拱架间距 1.4m（ 山岭隧道常规稳定段，间距可适当放宽）",
+    "body": [
+      "MountainTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasGeologicalCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc)",
+      "hasRockGrade(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, RockGrade_I)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, Dry)"
+    ],
+    "head": []
+  },
+  {
+    "label": "S06-2",
+    "enabled": true,
+    "comment": "山岭 + RockGrade II + 干燥 → 22.5 cm",
+    "body": [
+      "MountainTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasGeologicalCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc)",
+      "hasRockGrade(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, RockGrade_II)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, Dry)"
+    ],
+    "head": []
+  },
+  {
+    "label": "S11-2",
+    "enabled": true,
+    "comment": "山岭隧道 + RockGrade_II + 干燥 → 钢拱架间距 1.2m（II类围岩结构稳定性好，常用间距）",
+    "body": [
+      "MountainTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasGeologicalCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc)",
+      "hasRockGrade(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, RockGrade_II)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, Dry)"
+    ],
+    "head": []
+  },
+  {
+    "label": "S06-4",
+    "enabled": true,
+    "comment": "山岭 + RockGrade III + 干燥 → 25.0 cm",
+    "body": [
+      "MountainTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasGeologicalCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc)",
+      "hasRockGrade(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, RockGrade_III)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, Dry)"
+    ],
+    "head": []
+  },
+  {
+    "label": "S11-4",
+    "enabled": true,
+    "comment": "山岭隧道 + RockGrade_III + 干燥 → 钢拱架间距 1.0m（软弱围岩标准支护配置）",
+    "body": [
+      "MountainTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasGeologicalCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc)",
+      "hasRockGrade(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, RockGrade_III)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, Dry)"
+    ],
+    "head": []
+  },
+  {
+    "label": "S06-6",
+    "enabled": true,
+    "comment": "山岭 + RockGrade IV + 干燥 → 27.5 cm",
+    "body": [
+      "MountainTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasGeologicalCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc)",
+      "hasRockGrade(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, RockGrade_IV)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, Dry)"
+    ],
+    "head": []
+  },
+  {
+    "label": "S11-6",
+    "enabled": true,
+    "comment": "山岭隧道 + RockGrade_IV + 干燥 → 钢拱架间距 0.8m（不稳定段标准支护布置）",
+    "body": [
+      "MountainTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasGeologicalCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc)",
+      "hasRockGrade(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, RockGrade_IV)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, Dry)"
+    ],
+    "head": []
+  },
+  {
+    "label": "S06-8",
+    "enabled": true,
+    "comment": "山岭 + RockGrade V + 干燥 → 30.0 cm",
+    "body": [
+      "MountainTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasGeologicalCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc)",
+      "hasRockGrade(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, RockGrade_V)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, Dry)"
+    ],
+    "head": []
+  },
+  {
+    "label": "S11-8",
+    "enabled": true,
+    "comment": "山岭隧道 + RockGrade_V + 干燥 → 钢拱架间距 0.6m（极破碎区干燥，仍需密集支护 ）",
+    "body": [
+      "MountainTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasGeologicalCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc)",
+      "hasRockGrade(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, RockGrade_V)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, Dry)"
+    ],
+    "head": []
+  },
+  {
+    "label": "S11-1",
+    "enabled": true,
+    "comment": "山岭隧道 + RockGrade_I + 富水 → 钢拱架间距 1.2m（富水条件下适当加密以控制初期变形）",
+    "body": [
+      "MountainTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasGeologicalCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc)",
+      "hasRockGrade(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, RockGrade_I)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, WaterRich)"
+    ],
+    "head": []
+  },
+  {
+    "label": "S14-2",
+    "enabled": true,
+    "comment": "深埋隧道 + RockGrade_II + 干燥 → 钢拱架间距 1.0m",
+    "body": [
+      "DeepTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasGeologicalCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc)",
+      "hasRockGrade(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, RockGrade_II)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, Dry)"
+    ],
+    "head": []
+  },
+  {
+    "label": "S06-1",
+    "enabled": true,
+    "comment": "山岭 + RockGrade I + 富水 → 22.5 cm",
+    "body": [
+      "MountainTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasGeologicalCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc)",
+      "hasRockGrade(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, RockGrade_I)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, WaterRich)"
+    ],
+    "head": []
+  },
+  {
+    "label": "S06-3",
+    "enabled": true,
+    "comment": "山岭 + RockGrade II + 富水 → 25.0 cm",
+    "body": [
+      "MountainTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasGeologicalCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc)",
+      "hasRockGrade(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, RockGrade_II)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, WaterRich)"
+    ],
+    "head": []
+  },
+  {
+    "label": "S11-3",
+    "enabled": true,
+    "comment": "山岭隧道 + RockGrade_II + 富水 → 钢拱架间距 1.0m（富水加大支护密度）",
+    "body": [
+      "MountainTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasGeologicalCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc)",
+      "hasRockGrade(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, RockGrade_II)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, WaterRich)"
+    ],
+    "head": []
+  },
+  {
+    "label": "S06-5",
+    "enabled": true,
+    "comment": "山岭 + RockGrade III + 富水 → 27.5 cm",
+    "body": [
+      "MountainTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasGeologicalCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc)",
+      "hasRockGrade(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, RockGrade_III)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, WaterRich)"
+    ],
+    "head": []
+  },
+  {
+    "label": "S11-5",
+    "enabled": true,
+    "comment": "山岭隧道 + RockGrade_III + 富水 → 钢拱架间距 0.8m（围岩软+富水，支护需加密 ）",
+    "body": [
+      "MountainTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasGeologicalCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc)",
+      "hasRockGrade(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, RockGrade_III)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, WaterRich)"
+    ],
+    "head": []
+  },
+  {
+    "label": "S06-7",
+    "enabled": true,
+    "comment": "山岭 + RockGrade IV + 富水 → 30.0 cm",
+    "body": [
+      "MountainTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasGeologicalCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc)",
+      "hasRockGrade(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, RockGrade_IV)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, WaterRich)"
+    ],
+    "head": []
+  },
+  {
+    "label": "S11-7",
+    "enabled": true,
+    "comment": "山岭隧道 + RockGrade_IV + 富水 → 钢拱架间距 0.6m（水扰动显著，适当加密）",
+    "body": [
+      "MountainTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasGeologicalCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc)",
+      "hasRockGrade(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, RockGrade_IV)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, WaterRich)"
+    ],
+    "head": []
+  },
+  {
+    "label": "S06-9",
+    "enabled": true,
+    "comment": "山岭 + RockGrade V + 富水 → 32.5 cm",
+    "body": [
+      "MountainTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasGeologicalCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc)",
+      "hasRockGrade(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, RockGrade_V)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, WaterRich)"
+    ],
+    "head": []
+  },
+  {
+    "label": "S11-9",
+    "enabled": true,
+    "comment": "山岭隧道 + RockGrade_V + 富水 → 钢拱架间距 0.5m（极差围岩 + 富水，按规范推荐极限支护密度）",
+    "body": [
+      "MountainTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasGeologicalCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc)",
+      "hasRockGrade(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, RockGrade_V)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, WaterRich)"
+    ],
+    "head": []
+  },
+  {
+    "label": "W02-0",
+    "enabled": true,
+    "comment": "mediumSoil + Dry + MountainTunnelProject → 3.5mm// 山岭隧道多穿岩体，厚度略高",
+    "body": [
+      "MountainTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasSoilType(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, MediumSoil)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, Dry)"
+    ],
+    "head": []
+  },
+  {
+    "label": "W02-2",
+    "enabled": true,
+    "comment": "strongSoil + Dry + MountainTunnelProject → 3mm// 岩性强，防水压力小，厚度适中",
+    "body": [
+      "MountainTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasSoilType(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, StrongSoil)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, Dry)"
+    ],
+    "head": []
+  },
+  {
+    "label": "S09-4",
+    "enabled": true,
+    "comment": "深埋 + RockGrade III + 干燥 → 30.0 cm",
+    "body": [
+      "DeepTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasGeologicalCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc)",
+      "hasRockGrade(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, RockGrade_III)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, Dry)"
+    ],
+    "head": []
+  },
+  {
+    "label": "W02-4",
+    "enabled": true,
+    "comment": "weakSoil + Dry + MountainTunnelProject → 4.5mm // 弱土山区段落风险高，厚度适度提高",
+    "body": [
+      "MountainTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasSoilType(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, WeakSoil)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, Dry)"
+    ],
+    "head": []
+  },
+  {
+    "label": "W02-1",
+    "enabled": true,
+    "comment": "mediumSoil + WaterRich + MountainTunnelProject → 4.5mm",
+    "body": [
+      "MountainTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasSoilType(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, MediumSoil)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, WaterRich)"
+    ],
+    "head": []
+  },
+  {
+    "label": "W02-3",
+    "enabled": true,
+    "comment": "strongSoil + WaterRich + MountainTunnelProject → 4mm// 富水情况下仍需提升厚度",
+    "body": [
+      "MountainTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasSoilType(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, StrongSoil)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, WaterRich)"
+    ],
+    "head": []
+  },
+  {
+    "label": "W02-5",
+    "enabled": true,
+    "comment": "weakSoil + WaterRich + MountainTunnelProject → 5mm// 极端地质水文条件下应设最高标准防水层",
+    "body": [
+      "MountainTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasSoilType(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, WeakSoil)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, WaterRich)"
+    ],
+    "head": []
+  },
+  {
+    "label": "S08-0",
+    "enabled": true,
+    "comment": "浅埋 + RockGrade I + 干燥 → 22.5 cm",
+    "body": [
+      "ShallowTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasGeologicalCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc)",
+      "hasRockGrade(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, RockGrade_I)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, Dry)"
+    ],
+    "head": []
+  },
+  {
+    "label": "S13-0",
+    "enabled": true,
+    "comment": "浅埋隧道 + RockGrade_I + 干燥 → 钢拱架间距 1.2m(浅埋、稳定围岩、干燥环境下支护强度可适度降低)",
+    "body": [
+      "ShallowTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasGeologicalCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc)",
+      "hasRockGrade(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, RockGrade_I)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, Dry)"
+    ],
+    "head": []
+  },
+  {
+    "label": "S08-2",
+    "enabled": true,
+    "comment": "浅埋 + RockGrade II + 干燥 → 25.0 cm",
+    "body": [
+      "ShallowTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasGeologicalCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc)",
+      "hasRockGrade(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, RockGrade_II)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, Dry)"
+    ],
+    "head": []
+  },
+  {
+    "label": "S13-2",
+    "enabled": true,
+    "comment": "浅埋隧道 + RockGrade_II + 干燥 → 钢拱架间距 1.0m (II类围岩常规支护密度即可满足)",
+    "body": [
+      "ShallowTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasGeologicalCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc)",
+      "hasRockGrade(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, RockGrade_II)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, Dry)"
+    ],
+    "head": []
+  },
+  {
+    "label": "S08-4",
+    "enabled": true,
+    "comment": "浅埋 + RockGrade III + 干燥 → 27.5 cm",
+    "body": [
+      "ShallowTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasGeologicalCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc)",
+      "hasRockGrade(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, RockGrade_III)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, Dry)"
+    ],
+    "head": []
+  },
+  {
+    "label": "S13-4",
+    "enabled": true,
+    "comment": "浅埋隧道 + RockGrade_III + 干燥 → 钢拱架间距 0.8m(III类围岩稳定性差，应加密支护)",
+    "body": [
+      "ShallowTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasGeologicalCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc)",
+      "hasRockGrade(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, RockGrade_III)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, Dry)"
+    ],
+    "head": []
+  },
+  {
+    "label": "S08-6",
+    "enabled": true,
+    "comment": "浅埋 + RockGrade IV + 干燥 → 30.0 cm",
+    "body": [
+      "ShallowTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasGeologicalCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc)",
+      "hasRockGrade(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, RockGrade_IV)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, Dry)"
+    ],
+    "head": []
+  },
+  {
+    "label": "S14-4",
+    "enabled": true,
+    "comment": "深埋隧道 + RockGrade_III + 干燥 → 钢拱架间距 0.8m // III类围岩深埋下稳定性下降，适当加密支护",
+    "body": [
+      "DeepTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasGeologicalCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc)",
+      "hasRockGrade(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, RockGrade_III)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, Dry)"
+    ],
+    "head": []
+  },
+  {
+    "label": "S13-6",
+    "enabled": true,
+    "comment": "浅埋隧道 + RockGrade_IV + 干燥 → 钢拱架间距 0.6m (IV类围岩浅埋段应确保施工安全)",
+    "body": [
+      "ShallowTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasGeologicalCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc)",
+      "hasRockGrade(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, RockGrade_IV)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, Dry)"
+    ],
+    "head": []
+  },
+  {
+    "label": "S08-8",
+    "enabled": true,
+    "comment": "浅埋 + RockGrade V + 干燥 → 32.5 cm",
+    "body": [
+      "ShallowTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasGeologicalCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc)",
+      "hasRockGrade(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, RockGrade_V)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, Dry)"
+    ],
+    "head": []
+  },
+  {
+    "label": "S13-8",
+    "enabled": true,
+    "comment": "浅埋隧道 + RockGrade_V + 干燥 → 钢拱架间距 0.5m(极差围岩，即便干燥也需强支护)",
+    "body": [
+      "ShallowTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasGeologicalCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc)",
+      "hasRockGrade(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, RockGrade_V)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, Dry)"
+    ],
+    "head": []
+  },
+  {
+    "label": "S08-1",
+    "enabled": true,
+    "comment": "浅埋 + RockGrade I + 富水 → 25.0 cm",
+    "body": [
+      "ShallowTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasGeologicalCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc)",
+      "hasRockGrade(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, RockGrade_I)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, WaterRich)"
+    ],
+    "head": []
+  },
+  {
+    "label": "S13-1",
+    "enabled": true,
+    "comment": "浅埋隧道 + RockGrade_I + 富水 → 钢拱架间距 1.0m(富水条件支护加密，防止地表渗水导致坍塌)",
+    "body": [
+      "ShallowTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasGeologicalCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc)",
+      "hasRockGrade(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, RockGrade_I)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, WaterRich)"
+    ],
+    "head": []
+  },
+  {
+    "label": "S08-3",
+    "enabled": true,
+    "comment": "浅埋 + RockGrade II + 富水 → 27.5 cm",
+    "body": [
+      "ShallowTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasGeologicalCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc)",
+      "hasRockGrade(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, RockGrade_II)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, WaterRich)"
+    ],
+    "head": []
+  },
+  {
+    "label": "S13-3",
+    "enabled": true,
+    "comment": "浅埋隧道 + RockGrade_II + 富水 → 钢拱架间距 0.8m (增强防水及支护稳定性，防止浅覆土滑移)",
+    "body": [
+      "ShallowTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasGeologicalCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc)",
+      "hasRockGrade(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, RockGrade_II)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, WaterRich)"
+    ],
+    "head": []
+  },
+  {
+    "label": "S08-5",
+    "enabled": true,
+    "comment": "浅埋 + RockGrade III + 富水 → 30.0 cm",
+    "body": [
+      "ShallowTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasGeologicalCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc)",
+      "hasRockGrade(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, RockGrade_III)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, WaterRich)"
+    ],
+    "head": []
+  },
+  {
+    "label": "S13-5",
+    "enabled": true,
+    "comment": "浅埋隧道 + RockGrade_III + 富水 → 钢拱架间距 0.6m(浅埋富水极易涌水塌方，应加大支护强度)",
+    "body": [
+      "ShallowTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasGeologicalCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc)",
+      "hasRockGrade(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, RockGrade_III)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, WaterRich)"
+    ],
+    "head": []
+  },
+  {
+    "label": "S08-7",
+    "enabled": true,
+    "comment": "浅埋 + RockGrade IV + 富水 → 32.5 cm",
+    "body": [
+      "ShallowTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasGeologicalCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc)",
+      "hasRockGrade(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, RockGrade_IV)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, WaterRich)"
+    ],
+    "head": []
+  },
+  {
+    "label": "S14-6",
+    "enabled": true,
+    "comment": "深埋隧道 + RockGrade_IV + 干燥 → 钢拱架间距 0.6m// 差围岩即便干燥也需密支护防止变形",
+    "body": [
+      "DeepTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasGeologicalCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc)",
+      "hasRockGrade(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, RockGrade_IV)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, Dry)"
+    ],
+    "head": []
+  },
+  {
+    "label": "S13-7",
+    "enabled": true,
+    "comment": "浅埋隧道 + RockGrade_IV + 富水 → 钢拱架间距 0.5m(范建议最小间距，防治浅层地表水渗漏)",
+    "body": [
+      "ShallowTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasGeologicalCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc)",
+      "hasRockGrade(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, RockGrade_IV)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, WaterRich)"
+    ],
+    "head": []
+  },
+  {
+    "label": "S08-9",
+    "enabled": true,
+    "comment": "浅埋 + RockGrade V + 富水 → 35.0 cm",
+    "body": [
+      "ShallowTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasGeologicalCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc)",
+      "hasRockGrade(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, RockGrade_V)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, WaterRich)"
+    ],
+    "head": []
+  },
+  {
+    "label": "S13-9",
+    "enabled": true,
+    "comment": "浅埋隧道 + RockGrade_V + 富水 → 钢拱架间距 0.5m// 极端条件下不宜小于 0.5m，施工受限",
+    "body": [
+      "ShallowTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasGeologicalCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc)",
+      "hasRockGrade(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, RockGrade_V)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, WaterRich)"
+    ],
+    "head": []
+  },
+  {
+    "label": "W04-0",
+    "enabled": true,
+    "comment": "mediumSoil + Dry + ShallowTunnelProject → 3.5mm // 浅埋段施工扰动大，适度提高防水厚度",
+    "body": [
+      "ShallowTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasSoilType(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, MediumSoil)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, Dry)"
+    ],
+    "head": []
+  },
+  {
+    "label": "W05-0",
+    "enabled": true,
+    "comment": "mediumSoil + Dry + ShallowTunnelProject → 3.5mm// 浅埋段施工扰动大，适度提高防水厚度",
+    "body": [
+      "ShallowTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasSoilType(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, MediumSoil)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, Dry)"
+    ],
+    "head": []
+  },
+  {
+    "label": "W04-2",
+    "enabled": true,
+    "comment": "strongSoil + Dry + ShallowTunnelProject → 3mm // 自稳能力较强，标准厚度",
+    "body": [
+      "ShallowTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasSoilType(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, StrongSoil)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, Dry)"
+    ],
+    "head": []
+  },
+  {
+    "label": "W05-2",
+    "enabled": true,
+    "comment": "strongSoil + Dry + ShallowTunnelProject → 3mm// 自稳能力较强，标准厚度",
+    "body": [
+      "ShallowTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasSoilType(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, StrongSoil)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, Dry)"
+    ],
+    "head": []
+  },
+  {
+    "label": "W04-4",
+    "enabled": true,
+    "comment": "weakSoil + Dry + ShallowTunnelProject → 4.5mm  // 弱土层抗渗差，浅埋更易渗透",
+    "body": [
+      "ShallowTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasSoilType(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, WeakSoil)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, Dry)"
+    ],
+    "head": []
+  },
+  {
+    "label": "W05-4",
+    "enabled": true,
+    "comment": "weakSoil + Dry + ShallowTunnelProject → 4.5mm// 弱土层抗渗差，浅埋更易渗透",
+    "body": [
+      "ShallowTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasSoilType(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, WeakSoil)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, Dry)"
+    ],
+    "head": []
+  },
+  {
+    "label": "W04-1",
+    "enabled": true,
+    "comment": "mediumSoil + WaterRich + ShallowTunnelProject → 4.5mm // 富水浅埋，需重点加强防水",
+    "body": [
+      "ShallowTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasSoilType(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, MediumSoil)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, WaterRich)"
+    ],
+    "head": []
+  },
+  {
+    "label": "W05-1",
+    "enabled": true,
+    "comment": "mediumSoil + WaterRich + ShallowTunnelProject → 4.5mm // 富水浅埋，需重点加强防水",
+    "body": [
+      "ShallowTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasSoilType(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, MediumSoil)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, WaterRich)"
+    ],
+    "head": []
+  },
+  {
+    "label": "S09-9",
+    "enabled": true,
+    "comment": "深埋 + RockGrade V + 干燥 → 35.0 cm",
+    "body": [
+      "DeepTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasGeologicalCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc)",
+      "hasRockGrade(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, RockGrade_V)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, Dry)"
+    ],
+    "head": []
+  },
+  {
+    "label": "W04-3",
+    "enabled": true,
+    "comment": "strongSoil + WaterRich + ShallowTunnelProject → 4mm // 强土抗水性好，但富水仍需提升防水层",
+    "body": [
+      "ShallowTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasSoilType(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, StrongSoil)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, WaterRich)"
+    ],
+    "head": []
+  },
+  {
+    "label": "W05-3",
+    "enabled": true,
+    "comment": "strongSoil + WaterRich + ShallowTunnelProject → 4mm// 强土抗水性好，但富水仍需提升防水层",
+    "body": [
+      "ShallowTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasSoilType(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, StrongSoil)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, WaterRich)"
+    ],
+    "head": []
+  },
+  {
+    "label": "W05-5",
+    "enabled": true,
+    "comment": "weakSoil + WaterRich + ShallowTunnelProject → 5.5mm",
+    "body": [
+      "ShallowTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasSoilType(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, WeakSoil)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, WaterRich)"
+    ],
+    "head": []
+  },
+  {
+    "label": "W04-5",
+    "enabled": true,
+    "comment": "weakSoil + WaterRich + ShallowTunnelProject → 5.5mm// 弱土+富水+浅埋为最高风险组合，最大厚度",
+    "body": [
+      "ShallowTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasSoilType(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, WeakSoil)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, WaterRich)"
+    ],
+    "head": []
+  },
+  {
+    "label": "S16--0",
+    "enabled": true,
+    "comment": "RockGrade_I + 干燥 → 厚度 6mm// 稳定围岩且干燥，钢拱架厚度需求最低",
+    "body": [
+      "TunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasGeologicalCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc)",
+      "hasRockGrade(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, RockGrade_I)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, Dry)"
+    ],
+    "head": []
+  },
+  {
+    "label": "S16-2",
+    "enabled": true,
+    "comment": "TunnelProject + RockGrade_II + 干燥 → 厚度 8mm // 稳定围岩支护刚度适中，常规厚度",
+    "body": [
+      "TunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasGeologicalCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc)",
+      "hasRockGrade(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, RockGrade_II)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, Dry)"
+    ],
+    "head": []
+  },
+  {
+    "label": "S16-4",
+    "enabled": true,
+    "comment": "TunnelProject + RockGrade_III + 干燥 → 厚度 10mm // 中等围岩需适当提升钢拱架厚度以保证结构安全",
+    "body": [
+      "TunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasGeologicalCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc)",
+      "hasRockGrade(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, RockGrade_III)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, Dry)"
+    ],
+    "head": []
+  },
+  {
+    "label": "S16-6",
+    "enabled": true,
+    "comment": "TunnelProject + RockGrade_IV + 干燥→ 厚度 12mm",
+    "body": [
+      "TunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasGeologicalCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc)",
+      "hasRockGrade(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, RockGrade_IV)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, Dry)"
+    ],
+    "head": []
+  },
+  {
+    "label": "S16-8",
+    "enabled": true,
+    "comment": "TunnelProject + RockGrade_V + 干燥 → 厚度 14mm",
+    "body": [
+      "TunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasGeologicalCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc)",
+      "hasRockGrade(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, RockGrade_V)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, Dry)"
+    ],
+    "head": []
+  },
+  {
+    "label": "S16--1",
+    "enabled": true,
+    "comment": "TunnelProject + RockGrade_I + 富水 → 厚度 8mm // 富水导致锈蚀风险提高，适度增加钢拱架厚度",
+    "body": [
+      "TunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasGeologicalCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc)",
+      "hasRockGrade(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, RockGrade_I)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, WaterRich)"
+    ],
+    "head": []
+  },
+  {
+    "label": "S16-3",
+    "enabled": true,
+    "comment": "TunnelProject + RockGrade_II + 富水 → 厚度 10mm// 富水环境钢拱架需增强耐久性和刚度",
+    "body": [
+      "TunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasGeologicalCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc)",
+      "hasRockGrade(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, RockGrade_II)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, WaterRich)"
+    ],
+    "head": []
+  },
+  {
+    "label": "S14-8",
+    "enabled": true,
+    "comment": "深埋隧道 + RockGrade_V + 干燥 → 钢拱架间距 0.5m // 极差围岩，深埋段必须加强支护",
+    "body": [
+      "DeepTunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasGeologicalCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc)",
+      "hasRockGrade(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, RockGrade_V)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, Dry)"
+    ],
+    "head": []
+  },
+  {
+    "label": "S16-5",
+    "enabled": true,
+    "comment": "TunnelProject + RockGrade_III + 富水 → 厚度 12mm // 富水+III类围岩，钢拱架厚度需加强应对双重不利因素",
+    "body": [
+      "TunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasGeologicalCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc)",
+      "hasRockGrade(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, RockGrade_III)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, WaterRich)"
+    ],
+    "head": []
+  },
+  {
+    "label": "S16-7",
+    "enabled": true,
+    "comment": "TunnelProject + RockGrade_IV + 富水 → 厚度 14mm// 富水+差围岩，拱架厚度进一步加强以提高稳定性",
+    "body": [
+      "TunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasGeologicalCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc)",
+      "hasRockGrade(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, RockGrade_IV)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, WaterRich)"
+    ],
+    "head": []
+  },
+  {
+    "label": "S16-9",
+    "enabled": true,
+    "comment": "TunnelProject + RockGrade_V + 富水 → 厚度 16mm",
+    "body": [
+      "TunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasGeologicalCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc)",
+      "hasRockGrade(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, RockGrade_V)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, WaterRich)"
+    ],
+    "head": []
+  },
+  {
+    "label": "S05-0",
+    "enabled": true,
+    "comment": "任意隧道 + RockGrade V + 弱土 + 富水 → 厚度 45mm",
+    "body": [
+      "TunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasGeologicalCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc)",
+      "hasRockGrade(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, RockGrade_V)",
+      "hasSoilType(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, WeakSoil)",
+      "hasHydroCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/gc, WaterRich)"
+    ],
+    "head": []
+  },
+  {
+    "label": "S03-1",
+    "enabled": true,
+    "comment": "优秀围岩（I级）：L = 0.25 × D",
+    "body": [
+      "TunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasGeologicalCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, RockGrade_I)",
+      "hasTunnelDiameter(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/d)",
+      "UnknownPredicate(?x, ?y)"
+    ],
+    "head": []
+  },
+  {
+    "label": "S03-2",
+    "enabled": true,
+    "comment": "较好围岩（II级）：L = 0.3 × D",
+    "body": [
+      "TunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasGeologicalCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, RockGrade_II)",
+      "hasTunnelDiameter(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/d)",
+      "UnknownPredicate(?x, ?y)"
+    ],
+    "head": []
+  },
+  {
+    "label": "S03-3",
+    "enabled": true,
+    "comment": "中等岩体（III级）：锚杆长度 约为洞身宽度的三分之一（L = 0.33 × B）",
+    "body": [
+      "TunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasGeologicalCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, RockGrade_III)",
+      "hasTunnelDiameter(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/w)",
+      "UnknownPredicate(?x, ?y)",
+      "hasBoltLength(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/len)"
+    ],
+    "head": []
+  },
+  {
+    "label": "S03-4",
+    "enabled": true,
+    "comment": "较差岩体（IV级）：L = 0.45 × D",
+    "body": [
+      "TunnelProject(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, ?y)",
+      "hasGeologicalCondition(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, RockGrade_IV)",
+      "hasTunnelDiameter(http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/t, http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/d)",
+      "UnknownPredicate(?x, ?y)"
+    ],
+    "head": []
+  }
+]

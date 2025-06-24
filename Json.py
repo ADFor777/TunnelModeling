@@ -1,21 +1,26 @@
 from rdflib import Graph, Namespace, RDF, RDFS, Literal
 from rdflib.namespace import OWL
 import json
+import os
 
-# 载入本体
+# ====== Step 1: 加载本体 ======
+filename = "Tunnel_RDF.owl"
+if not os.path.exists(filename):
+    print("⚠️ 文件未找到，请检查路径！当前路径：", os.getcwd())
+    exit()
+
 g = Graph()
-g.parse("Tunnel_RDF.owl", format="xml")
+g.parse(filename, format="xml")
 
-# 命名空间
+# ====== Step 2: 定义命名空间 ======
 SWRL  = Namespace("http://www.w3.org/2003/11/swrl#")
 SWRLA = Namespace("http://swrl.stanford.edu/ontologies/3.3/swrla.owl#")
 MY    = Namespace("http://www.semanticweb.org/lenovo/ontologies/2025/5/untitled-ontology-10/")  
 RDFNS = Namespace("http://www.w3.org/2000/01/rdf-schema#")
 
-# 结果列表
+# ====== Step 3: 提取规则 ======
 rules = []
 
-# 遍历所有规则个体（类型为 swrl:Imp）
 for rule in g.subjects(RDF.type, SWRL.Imp):
     label = g.value(rule, RDFS.label)
     comment = g.value(rule, RDFS.comment)
@@ -25,20 +30,20 @@ for rule in g.subjects(RDF.type, SWRL.Imp):
     body_atoms = []
     head_atoms = []
 
-    # 提取 body 中的 atom 列表
+    # Body
     for list_node in g.items(g.value(rule, SWRL.body)):
         atom_type = g.value(list_node, RDF.type)
         pred = g.value(list_node, SWRL.argument1)
         obj  = g.value(list_node, SWRL.argument2)
         prop = g.value(list_node, SWRL.propertyPredicate) or g.value(list_node, SWRL.classPredicate) or g.value(list_node, SWRL.dataPropertyPredicate)
 
-        if atom_type:  # 转换为类似 "hasSoilType(?t, WeakSoil)"
+        if atom_type:
             predicate = prop.split("#")[-1] if prop else "UnknownPredicate"
             subj = pred.split("#")[-1] if pred else "?x"
             obj_ = obj.split("#")[-1] if obj else "?y"
             body_atoms.append(f"{predicate}({subj}, {obj_})")
 
-    # 提取 head（只允许一个 DataPropertyAtom）
+    # Head
     for list_node in g.items(g.value(rule, SWRL.head)):
         pred = g.value(list_node, SWRL.argument1)
         obj  = g.value(list_node, SWRL.argument2)
@@ -49,7 +54,6 @@ for rule in g.subjects(RDF.type, SWRL.Imp):
             val  = str(obj)
             head_atoms.append(f"{predicate}({subj}, {val})")
 
-    # 保存规则
     rules.append({
         "label": str(label),
         "enabled": enabled_str,
@@ -58,5 +62,10 @@ for rule in g.subjects(RDF.type, SWRL.Imp):
         "head": head_atoms
     })
 
-# 输出为 JSON
-print(json.dumps(rules, indent=2, ensure_ascii=False))
+# ====== Step 4: 写入 JSON 文件 ======
+output_path = "rules_output.json"
+with open(output_path, "w", encoding="utf-8") as f:
+    json.dump(rules, f, indent=2, ensure_ascii=False)
+
+print(f"✅ 成功写入 JSON 文件：{output_path}")
+
