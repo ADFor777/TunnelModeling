@@ -1,0 +1,8 @@
+{
+  "hasTunnelLength": 2500.0,
+  "hasGeologicalCondition": null,
+  "hasHydroCondition": "water-rich",
+  "hasSoilType": "StrongSoil",
+  "tunnelType": "MountainTunnelProject",
+  "hasTunnelDiameter": 6.8
+}
