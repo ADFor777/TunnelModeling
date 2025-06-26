@@ -107,7 +107,7 @@ def json_to_owl(json_path, swrl_rules_path, output_owl_path=None):
             swrl_rules = f.read()
         
         # 将SWRL规则添加到图中
-        g.parse(data=swrl_rules, format='xml')
+        g.parse(data=swrl_rules, format='turtle')
         print(f"[推理程序] 已加载SWRL规则")
         
         # 7. 执行OWLRL推理

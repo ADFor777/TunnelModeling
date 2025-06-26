@@ -22,8 +22,6 @@ load_dotenv('.env')
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 AUTHORIZATION_CODE = os.getenv("AUTHORIZATION_CODE")
 
-# client = OpenAI(api_key=OPENAI_API_KEY)
-
 client = OpenAI(
     # 若没有配置环境变量，请用百炼API Key将下行替换为：api_key="sk-xxx",
     api_key=OPENAI_API_KEY,
@@ -41,8 +39,9 @@ conversation_history = [
 1. 请以冷酷，不耐烦的语气回答问题；
 2. 如果用户希望你帮他发送一封邮件，如果他没有提供发件人邮箱、收件人邮箱、邮件主题和邮件内容，请提示用户提供这些信息；
 3. 如果用户希望你帮他查找某个点距离数据库中最近的点，请提示用户提供目标点的坐标，格式为 [x, y]；
-4. 在每轮对话中，保持对话的连贯性，记住之前的对话内容;
-5. 如果用户表达以下意图，请结束对话：
+4. 如果用户希望你解析隧道工程参数，请提示用户提供隧道项目的详细描述；
+5. 在每轮对话中，保持对话的连贯性，记住之前的对话内容;
+6. 如果用户表达以下意图，请结束对话：
    - 明确说"再见"、"拜拜"、"结束对话"等告别语
    - 表达"我要走了"、"对话到此为止"等结束意图
    - 使用"exit"、"quit"等退出命令"""
@@ -101,6 +100,104 @@ def find_point(target_point, num_data):
     plt.close()
 
     return tuple(nearest_point), image_base64
+
+
+def parse_tunnel_specification(input_text, strict_mode=False, unit_preference="auto"):
+    """
+    解析隧道工程参数
+
+    Args:
+        input_text (str): 自然语言描述的隧道项目
+        strict_mode (bool): 是否启用严格验证模式
+        unit_preference (str): 首选单位系统
+
+    Returns:
+        dict: 结构化的隧道工程参数
+    """
+    # 初始化结果字典
+    result = {
+        "hasTunnelLength": None,
+        "hasGeologicalCondition": None,
+        "hasHydroCondition": None,
+        "hasSoilType": None,
+        "tunnelType": None,
+        "hasTunnelDiameter": None
+    }
+
+    # 简单的关键词匹配和数值提取
+    text = input_text.lower()
+
+    # 提取隧道长度
+    import re
+    length_patterns = [
+        r'长度.*?(\d+(?:\.\d+)?)\s*(?:米|m|公里|km)',
+        r'(\d+(?:\.\d+)?)\s*(?:米|m|公里|km).*?长',
+        r'length.*?(\d+(?:\.\d+)?)\s*(?:m|meter|km|kilometer)',
+        r'(\d+(?:\.\d+)?)\s*(?:m|meter|km|kilometer).*?long'
+    ]
+    for pattern in length_patterns:
+        match = re.search(pattern, text)
+        if match:
+            length_value = float(match.group(1))
+            # 如果是公里，转换为米
+            if 'km' in match.group(0) or '公里' in match.group(0):
+                length_value *= 1000
+            result["hasTunnelLength"] = length_value
+            break
+
+    # 提取隧道直径
+    diameter_patterns = [
+        r'直径.*?(\d+(?:\.\d+)?)\s*(?:米|m)',
+        r'(\d+(?:\.\d+)?)\s*(?:米|m).*?直径',
+        r'diameter.*?(\d+(?:\.\d+)?)\s*(?:m|meter)',
+        r'(\d+(?:\.\d+)?)\s*(?:m|meter).*?diameter'
+    ]
+    for pattern in diameter_patterns:
+        match = re.search(pattern, text)
+        if match:
+            result["hasTunnelDiameter"] = float(match.group(1))
+            break
+
+    # 围岩等级判断 - 统一使用罗马数字
+    rock_grade_map = {
+        "ⅰ": "I", "i": "I", "1": "I", "一": "I",
+        "ⅱ": "II", "ii": "II", "2": "II", "二": "II",
+        "ⅲ": "III", "iii": "III", "3": "III", "三": "III",
+        "ⅳ": "IV", "iv": "IV", "4": "IV", "四": "IV",
+        "ⅴ": "V", "v": "V", "5": "V", "五": "V",
+        "ⅵ": "VI", "vi": "VI", "6": "VI", "六": "VI"
+    }
+
+    for grade_key, grade_value in rock_grade_map.items():
+        if f"围岩{grade_key}" in text or f"等级{grade_key}" in text or f"grade {grade_key}" in text:
+            result["hasGeologicalCondition"] = grade_value
+            break
+
+    # 水文条件判断 - 使用英文值
+    if "富水" in text or "water-rich" in text or "rich water" in text:
+        result["hasHydroCondition"] = "water-rich"
+    elif "干燥" in text or "干旱" in text or "dry" in text:
+        result["hasHydroCondition"] = "dry"
+
+    # 土壤类型判断 - 使用英文值
+    if "强风化" in text or "强土" in text or "strong soil" in text or "strong rock" in text:
+        result["hasSoilType"] = "StrongSoil"
+    elif "弱风化" in text or "弱土" in text or "weak soil" in text or "weak rock" in text:
+        result["hasSoilType"] = "WeakSoil"
+    elif "中等风化" in text or "中等土" in text or "medium soil" in text or "medium rock" in text:
+        result["hasSoilType"] = "MediumSoil"
+
+    # 隧道类型判断 - 使用英文值
+    if "山岭" in text or "山区" in text or "mountain" in text:
+        result["tunnelType"] = "MountainTunnelProject"
+    elif "水下" in text or "海底" in text or "underwater" in text or "subsea" in text:
+        result["tunnelType"] = "UnderwaterTunnelProject"
+    elif "浅埋" in text or "shallow" in text:
+        result["tunnelType"] = "ShallowTunnelProject"
+    elif "深埋" in text or "deep" in text:
+        result["tunnelType"] = "DeepTunnelProject"
+
+    return result
 
 
 tools = [
@@ -163,6 +260,68 @@ tools = [
                 },
                 "required": ["target_point"],
             },
+        }
+    },
+    # 工具4 解析隧道工程参数
+    {
+        "type": "function",
+        "function": {
+            "name": "parse_tunnel_specification",
+            "description": "Extract and structure tunnel engineering parameters from natural language descriptions",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "input_text": {
+                        "type": "string",
+                        "description": "Natural language description of the tunnel project"
+                    },
+                    "strict_mode": {
+                        "type": "boolean",
+                        "default": False,
+                        "description": "Enable strict validation for parameter values (default: false)"
+                    },
+                    "unit_preference": {
+                        "type": "string",
+                        "enum": ["metric", "imperial", "auto"],
+                        "default": "auto",
+                        "description": "Preferred unit system for numerical values (default: auto)"
+                    }
+                },
+                "required": ["input_text"]
+            },
+            "returns": {
+                "type": "object",
+                "properties": {
+                    "hasTunnelLength": {
+                        "type": "number",
+                        "description": "Tunnel length in meters"
+                    },
+                    "hasGeologicalCondition": {
+                        "type": "string",
+                        "enum": ["Ⅰ", "Ⅱ", "Ⅲ", "Ⅳ", "Ⅴ", "Ⅵ"],
+                        "description": "Surrounding rock grade according to Chinese classification standard"
+                    },
+                    "hasHydroCondition": {
+                        "type": "string",
+                        "enum": ["dry", "water-rich"],
+                        "description": "Hydrogeological condition category"
+                    },
+                    "hasSoilType": {
+                        "type": "string",
+                        "enum": ["Medium Soil", "Strong soil", "WeakSoil"],
+                        "description": "Dominant soil or rock type"
+                    },
+                    "tunnelType": {
+                        "type": "string",
+                        "enum": ["MountainTunnelProject", "UnderwaterTunnelProject", "ShallowTunnelProject", "DeepTunnelProject"],
+                        "description": "Tunnel project type classification"
+                    },
+                    "hasTunnelDiameter": {
+                        "type": "number",
+                        "description": "Tunnel diameter in meters (circular tunnels) or hydraulic diameter (non-circular)"
+                    }
+                }
+            }
         }
     }
 ]
@@ -298,6 +457,64 @@ def chat():
                 conversation_history.append(
                     {"role": "assistant", "content": "抱歉，无法查找当前时间！"})
                 return jsonify(response)
+        elif fn_name == "parse_tunnel_specification":
+            try:
+                args = json.loads(fn_args)
+                input_text = args['input_text']
+                strict_mode = args.get('strict_mode', False)
+                unit_preference = args.get('unit_preference', 'auto')
+
+                # 调用隧道参数解析函数
+                tunnel_params = parse_tunnel_specification(input_text, strict_mode, unit_preference)
+
+                # 生成时间戳作为文件名的一部分
+                timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+                json_filename = f"tunnel_parameters_{timestamp}.json"
+
+                # 保存为JSON文件
+                with open(json_filename, 'w', encoding='utf-8') as f:
+                    json.dump(tunnel_params, f, indent=2, ensure_ascii=False)
+
+                # 格式化输出结果（中文显示）
+                response = f"隧道工程参数解析结果已保存为 {json_filename}：\n"
+                param_found = False
+                for key, value in tunnel_params.items():
+                    if value is not None:
+                        param_found = True
+                        if key == "hasTunnelLength":
+                            response += f"隧道长度 (hasTunnelLength): {value} 米\n"
+                        elif key == "hasGeologicalCondition":
+                            response += f"围岩等级 (hasGeologicalCondition): {value}\n"
+                        elif key == "hasHydroCondition":
+                            response += f"水文条件 (hasHydroCondition): {value}\n"
+                        elif key == "hasSoilType":
+                            response += f"土壤类型 (hasSoilType): {value}\n"
+                        elif key == "tunnelType":
+                            response += f"隧道类型 (tunnelType): {value}\n"
+                        elif key == "hasTunnelDiameter":
+                            response += f"隧道直径 (hasTunnelDiameter): {value} 米\n"
+
+                if not param_found:
+                    response = "抱歉，无法从描述中提取到有效的隧道工程参数。请提供更详细的信息。"
+                else:
+                    # 获取文件绝对路径
+                    json_path = os.path.abspath(json_filename)
+                    response += f"文件绝对路径：{json_path}\n"
+
+                conversation_history.append(
+                    {"role": "assistant", "content": response})
+                return jsonify({
+                    'response': response,
+                    'end_conversation': False
+                })
+            except Exception as e:
+                print(f"解析隧道参数时出错：{e}")
+                conversation_history.append(
+                    {"role": "assistant", "content": "抱歉，解析隧道参数时出现错误！"})
+                return jsonify({
+                    'response': "抱歉，解析隧道参数时出现错误！",
+                    'end_conversation': False
+                })
 
 
 @app.route('/send_email', methods=['POST'])
