@@ -1,0 +1,12 @@
+{
+  "hasConstructionMethod": "DrillAndBlast",
+  "hasBoltLength": 5.4,
+  "hasBoltSpacing": 2.7,
+  "hasBoltColumnCount": 13,
+  "hasBoltRowCount": 1296,
+  "hasLiningThickness": 30.0,
+  "hasSteelArchSpacing": 0.7,
+  "hasSteelArchCount": 5000,
+  "hasSteelArchThickness": 14,
+  "hasWaterproofLayerThickness": 4.0
+}

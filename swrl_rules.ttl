@@ -1,0 +1,60 @@
+
+@prefix : <http://example.com/dlsafe#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# 施工方法规则
+:constructionRule1 rdf:type swrl:Imp ;
+    swrl:body [ rdf:type swrl:AtomList ;
+                rdf:first [ rdf:type swrl:ClassAtom ;
+                           swrl:classPredicate :TunnelProject ;
+                           swrl:argument1 ?t ] ;
+                rdf:rest [ rdf:type swrl:AtomList ;
+                          rdf:first [ rdf:type swrl:DatavaluedPropertyAtom ;
+                                     swrl:propertyPredicate :hasTunnelLength ;
+                                     swrl:argument1 ?t ;
+                                     swrl:argument2 ?len ] ;
+                          rdf:rest [ rdf:type swrl:AtomList ;
+                                    rdf:first [ rdf:type swrl:BuiltinAtom ;
+                                               swrl:builtin swrlb:greaterThan ;
+                                               swrl:arguments [ rdf:type rdf:List ;
+                                                              rdf:first ?len ;
+                                                              rdf:rest [ rdf:type rdf:List ;
+                                                                        rdf:first 3000 ;
+                                                                        rdf:rest rdf:nil ] ] ] ;
+                                    rdf:rest rdf:nil ] ] ] ;
+    swrl:head [ rdf:type swrl:AtomList ;
+                rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                           swrl:propertyPredicate :hasConstructionMethod ;
+                           swrl:argument1 ?t ;
+                           swrl:argument2 :DrillAndBlast ] ;
+                rdf:rest rdf:nil ] .
+
+:constructionRule2 rdf:type swrl:Imp ;
+    swrl:body [ rdf:type swrl:AtomList ;
+                rdf:first [ rdf:type swrl:ClassAtom ;
+                           swrl:classPredicate :TunnelProject ;
+                           swrl:argument1 ?t ] ;
+                rdf:rest [ rdf:type swrl:AtomList ;
+                          rdf:first [ rdf:type swrl:DatavaluedPropertyAtom ;
+                                     swrl:propertyPredicate :hasTunnelLength ;
+                                     swrl:argument1 ?t ;
+                                     swrl:argument2 ?len ] ;
+                          rdf:rest [ rdf:type swrl:AtomList ;
+                                    rdf:first [ rdf:type swrl:BuiltinAtom ;
+                                               swrl:builtin swrlb:lessThanOrEqual ;
+                                               swrl:arguments [ rdf:type rdf:List ;
+                                                              rdf:first ?len ;
+                                                              rdf:rest [ rdf:type rdf:List ;
+                                                                        rdf:first 3000 ;
+                                                                        rdf:rest rdf:nil ] ] ] ;
+                                    rdf:rest rdf:nil ] ] ] ;
+    swrl:head [ rdf:type swrl:AtomList ;
+                rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                           swrl:propertyPredicate :hasConstructionMethod ;
+                           swrl:argument1 ?t ;
+                           swrl:argument2 :TBM ] ;
+                rdf:rest rdf:nil ] .
