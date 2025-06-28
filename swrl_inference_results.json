@@ -1,0 +1,12 @@
+{
+  "hasConstructionMethod": "TBM",
+  "hasLiningThickness": 27.5,
+  "hasSteelArchSpacing": 0.8,
+  "hasSteelArchThickness": 12,
+  "hasWaterproofLayerThickness": 4.0,
+  "hasBoltLength": 3.33,
+  "hasBoltSpacing": 1.67,
+  "hasBoltRowCount": 1497,
+  "hasBoltColumnCount": 18,
+  "hasSteelArchCount": 3125
+}
