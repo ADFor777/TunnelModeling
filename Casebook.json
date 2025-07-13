@@ -1,0 +1,134 @@
+[
+    {
+        "id": 1,
+        "condition": {
+            "hasTunnelLength": 4200,
+            "hasTunnelDiameter": 12.0,
+            "hasTunnelType": "MountainTunnelProject",
+            "hasGeologicalCondition": "IV",
+            "hasHydroCondition": "WaterRich",
+            "hasSoilType": "WeakSoil",
+            "hasConstructionMethod": "DrillBlast"
+        },
+        "solution": {
+            "hasBoltLength": 4.5,
+            "hasBoltRowCount": 3,
+            "hasBoltColumnCount": 4,
+            "hasLiningThickness": 35,
+            "hasSteelArchSpacing": 0.8,
+            "hasSteelArchCount": 40,
+            "hasSteelArchThickness": 12,
+            "hasWaterproofLayerThickness": 10
+        }
+    },
+    {
+        "id": 2,
+        "condition": {
+            "hasTunnelLength": 2500,
+            "hasTunnelDiameter": 10.5,
+            "hasTunnelType": "ShallowTunnelProject",
+            "hasGeologicalCondition": "III",
+            "hasHydroCondition": "Dry",
+            "hasSoilType": "StrongSoil",
+            "hasConstructionMethod": "Shield"
+        },
+        "solution": {
+            "hasBoltLength": 3.8,
+            "hasBoltRowCount": 2,
+            "hasBoltColumnCount": 3,
+            "hasLiningThickness": 30,
+            "hasSteelArchSpacing": 1.0,
+            "hasSteelArchCount": 35,
+            "hasSteelArchThickness": 10,
+            "hasWaterproofLayerThickness": 8
+        }
+    },
+    {
+        "id": 3,
+        "condition": {
+            "hasTunnelLength": 3200,
+            "hasTunnelDiameter": 11.2,
+            "hasTunnelType": "UnderwaterTunnelProject",
+            "hasGeologicalCondition": "V",
+            "hasHydroCondition": "WaterRich",
+            "hasSoilType": "黏土",
+            "hasConstructionMethod": "Shield"
+        },
+        "solution": {
+            "hasBoltLength": 5.0,
+            "hasBoltRowCount": 4,
+            "hasBoltColumnCount": 4,
+            "hasLiningThickness": 40,
+            "hasSteelArchSpacing": 0.7,
+            "hasSteelArchCount": 45,
+            "hasSteelArchThickness": 14,
+            "hasWaterproofLayerThickness": 12
+        }
+    },
+    {
+        "id": 4,
+        "condition": {
+            "hasTunnelLength": 1800,
+            "hasTunnelDiameter": 9.8,
+            "hasTunnelType": "DeepTunnelProject",
+            "hasGeologicalCondition": "II",
+            "hasHydroCondition": "Dry",
+            "hasSoilType": "StrongSoil",
+            "hasConstructionMethod": "DrillBlast"
+        },
+        "solution": {
+            "hasBoltLength": 4.0,
+            "hasBoltRowCount": 3,
+            "hasBoltColumnCount": 3,
+            "hasLiningThickness": 32,
+            "hasSteelArchSpacing": 0.9,
+            "hasSteelArchCount": 38,
+            "hasSteelArchThickness": 11,
+            "hasWaterproofLayerThickness": 9
+        }
+    },
+    {
+        "id": 5,
+        "condition": {
+            "hasTunnelLength": 3600,
+            "hasTunnelDiameter": 11.5,
+            "hasTunnelType": "MountainTunnelProject",
+            "hasGeologicalCondition": "IV",
+            "hasHydroCondition": "WaterRich",
+            "hasSoilType": "Clay",
+            "hasConstructionMethod": "DrillBlast"
+        },
+        "solution": {
+            "hasBoltLength": 4.2,
+            "hasBoltRowCount": 3,
+            "hasBoltColumnCount": 3,
+            "hasLiningThickness": 38,
+            "hasSteelArchSpacing": 0.9,
+            "hasSteelArchCount": 36,
+            "hasSteelArchThickness": 12,
+            "hasWaterproofLayerThickness": 10
+        }
+    },
+    {
+        "id": 5,
+        "condition": {
+            "hasTunnelLength": 3500,
+            "hasTunnelDiameter": 11.5,
+            "hasTunnelType": "ShallowTunnelProject",
+            "hasGeologicalCondition": "II",
+            "hasHydroCondition": "Medium",
+            "hasSoilType": "Clay",
+            "hasConstructionMethod": "DrillBlast"
+        },
+        "solution": {
+            "hasBoltLength": 3.6,
+            "hasBoltRowCount": 3,
+            "hasBoltColumnCount": 3,
+            "hasLiningThickness": 28,
+            "hasSteelArchSpacing": 1.0,
+            "hasSteelArchCount": 30,
+            "hasSteelArchThickness": 9,
+            "hasWaterproofLayerThickness": 7
+        }
+    }
+]

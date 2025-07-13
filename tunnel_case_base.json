@@ -130,49 +130,5 @@
       "hasSteelArchThickness": 16,
       "hasWaterproofLayerThickness": 8
     }
-  },
-  {
-    "features": [
-      1100,
-      3,
-      2,
-      2,
-      1,
-      10.2
-    ],
-    "label": "NewTunnelCase_001",
-    "outputs": {
-      "hasConstructionMethod": "DrillBlast",
-      "hasBoltLength": 4.5,
-      "hasBoltRowCount": 2,
-      "hasBoltColumnCount": 3,
-      "hasLiningThickness": 30,
-      "hasSteelArchSpacing": 0.8,
-      "hasSteelArchCount": 4,
-      "hasSteelArchThickness": 12,
-      "hasWaterproofLayerThickness": 5
-    }
-  },
-  {
-    "features": [
-      1100,
-      3,
-      2,
-      2,
-      1,
-      10.2
-    ],
-    "label": "NewTunnelCase_001",
-    "outputs": {
-      "hasConstructionMethod": "DrillBlast",
-      "hasBoltLength": 4.5,
-      "hasBoltRowCount": 2,
-      "hasBoltColumnCount": 3,
-      "hasLiningThickness": 30,
-      "hasSteelArchSpacing": 0.8,
-      "hasSteelArchCount": 4,
-      "hasSteelArchThickness": 12,
-      "hasWaterproofLayerThickness": 5
-    }
   }
 ]
