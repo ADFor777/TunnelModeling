@@ -1,6 +1,7 @@
 [
     {
         "id": 1,
+        "name": "SyntheticTunnel-001",
         "condition": {
             "hasTunnelLength": 4200,
             "hasTunnelDiameter": 12.0,
@@ -12,11 +13,12 @@
         },
         "solution": {
             "hasBoltLength": 4.5,
-            "hasBoltRowCount": 3,
-            "hasBoltColumnCount": 4,
+            "hasBoltSpacing": 2.25,
+            "hasBoltRowCount": 1867,
+            "hasBoltColumnCount": 9,
             "hasLiningThickness": 35,
             "hasSteelArchSpacing": 0.8,
-            "hasSteelArchCount": 40,
+            "hasSteelArchCount": 5250,
             "hasSteelArchThickness": 12,
             "hasWaterproofLayerThickness": 10
         }
@@ -34,8 +36,9 @@
         },
         "solution": {
             "hasBoltLength": 3.8,
-            "hasBoltRowCount": 2,
-            "hasBoltColumnCount": 3,
+            "hasBoltSpacing": 1.9,
+            "hasBoltRowCount": 1316,
+            "hasBoltColumnCount": 9,
             "hasLiningThickness": 30,
             "hasSteelArchSpacing": 1.0,
             "hasSteelArchCount": 35,
@@ -56,11 +59,12 @@
         },
         "solution": {
             "hasBoltLength": 5.0,
-            "hasBoltRowCount": 4,
-            "hasBoltColumnCount": 4,
+            "hasBoltSpacing": 2.5,
+            "hasBoltRowCount": 1280,
+            "hasBoltColumnCount": 8,
             "hasLiningThickness": 40,
             "hasSteelArchSpacing": 0.7,
-            "hasSteelArchCount": 45,
+            "hasSteelArchCount": 4571,
             "hasSteelArchThickness": 14,
             "hasWaterproofLayerThickness": 12
         }
@@ -78,11 +82,12 @@
         },
         "solution": {
             "hasBoltLength": 4.0,
-            "hasBoltRowCount": 3,
-            "hasBoltColumnCount": 3,
+            "hasBoltSpacing": 2.0,
+            "hasBoltRowCount": 900,
+            "hasBoltColumnCount": 8,
             "hasLiningThickness": 32,
             "hasSteelArchSpacing": 0.9,
-            "hasSteelArchCount": 38,
+            "hasSteelArchCount": 2000,
             "hasSteelArchThickness": 11,
             "hasWaterproofLayerThickness": 9
         }
@@ -95,18 +100,3424 @@
             "hasTunnelType": "MountainTunnelProject",
             "hasGeologicalCondition": "IV",
             "hasHydroCondition": "WaterRich",
-            "hasSoilType": "Clay",
+            "hasSoilType": "WeakSoil",
             "hasConstructionMethod": "DrillBlast"
         },
         "solution": {
             "hasBoltLength": 4.2,
-            "hasBoltRowCount": 3,
-            "hasBoltColumnCount": 3,
+            "hasBoltSpacing": 2.2,
+            "hasBoltRowCount": 1637,
+            "hasBoltColumnCount": 9,
             "hasLiningThickness": 38,
             "hasSteelArchSpacing": 0.9,
-            "hasSteelArchCount": 36,
+            "hasSteelArchCount": 4000,
             "hasSteelArchThickness": 12,
             "hasWaterproofLayerThickness": 10
+        }
+    },
+    {
+        "id": 6,
+        "condition": {
+            "hasTunnelLength": 3500,
+            "hasTunnelDiameter": 11.5,
+            "hasTunnelType": "ShallowTunnelProject",
+            "hasGeologicalCondition": "II",
+            "hasHydroCondition": "Medium",
+            "hasSoilType": "WeakSoil",
+            "hasConstructionMethod": "DrillBlast"
+        },
+        "solution": {
+            "hasBoltLength": 3.6,
+            "hasBoltSpacing": 1.8,
+            "hasBoltRowCount": 1945,
+            "hasBoltColumnCount": 11,
+            "hasLiningThickness": 28,
+            "hasSteelArchSpacing": 1.0,
+            "hasSteelArchCount": 3500,
+            "hasSteelArchThickness": 10,
+            "hasWaterproofLayerThickness": 7
+        }
+    },
+    {
+        "id": 7,
+        "name": "Abdalajís Tunnel",
+        "condition": {
+            "hasTunnelLength": 8970,
+            "hasTunnelDiameter": 12.0,
+            "hasTunnelType": "UnderwaterTunnelProject",
+            "hasGeologicalCondition": "IV",
+            "hasHydroCondition": "WaterRich",
+            "hasSoilType": "StrongSoil",
+            "hasConstructionMethod": "Shield"
+        },
+        "solution": {
+            "hasBoltLength": 5.4,
+            "hasBoltSpacing": 2.7,
+            "hasBoltRowCount": 3322,
+            "hasBoltColumnCount": 7,
+            "hasLiningThickness": 35,
+            "hasSteelArchSpacing": 1.0,
+            "hasSteelArchCount": 8970,
+            "hasSteelArchThickness": 15,
+            "hasWaterproofLayerThickness": 15
+        }
+    },
+    {
+        "id": 8,
+        "name": "SyntheticTunnel-008",
+        "condition": {
+            "hasTunnelLength": 4450,
+            "hasTunnelDiameter": 15.43,
+            "hasTunnelType": "UnderwaterTunnelProject",
+            "hasGeologicalCondition": "V",
+            "hasHydroCondition": "WaterRich",
+            "hasSoilType": "Clay",
+            "hasConstructionMethod": "Shield"
+        },
+        "solution": {
+            "hasBoltLength": 4.5,
+            "hasBoltSpacing": 2.25,
+            "hasBoltRowCount": 1978,
+            "hasBoltColumnCount": 11,
+            "hasLiningThickness": 35,
+            "hasSteelArchSpacing": 1.2,
+            "hasSteelArchCount": 3708,
+            "hasSteelArchThickness": 14,
+            "hasWaterproofLayerThickness": 12
+        }
+    },
+    {
+        "id": 9,
+        "name": "Qianjiang Tunnel",
+        "condition": {
+            "hasTunnelLength": 4450,
+            "hasTunnelDiameter": 15.43,
+            "hasTunnelType": "UnderwaterTunnelProject",
+            "hasGeologicalCondition": "V",
+            "hasHydroCondition": "WaterRich",
+            "hasSoilType": "Clay",
+            "hasConstructionMethod": "Shield"
+        },
+        "solution": {
+            "hasBoltLength": 4.5,
+            "hasBoltSpacing": 2.25,
+            "hasSteelArchSpacing": 1.0,
+            "hasLiningThickness": 35,
+            "hasSteelArchCount": 4450,
+            "hasSteelArchThickness": 14,
+            "hasWaterproofLayerThickness": 15,
+            "hasBoltRowCount": 1978,
+            "hasBoltColumnCount": 11
+        }
+    },
+    {
+        "id": 10,
+        "name": "Wushaoling Tunnel",
+        "condition": {
+            "hasTunnelLength": 21050,
+            "hasTunnelDiameter": 12.0,
+            "hasTunnelType": "MountainTunnelProject",
+            "hasGeologicalCondition": "V",
+            "hasHydroCondition": "WaterRich",
+            "hasSoilType": "WeakSoil",
+            "hasConstructionMethod": "DrillBlast"
+        },
+        "solution": {
+            "hasBoltLength": 6.0,
+            "hasBoltSpacing": 3.0,
+            "hasBoltRowCount": 7017,
+            "hasBoltColumnCount": 7,
+            "hasLiningThickness": 60,
+            "hasSteelArchSpacing": 0.8,
+            "hasSteelArchCount": 26312,
+            "hasSteelArchThickness": 18,
+            "hasWaterproofLayerThickness": 20
+        }
+    },
+    {
+        "id": 11,
+        "name": "Tiantai Mountain Tunnel",
+        "condition": {
+            "hasTunnelLength": 15483,
+            "hasTunnelDiameter": 14.0,
+            "hasTunnelType": "MountainTunnelProject",
+            "hasGeologicalCondition": "V",
+            "hasHydroCondition": "WaterRich",
+            "hasSoilType": "WeakSoil",
+            "hasConstructionMethod": "DrillBlast"
+        },
+        "solution": {
+            "hasBoltLength": 5.0,
+            "hasBoltSpacing": 2.5,
+            "hasSteelArchSpacing": 1.2,
+            "hasLiningThickness": 50,
+            "hasSteelArchCount": 12902,
+            "hasSteelArchThickness": 16,
+            "hasWaterproofLayerThickness": 20,
+            "hasBoltRowCount": 6194,
+            "hasBoltColumnCount": 9
+        }
+    },
+    {
+        "id": 12,
+        "name": "Yulong Snow Mountain Tunnel",
+        "condition": {
+            "hasTunnelLength": 14700,
+            "hasTunnelDiameter": 12.0,
+            "hasTunnelType": "MountainTunnelProject",
+            "hasGeologicalCondition": "V",
+            "hasHydroCondition": "WaterRich",
+            "hasSoilType": "StrongSoil",
+            "hasConstructionMethod": "Shield"
+        },
+        "solution": {
+            "hasBoltLength": 6.0,
+            "hasBoltSpacing": 7,
+            "hasBoltRowCount": 4900,
+            "hasBoltColumnCount": 3,
+            "hasSteelArchSpacing": 1.0,
+            "hasLiningThickness": 35,
+            "hasSteelArchCount": 14700,
+            "hasSteelArchThickness": 14,
+            "hasWaterproofLayerThickness": 15
+        }
+    },
+    {
+        "id": 13,
+        "name": "Dali–Lijiang Railway Tunnels",
+        "condition": {
+            "hasTunnelLength": 5000,
+            "hasTunnelDiameter": 13.0,
+            "hasTunnelType": "MountainTunnelProject",
+            "hasGeologicalCondition": "V",
+            "hasHydroCondition": "Medium",
+            "hasSoilType": "Clay",
+            "hasConstructionMethod": "DrillBlast"
+        },
+        "solution": {
+            "hasBoltLength": 5.4,
+            "hasBoltSpacing": 2.7,
+            "hasBoltRowCount": 24010,
+            "hasBoltColumnCount": 10,
+            "hasLiningThickness": 40,
+            "hasSteelArchSpacing": 0.9,
+            "hasSteelArchCount": 80033,
+            "hasSteelArchThickness": 15,
+            "hasWaterproofLayerThickness": 10
+        }
+    },
+    {
+        "id": 14,
+        "name": "Leipzig City Tunnel",
+        "condition": {
+            "hasTunnelLength": 3609,
+            "hasTunnelDiameter": 9.0,
+            "hasGeologicalCondition": "IV",
+            "hasHydroCondition": "WaterRich",
+            "hasSoilType": "Mixed",
+            "hasConstructionMethod": "Shield"
+        },
+        "solution": {
+            "hasBoltLength": 4.05,
+            "hasBoltSpacing": 2.025,
+            "hasBoltRowCount": 1782,
+            "hasBoltColumnCount": 7,
+            "hasLiningThickness": 40,
+            "hasSteelArchSpacing": 1.0,
+            "hasSteelArchCount": 3609,
+            "hasSteelArchThickness": 14,
+            "hasWaterproofLayerThickness": 15
+        }
+    },
+    {
+        "id": 15,
+        "name": "Delhi Metro Aerocity Tunnel",
+        "condition": {
+            "hasTunnelLength": 1550,
+            "hasTunnelDiameter": 5.8,
+            "hasTunnelType": "ShallowTunnelProject",
+            "hasGeologicalCondition": "IV",
+            "hasHydroCondition": "WaterRich",
+            "hasSoilType": "Silt",
+            "hasConstructionMethod": "Shield"
+        },
+        "solution": {
+            "hasBoltLength": 2.61,
+            "hasBoltSpacing": 1.305,
+            "hasBoltRowCount": 1188,
+            "hasBoltColumnCount": 7,
+            "hasLiningThickness": 30,
+            "hasSteelArchSpacing": 1.0,
+            "hasSteelArchCount": 1550,
+            "hasSteelArchThickness": 12,
+            "hasWaterproofLayerThickness": 15
+        }
+    },
+    {
+        "id": 16,
+        "name": "Abdalajís Tunnel",
+        "condition": {
+            "hasTunnelLength": 8970,
+            "hasTunnelDiameter": 12.0,
+            "hasTunnelType": "MountainTunnelProject",
+            "hasGeologicalCondition": "IV",
+            "hasHydroCondition": "WaterRich",
+            "hasSoilType": "Rock",
+            "hasConstructionMethod": "Shield"
+        },
+        "solution": {
+            "hasBoltLength": 5.4,
+            "hasBoltSpacing": 2.7,
+            "hasBoltRowCount": 3322,
+            "hasBoltColumnCount": 8,
+            "hasLiningThickness": 35,
+            "hasSteelArchSpacing": 1.0,
+            "hasSteelArchCount": 8970,
+            "hasSteelArchThickness": 15,
+            "hasWaterproofLayerThickness": 15
+        }
+    },
+    {
+        "id": 17,
+        "name": "Suzhou East Tunnel",
+        "condition": {
+            "hasTunnelLength": 15570,
+            "hasTunnelDiameter": 14.81,
+            "hasTunnelType": "ShallowTunnelProject",
+            "hasGeologicalCondition": "IV",
+            "hasHydroCondition": "WaterRich",
+            "hasSoilType": "Medium Soil",
+            "hasConstructionMethod": "Shield"
+        },
+        "solution": {
+            "hasBoltLength": 6.66,
+            "hasBoltSpacing": 3.33,
+            "hasBoltRowCount": 4677,
+            "hasBoltColumnCount": 7,
+            "hasLiningThickness": 45,
+            "hasSteelArchCount": 15570,
+            "hasSteelArchThickness": 20,
+            "hasWaterproofLayerThickness": 20
+        }
+    },
+    {
+        "id": 18,
+        "name": "Beijing Cross-City Railway Tunnel",
+        "condition": {
+            "hasTunnelLength": 9156,
+            "hasTunnelDiameter": 9.0,
+            "hasTunnelType": "ShallowTunnelProject",
+            "hasGeologicalCondition": "IV",
+            "hasHydroCondition": "WaterRich",
+            "hasSoilType": "Medium Soil",
+            "hasConstructionMethod": "Shield"
+        },
+        "solution": {
+            "hasBoltLength": 4.05,
+            "hasBoltSpacing": 2.025,
+            "hasBoltRowCount": 4521,
+            "hasBoltColumnCount": 7,
+            "hasLiningThickness": 40,
+            "hasSteelArchSpacing": 1.0,
+            "hasSteelArchCount": 9156,
+            "hasSteelArchThickness": 14,
+            "hasWaterproofLayerThickness": 20
+        }
+    },
+    {
+        "id": 19,
+        "name": "SyntheticTunnel-019",
+        "condition": {
+            "hasTunnelLength": 8131,
+            "hasTunnelDiameter": 13.1,
+            "hasTunnelType": "DeepTunnelProject",
+            "hasGeologicalCondition": "IV",
+            "hasHydroCondition": "Medium",
+            "hasSoilType": "WeakSoil",
+            "hasConstructionMethod": "DrillBlast"
+        },
+        "solution": {
+            "hasBoltLength": 5.89,
+            "hasBoltSpacing": 2.94,
+            "hasBoltRowCount": 2765,
+            "hasBoltColumnCount": 7,
+            "hasLiningThickness": 35,
+            "hasSteelArchSpacing": 0.95,
+            "hasSteelArchCount": 8558,
+            "hasSteelArchThickness": 10,
+            "hasWaterproofLayerThickness": 20
+        }
+    },
+    {
+        "id": 20,
+        "name": "SyntheticTunnel-020",
+        "condition": {
+            "hasTunnelLength": 11367,
+            "hasTunnelDiameter": 14.01,
+            "hasTunnelType": "DeepTunnelProject",
+            "hasGeologicalCondition": "II",
+            "hasHydroCondition": "Dry",
+            "hasSoilType": "WeakSoil",
+            "hasConstructionMethod": "DrillBlast"
+        },
+        "solution": {
+            "hasBoltLength": 4.2,
+            "hasBoltSpacing": 2.1,
+            "hasBoltRowCount": 5412,
+            "hasBoltColumnCount": 11,
+            "hasLiningThickness": 30,
+            "hasSteelArchSpacing": 1.07,
+            "hasSteelArchCount": 10623,
+            "hasSteelArchThickness": 16,
+            "hasWaterproofLayerThickness": 10
+        }
+    },
+    {
+        "id": 21,
+        "name": "SyntheticTunnel-021",
+        "condition": {
+            "hasTunnelLength": 14268,
+            "hasTunnelDiameter": 9.54,
+            "hasTunnelType": "DeepTunnelProject",
+            "hasGeologicalCondition": "III",
+            "hasHydroCondition": "Medium",
+            "hasSoilType": "Medium Soil",
+            "hasConstructionMethod": "Shield"
+        },
+        "solution": {
+            "hasBoltLength": 3.15,
+            "hasBoltSpacing": 1.57,
+            "hasBoltRowCount": 9087,
+            "hasBoltColumnCount": 10,
+            "hasLiningThickness": 45,
+            "hasSteelArchSpacing": 0.75,
+            "hasSteelArchCount": 19024,
+            "hasSteelArchThickness": 18,
+            "hasWaterproofLayerThickness": 15
+        }
+    },
+    {
+        "id": 22,
+        "name": "SyntheticTunnel-022",
+        "condition": {
+            "hasTunnelLength": 7211,
+            "hasTunnelDiameter": 12.62,
+            "hasTunnelType": "DeepTunnelProject",
+            "hasGeologicalCondition": "IV",
+            "hasHydroCondition": "WaterRich",
+            "hasSoilType": "Medium Soil",
+            "hasConstructionMethod": "Shield"
+        },
+        "solution": {
+            "hasBoltLength": 5.68,
+            "hasBoltSpacing": 2.84,
+            "hasBoltRowCount": 2539,
+            "hasBoltColumnCount": 7,
+            "hasLiningThickness": 35,
+            "hasSteelArchSpacing": 1.03,
+            "hasSteelArchCount": 7000,
+            "hasSteelArchThickness": 12,
+            "hasWaterproofLayerThickness": 10
+        }
+    },
+    {
+        "id": 23,
+        "name": "SyntheticTunnel-023",
+        "condition": {
+            "hasTunnelLength": 4544,
+            "hasTunnelDiameter": 11.12,
+            "hasTunnelType": "ShallowTunnelProject",
+            "hasGeologicalCondition": "I",
+            "hasHydroCondition": "WaterRich",
+            "hasSoilType": "StrongSoil",
+            "hasConstructionMethod": "DrillBlast"
+        },
+        "solution": {
+            "hasBoltLength": 2.78,
+            "hasBoltSpacing": 1.39,
+            "hasBoltRowCount": 3269,
+            "hasBoltColumnCount": 13,
+            "hasLiningThickness": 40,
+            "hasSteelArchSpacing": 1.04,
+            "hasSteelArchCount": 4369,
+            "hasSteelArchThickness": 14,
+            "hasWaterproofLayerThickness": 15
+        }
+    },
+    {
+        "id": 24,
+        "name": "SyntheticTunnel-024",
+        "condition": {
+            "hasTunnelLength": 3098,
+            "hasTunnelDiameter": 7.35,
+            "hasTunnelType": "UnderwaterTunnelProject",
+            "hasGeologicalCondition": "II",
+            "hasHydroCondition": "Medium",
+            "hasSoilType": "WeakSoil",
+            "hasConstructionMethod": "DrillBlast"
+        },
+        "solution": {
+            "hasBoltLength": 2.2,
+            "hasBoltSpacing": 1.1,
+            "hasBoltRowCount": 2816,
+            "hasBoltColumnCount": 11,
+            "hasLiningThickness": 45,
+            "hasSteelArchSpacing": 0.87,
+            "hasSteelArchCount": 3560,
+            "hasSteelArchThickness": 10,
+            "hasWaterproofLayerThickness": 12
+        }
+    },
+    {
+        "id": 25,
+        "name": "SyntheticTunnel-025",
+        "condition": {
+            "hasTunnelLength": 7775,
+            "hasTunnelDiameter": 12.4,
+            "hasTunnelType": "UrbanTunnelProject",
+            "hasGeologicalCondition": "V",
+            "hasHydroCondition": "Medium",
+            "hasSoilType": "WeakSoil",
+            "hasConstructionMethod": "Shield"
+        },
+        "solution": {
+            "hasBoltLength": 6.2,
+            "hasBoltSpacing": 3.1,
+            "hasBoltRowCount": 2508,
+            "hasBoltColumnCount": 7,
+            "hasLiningThickness": 35,
+            "hasSteelArchSpacing": 1.06,
+            "hasSteelArchCount": 7334,
+            "hasSteelArchThickness": 10,
+            "hasWaterproofLayerThickness": 20
+        }
+    },
+    {
+        "id": 26,
+        "name": "SyntheticTunnel-026",
+        "condition": {
+            "hasTunnelLength": 4455,
+            "hasTunnelDiameter": 13.33,
+            "hasTunnelType": "ShallowTunnelProject",
+            "hasGeologicalCondition": "II",
+            "hasHydroCondition": "Medium",
+            "hasSoilType": "Medium Soil",
+            "hasConstructionMethod": "DrillBlast"
+        },
+        "solution": {
+            "hasBoltLength": 4.0,
+            "hasBoltSpacing": 2.0,
+            "hasBoltRowCount": 2227,
+            "hasBoltColumnCount": 11,
+            "hasLiningThickness": 45,
+            "hasSteelArchSpacing": 1.04,
+            "hasSteelArchCount": 4283,
+            "hasSteelArchThickness": 10,
+            "hasWaterproofLayerThickness": 15
+        }
+    },
+    {
+        "id": 27,
+        "name": "SyntheticTunnel-027",
+        "condition": {
+            "hasTunnelLength": 4422,
+            "hasTunnelDiameter": 14.47,
+            "hasTunnelType": "DeepTunnelProject",
+            "hasGeologicalCondition": "II",
+            "hasHydroCondition": "WaterRich",
+            "hasSoilType": "Medium Soil",
+            "hasConstructionMethod": "DrillBlast"
+        },
+        "solution": {
+            "hasBoltLength": 4.34,
+            "hasBoltSpacing": 2.17,
+            "hasBoltRowCount": 2037,
+            "hasBoltColumnCount": 11,
+            "hasLiningThickness": 45,
+            "hasSteelArchSpacing": 0.72,
+            "hasSteelArchCount": 6141,
+            "hasSteelArchThickness": 16,
+            "hasWaterproofLayerThickness": 25
+        }
+    },
+    {
+        "id": 28,
+        "name": "SyntheticTunnel-028",
+        "condition": {
+            "hasTunnelLength": 5368,
+            "hasTunnelDiameter": 12.14,
+            "hasTunnelType": "UnderwaterTunnelProject",
+            "hasGeologicalCondition": "I",
+            "hasHydroCondition": "Dry",
+            "hasSoilType": "Medium Soil",
+            "hasConstructionMethod": "DrillBlast"
+        },
+        "solution": {
+            "hasBoltLength": 3.04,
+            "hasBoltSpacing": 1.52,
+            "hasBoltRowCount": 3531,
+            "hasBoltColumnCount": 13,
+            "hasLiningThickness": 45,
+            "hasSteelArchSpacing": 1.1,
+            "hasSteelArchCount": 4880,
+            "hasSteelArchThickness": 14,
+            "hasWaterproofLayerThickness": 12
+        }
+    },
+    {
+        "id": 29,
+        "name": "SyntheticTunnel-029",
+        "condition": {
+            "hasTunnelLength": 1471,
+            "hasTunnelDiameter": 8.61,
+            "hasTunnelType": "UrbanTunnelProject",
+            "hasGeologicalCondition": "III",
+            "hasHydroCondition": "WaterRich",
+            "hasSoilType": "Medium Soil",
+            "hasConstructionMethod": "DrillBlast"
+        },
+        "solution": {
+            "hasBoltLength": 2.84,
+            "hasBoltSpacing": 1.42,
+            "hasBoltRowCount": 1035,
+            "hasBoltColumnCount": 10,
+            "hasLiningThickness": 45,
+            "hasSteelArchSpacing": 0.99,
+            "hasSteelArchCount": 1485,
+            "hasSteelArchThickness": 16,
+            "hasWaterproofLayerThickness": 20
+        }
+    },
+    {
+        "id": 30,
+        "name": "SyntheticTunnel-030",
+        "condition": {
+            "hasTunnelLength": 2643,
+            "hasTunnelDiameter": 9.05,
+            "hasTunnelType": "DeepTunnelProject",
+            "hasGeologicalCondition": "III",
+            "hasHydroCondition": "Medium",
+            "hasSoilType": "StrongSoil",
+            "hasConstructionMethod": "DrillBlast"
+        },
+        "solution": {
+            "hasBoltLength": 2.99,
+            "hasBoltSpacing": 1.5,
+            "hasBoltRowCount": 1762,
+            "hasBoltColumnCount": 10,
+            "hasLiningThickness": 40,
+            "hasSteelArchSpacing": 0.83,
+            "hasSteelArchCount": 3184,
+            "hasSteelArchThickness": 12,
+            "hasWaterproofLayerThickness": 25
+        }
+    },
+    {
+        "id": 31,
+        "name": "SyntheticTunnel-031",
+        "condition": {
+            "hasTunnelLength": 7600,
+            "hasTunnelDiameter": 12.88,
+            "hasTunnelType": "UrbanTunnelProject",
+            "hasGeologicalCondition": "III",
+            "hasHydroCondition": "Medium",
+            "hasSoilType": "Medium Soil",
+            "hasConstructionMethod": "Shield"
+        },
+        "solution": {
+            "hasBoltLength": 4.25,
+            "hasBoltSpacing": 2.12,
+            "hasBoltRowCount": 3584,
+            "hasBoltColumnCount": 10,
+            "hasLiningThickness": 35,
+            "hasSteelArchSpacing": 1.08,
+            "hasSteelArchCount": 7037,
+            "hasSteelArchThickness": 18,
+            "hasWaterproofLayerThickness": 25
+        }
+    },
+    {
+        "id": 32,
+        "name": "SyntheticTunnel-032",
+        "condition": {
+            "hasTunnelLength": 5866,
+            "hasTunnelDiameter": 13.28,
+            "hasTunnelType": "UrbanTunnelProject",
+            "hasGeologicalCondition": "III",
+            "hasHydroCondition": "Dry",
+            "hasSoilType": "StrongSoil",
+            "hasConstructionMethod": "DrillBlast"
+        },
+        "solution": {
+            "hasBoltLength": 4.38,
+            "hasBoltSpacing": 2.19,
+            "hasBoltRowCount": 2678,
+            "hasBoltColumnCount": 10,
+            "hasLiningThickness": 30,
+            "hasSteelArchSpacing": 1.01,
+            "hasSteelArchCount": 5807,
+            "hasSteelArchThickness": 10,
+            "hasWaterproofLayerThickness": 20
+        }
+    },
+    {
+        "id": 33,
+        "name": "SyntheticTunnel-033",
+        "condition": {
+            "hasTunnelLength": 2744,
+            "hasTunnelDiameter": 10.97,
+            "hasTunnelType": "MountainTunnelProject",
+            "hasGeologicalCondition": "III",
+            "hasHydroCondition": "Medium",
+            "hasSoilType": "StrongSoil",
+            "hasConstructionMethod": "Shield"
+        },
+        "solution": {
+            "hasBoltLength": 3.62,
+            "hasBoltSpacing": 1.81,
+            "hasBoltRowCount": 1516,
+            "hasBoltColumnCount": 10,
+            "hasLiningThickness": 45,
+            "hasSteelArchSpacing": 1.12,
+            "hasSteelArchCount": 2449,
+            "hasSteelArchThickness": 18,
+            "hasWaterproofLayerThickness": 10
+        }
+    },
+    {
+        "id": 34,
+        "name": "SyntheticTunnel-034",
+        "condition": {
+            "hasTunnelLength": 4449,
+            "hasTunnelDiameter": 10.28,
+            "hasTunnelType": "DeepTunnelProject",
+            "hasGeologicalCondition": "III",
+            "hasHydroCondition": "WaterRich",
+            "hasSoilType": "Medium Soil",
+            "hasConstructionMethod": "Shield"
+        },
+        "solution": {
+            "hasBoltLength": 3.39,
+            "hasBoltSpacing": 1.7,
+            "hasBoltRowCount": 2617,
+            "hasBoltColumnCount": 10,
+            "hasLiningThickness": 30,
+            "hasSteelArchSpacing": 1.03,
+            "hasSteelArchCount": 4319,
+            "hasSteelArchThickness": 18,
+            "hasWaterproofLayerThickness": 10
+        }
+    },
+    {
+        "id": 35,
+        "name": "SyntheticTunnel-035",
+        "condition": {
+            "hasTunnelLength": 11940,
+            "hasTunnelDiameter": 8.98,
+            "hasTunnelType": "MountainTunnelProject",
+            "hasGeologicalCondition": "IV",
+            "hasHydroCondition": "WaterRich",
+            "hasSoilType": "Medium Soil",
+            "hasConstructionMethod": "Shield"
+        },
+        "solution": {
+            "hasBoltLength": 4.04,
+            "hasBoltSpacing": 2.02,
+            "hasBoltRowCount": 5910,
+            "hasBoltColumnCount": 7,
+            "hasLiningThickness": 45,
+            "hasSteelArchSpacing": 1.2,
+            "hasSteelArchCount": 9950,
+            "hasSteelArchThickness": 18,
+            "hasWaterproofLayerThickness": 20
+        }
+    },
+    {
+        "id": 36,
+        "name": "SyntheticTunnel-036",
+        "condition": {
+            "hasTunnelLength": 12915,
+            "hasTunnelDiameter": 10.48,
+            "hasTunnelType": "DeepTunnelProject",
+            "hasGeologicalCondition": "IV",
+            "hasHydroCondition": "Dry",
+            "hasSoilType": "StrongSoil",
+            "hasConstructionMethod": "Shield"
+        },
+        "solution": {
+            "hasBoltLength": 4.72,
+            "hasBoltSpacing": 2.36,
+            "hasBoltRowCount": 5472,
+            "hasBoltColumnCount": 7,
+            "hasLiningThickness": 30,
+            "hasSteelArchSpacing": 1.09,
+            "hasSteelArchCount": 11848,
+            "hasSteelArchThickness": 18,
+            "hasWaterproofLayerThickness": 10
+        }
+    },
+    {
+        "id": 37,
+        "name": "SyntheticTunnel-037",
+        "condition": {
+            "hasTunnelLength": 5828,
+            "hasTunnelDiameter": 11.98,
+            "hasTunnelType": "UrbanTunnelProject",
+            "hasGeologicalCondition": "II",
+            "hasHydroCondition": "Medium",
+            "hasSoilType": "Medium Soil",
+            "hasConstructionMethod": "Shield"
+        },
+        "solution": {
+            "hasBoltLength": 3.59,
+            "hasBoltSpacing": 1.79,
+            "hasBoltRowCount": 3255,
+            "hasBoltColumnCount": 11,
+            "hasLiningThickness": 30,
+            "hasSteelArchSpacing": 1.07,
+            "hasSteelArchCount": 5446,
+            "hasSteelArchThickness": 12,
+            "hasWaterproofLayerThickness": 10
+        }
+    },
+    {
+        "id": 38,
+        "name": "SyntheticTunnel-038",
+        "condition": {
+            "hasTunnelLength": 2814,
+            "hasTunnelDiameter": 7.24,
+            "hasTunnelType": "UrbanTunnelProject",
+            "hasGeologicalCondition": "III",
+            "hasHydroCondition": "Medium",
+            "hasSoilType": "Medium Soil",
+            "hasConstructionMethod": "Shield"
+        },
+        "solution": {
+            "hasBoltLength": 2.39,
+            "hasBoltSpacing": 1.2,
+            "hasBoltRowCount": 2345,
+            "hasBoltColumnCount": 10,
+            "hasLiningThickness": 35,
+            "hasSteelArchSpacing": 1.08,
+            "hasSteelArchCount": 2605,
+            "hasSteelArchThickness": 12,
+            "hasWaterproofLayerThickness": 10
+        }
+    },
+    {
+        "id": 39,
+        "name": "SyntheticTunnel-039",
+        "condition": {
+            "hasTunnelLength": 12849,
+            "hasTunnelDiameter": 14.19,
+            "hasTunnelType": "MountainTunnelProject",
+            "hasGeologicalCondition": "IV",
+            "hasHydroCondition": "Dry",
+            "hasSoilType": "WeakSoil",
+            "hasConstructionMethod": "DrillBlast"
+        },
+        "solution": {
+            "hasBoltLength": 6.39,
+            "hasBoltSpacing": 3.19,
+            "hasBoltRowCount": 4027,
+            "hasBoltColumnCount": 7,
+            "hasLiningThickness": 40,
+            "hasSteelArchSpacing": 0.93,
+            "hasSteelArchCount": 13816,
+            "hasSteelArchThickness": 18,
+            "hasWaterproofLayerThickness": 15
+        }
+    },
+    {
+        "id": 40,
+        "name": "SyntheticTunnel-040",
+        "condition": {
+            "hasTunnelLength": 12170,
+            "hasTunnelDiameter": 8.69,
+            "hasTunnelType": "ShallowTunnelProject",
+            "hasGeologicalCondition": "I",
+            "hasHydroCondition": "Medium",
+            "hasSoilType": "WeakSoil",
+            "hasConstructionMethod": "DrillBlast"
+        },
+        "solution": {
+            "hasBoltLength": 2.17,
+            "hasBoltSpacing": 1.08,
+            "hasBoltRowCount": 11268,
+            "hasBoltColumnCount": 13,
+            "hasLiningThickness": 45,
+            "hasSteelArchSpacing": 1.19,
+            "hasSteelArchCount": 10226,
+            "hasSteelArchThickness": 14,
+            "hasWaterproofLayerThickness": 20
+        }
+    },
+    {
+        "id": 41,
+        "name": "SyntheticTunnel-041",
+        "condition": {
+            "hasTunnelLength": 5462,
+            "hasTunnelDiameter": 6.03,
+            "hasTunnelType": "UnderwaterTunnelProject",
+            "hasGeologicalCondition": "III",
+            "hasHydroCondition": "Medium",
+            "hasSoilType": "StrongSoil",
+            "hasConstructionMethod": "Shield"
+        },
+        "solution": {
+            "hasBoltLength": 1.99,
+            "hasBoltSpacing": 0.99,
+            "hasBoltRowCount": 5517,
+            "hasBoltColumnCount": 10,
+            "hasLiningThickness": 30,
+            "hasSteelArchSpacing": 0.96,
+            "hasSteelArchCount": 5689,
+            "hasSteelArchThickness": 10,
+            "hasWaterproofLayerThickness": 25
+        }
+    },
+    {
+        "id": 42,
+        "name": "SyntheticTunnel-042",
+        "condition": {
+            "hasTunnelLength": 6197,
+            "hasTunnelDiameter": 8.19,
+            "hasTunnelType": "ShallowTunnelProject",
+            "hasGeologicalCondition": "V",
+            "hasHydroCondition": "Medium",
+            "hasSoilType": "WeakSoil",
+            "hasConstructionMethod": "DrillBlast"
+        },
+        "solution": {
+            "hasBoltLength": 4.09,
+            "hasBoltSpacing": 2.04,
+            "hasBoltRowCount": 3037,
+            "hasBoltColumnCount": 7,
+            "hasLiningThickness": 40,
+            "hasSteelArchSpacing": 1.01,
+            "hasSteelArchCount": 6135,
+            "hasSteelArchThickness": 18,
+            "hasWaterproofLayerThickness": 12
+        }
+    },
+    {
+        "id": 43,
+        "name": "SyntheticTunnel-043",
+        "condition": {
+            "hasTunnelLength": 8101,
+            "hasTunnelDiameter": 13.97,
+            "hasTunnelType": "UnderwaterTunnelProject",
+            "hasGeologicalCondition": "II",
+            "hasHydroCondition": "Medium",
+            "hasSoilType": "StrongSoil",
+            "hasConstructionMethod": "Shield"
+        },
+        "solution": {
+            "hasBoltLength": 4.19,
+            "hasBoltSpacing": 2.1,
+            "hasBoltRowCount": 3857,
+            "hasBoltColumnCount": 11,
+            "hasLiningThickness": 35,
+            "hasSteelArchSpacing": 0.97,
+            "hasSteelArchCount": 8351,
+            "hasSteelArchThickness": 16,
+            "hasWaterproofLayerThickness": 12
+        }
+    },
+    {
+        "id": 44,
+        "name": "SyntheticTunnel-044",
+        "condition": {
+            "hasTunnelLength": 6331,
+            "hasTunnelDiameter": 7.36,
+            "hasTunnelType": "UrbanTunnelProject",
+            "hasGeologicalCondition": "III",
+            "hasHydroCondition": "Medium",
+            "hasSoilType": "StrongSoil",
+            "hasConstructionMethod": "DrillBlast"
+        },
+        "solution": {
+            "hasBoltLength": 2.43,
+            "hasBoltSpacing": 1.22,
+            "hasBoltRowCount": 5189,
+            "hasBoltColumnCount": 10,
+            "hasLiningThickness": 35,
+            "hasSteelArchSpacing": 0.84,
+            "hasSteelArchCount": 7536,
+            "hasSteelArchThickness": 12,
+            "hasWaterproofLayerThickness": 12
+        }
+    },
+    {
+        "id": 45,
+        "name": "SyntheticTunnel-045",
+        "condition": {
+            "hasTunnelLength": 7052,
+            "hasTunnelDiameter": 9.18,
+            "hasTunnelType": "UrbanTunnelProject",
+            "hasGeologicalCondition": "IV",
+            "hasHydroCondition": "WaterRich",
+            "hasSoilType": "StrongSoil",
+            "hasConstructionMethod": "Shield"
+        },
+        "solution": {
+            "hasBoltLength": 4.13,
+            "hasBoltSpacing": 2.06,
+            "hasBoltRowCount": 3423,
+            "hasBoltColumnCount": 7,
+            "hasLiningThickness": 45,
+            "hasSteelArchSpacing": 0.96,
+            "hasSteelArchCount": 7345,
+            "hasSteelArchThickness": 16,
+            "hasWaterproofLayerThickness": 10
+        }
+    },
+    {
+        "id": 46,
+        "name": "SyntheticTunnel-046",
+        "condition": {
+            "hasTunnelLength": 3940,
+            "hasTunnelDiameter": 11.75,
+            "hasTunnelType": "UrbanTunnelProject",
+            "hasGeologicalCondition": "V",
+            "hasHydroCondition": "Medium",
+            "hasSoilType": "WeakSoil",
+            "hasConstructionMethod": "DrillBlast"
+        },
+        "solution": {
+            "hasBoltLength": 5.88,
+            "hasBoltSpacing": 2.94,
+            "hasBoltRowCount": 1340,
+            "hasBoltColumnCount": 7,
+            "hasLiningThickness": 45,
+            "hasSteelArchSpacing": 0.81,
+            "hasSteelArchCount": 4864,
+            "hasSteelArchThickness": 18,
+            "hasWaterproofLayerThickness": 10
+        }
+    },
+    {
+        "id": 47,
+        "name": "SyntheticTunnel-047",
+        "condition": {
+            "hasTunnelLength": 4001,
+            "hasTunnelDiameter": 9.25,
+            "hasTunnelType": "MountainTunnelProject",
+            "hasGeologicalCondition": "I",
+            "hasHydroCondition": "Dry",
+            "hasSoilType": "Medium Soil",
+            "hasConstructionMethod": "Shield"
+        },
+        "solution": {
+            "hasBoltLength": 2.31,
+            "hasBoltSpacing": 1.16,
+            "hasBoltRowCount": 3449,
+            "hasBoltColumnCount": 13,
+            "hasLiningThickness": 40,
+            "hasSteelArchSpacing": 0.99,
+            "hasSteelArchCount": 4041,
+            "hasSteelArchThickness": 10,
+            "hasWaterproofLayerThickness": 20
+        }
+    },
+    {
+        "id": 48,
+        "name": "SyntheticTunnel-048",
+        "condition": {
+            "hasTunnelLength": 2247,
+            "hasTunnelDiameter": 13.72,
+            "hasTunnelType": "UrbanTunnelProject",
+            "hasGeologicalCondition": "V",
+            "hasHydroCondition": "Medium",
+            "hasSoilType": "StrongSoil",
+            "hasConstructionMethod": "DrillBlast"
+        },
+        "solution": {
+            "hasBoltLength": 6.86,
+            "hasBoltSpacing": 3.43,
+            "hasBoltRowCount": 655,
+            "hasBoltColumnCount": 7,
+            "hasLiningThickness": 30,
+            "hasSteelArchSpacing": 0.83,
+            "hasSteelArchCount": 2707,
+            "hasSteelArchThickness": 12,
+            "hasWaterproofLayerThickness": 25
+        }
+    },
+    {
+        "id": 49,
+        "name": "SyntheticTunnel-049",
+        "condition": {
+            "hasTunnelLength": 9273,
+            "hasTunnelDiameter": 9.81,
+            "hasTunnelType": "UnderwaterTunnelProject",
+            "hasGeologicalCondition": "I",
+            "hasHydroCondition": "Medium",
+            "hasSoilType": "StrongSoil",
+            "hasConstructionMethod": "Shield"
+        },
+        "solution": {
+            "hasBoltLength": 2.45,
+            "hasBoltSpacing": 1.23,
+            "hasBoltRowCount": 7539,
+            "hasBoltColumnCount": 13,
+            "hasLiningThickness": 45,
+            "hasSteelArchSpacing": 1.08,
+            "hasSteelArchCount": 8586,
+            "hasSteelArchThickness": 16,
+            "hasWaterproofLayerThickness": 25
+        }
+    },
+    {
+        "id": 50,
+        "name": "SyntheticTunnel-050",
+        "condition": {
+            "hasTunnelLength": 4343,
+            "hasTunnelDiameter": 10.53,
+            "hasTunnelType": "UnderwaterTunnelProject",
+            "hasGeologicalCondition": "III",
+            "hasHydroCondition": "Dry",
+            "hasSoilType": "Medium Soil",
+            "hasConstructionMethod": "DrillBlast"
+        },
+        "solution": {
+            "hasBoltLength": 3.47,
+            "hasBoltSpacing": 1.74,
+            "hasBoltRowCount": 2495,
+            "hasBoltColumnCount": 10,
+            "hasLiningThickness": 35,
+            "hasSteelArchSpacing": 0.85,
+            "hasSteelArchCount": 5109,
+            "hasSteelArchThickness": 20,
+            "hasWaterproofLayerThickness": 15
+        }
+    },
+    {
+        "id": 51,
+        "name": "SyntheticTunnel-051",
+        "condition": {
+            "hasTunnelLength": 3126,
+            "hasTunnelDiameter": 13.62,
+            "hasTunnelType": "DeepTunnelProject",
+            "hasGeologicalCondition": "III",
+            "hasHydroCondition": "Dry",
+            "hasSoilType": "StrongSoil",
+            "hasConstructionMethod": "DrillBlast"
+        },
+        "solution": {
+            "hasBoltLength": 4.49,
+            "hasBoltSpacing": 2.25,
+            "hasBoltRowCount": 1389,
+            "hasBoltColumnCount": 10,
+            "hasLiningThickness": 40,
+            "hasSteelArchSpacing": 1.13,
+            "hasSteelArchCount": 2766,
+            "hasSteelArchThickness": 10,
+            "hasWaterproofLayerThickness": 15
+        }
+    },
+    {
+        "id": 52,
+        "name": "SyntheticTunnel-052",
+        "condition": {
+            "hasTunnelLength": 10070,
+            "hasTunnelDiameter": 9.8,
+            "hasTunnelType": "ShallowTunnelProject",
+            "hasGeologicalCondition": "V",
+            "hasHydroCondition": "Medium",
+            "hasSoilType": "WeakSoil",
+            "hasConstructionMethod": "DrillBlast"
+        },
+        "solution": {
+            "hasBoltLength": 4.9,
+            "hasBoltSpacing": 2.45,
+            "hasBoltRowCount": 4110,
+            "hasBoltColumnCount": 7,
+            "hasLiningThickness": 30,
+            "hasSteelArchSpacing": 0.73,
+            "hasSteelArchCount": 13794,
+            "hasSteelArchThickness": 14,
+            "hasWaterproofLayerThickness": 20
+        }
+    },
+    {
+        "id": 53,
+        "name": "SyntheticTunnel-053",
+        "condition": {
+            "hasTunnelLength": 4324,
+            "hasTunnelDiameter": 10.17,
+            "hasTunnelType": "UrbanTunnelProject",
+            "hasGeologicalCondition": "III",
+            "hasHydroCondition": "WaterRich",
+            "hasSoilType": "Medium Soil",
+            "hasConstructionMethod": "DrillBlast"
+        },
+        "solution": {
+            "hasBoltLength": 3.36,
+            "hasBoltSpacing": 1.68,
+            "hasBoltRowCount": 2573,
+            "hasBoltColumnCount": 10,
+            "hasLiningThickness": 35,
+            "hasSteelArchSpacing": 0.88,
+            "hasSteelArchCount": 4913,
+            "hasSteelArchThickness": 18,
+            "hasWaterproofLayerThickness": 25
+        }
+    },
+    {
+        "id": 54,
+        "name": "SyntheticTunnel-054",
+        "condition": {
+            "hasTunnelLength": 7413,
+            "hasTunnelDiameter": 14.09,
+            "hasTunnelType": "ShallowTunnelProject",
+            "hasGeologicalCondition": "I",
+            "hasHydroCondition": "Medium",
+            "hasSoilType": "WeakSoil",
+            "hasConstructionMethod": "Shield"
+        },
+        "solution": {
+            "hasBoltLength": 3.52,
+            "hasBoltSpacing": 1.76,
+            "hasBoltRowCount": 4211,
+            "hasBoltColumnCount": 13,
+            "hasLiningThickness": 45,
+            "hasSteelArchSpacing": 0.73,
+            "hasSteelArchCount": 10154,
+            "hasSteelArchThickness": 20,
+            "hasWaterproofLayerThickness": 12
+        }
+    },
+    {
+        "id": 55,
+        "name": "SyntheticTunnel-055",
+        "condition": {
+            "hasTunnelLength": 2588,
+            "hasTunnelDiameter": 8.41,
+            "hasTunnelType": "DeepTunnelProject",
+            "hasGeologicalCondition": "II",
+            "hasHydroCondition": "WaterRich",
+            "hasSoilType": "WeakSoil",
+            "hasConstructionMethod": "Shield"
+        },
+        "solution": {
+            "hasBoltLength": 2.52,
+            "hasBoltSpacing": 1.26,
+            "hasBoltRowCount": 2053,
+            "hasBoltColumnCount": 11,
+            "hasLiningThickness": 40,
+            "hasSteelArchSpacing": 0.7,
+            "hasSteelArchCount": 3697,
+            "hasSteelArchThickness": 12,
+            "hasWaterproofLayerThickness": 15
+        }
+    },
+    {
+        "id": 56,
+        "name": "SyntheticTunnel-056",
+        "condition": {
+            "hasTunnelLength": 12236,
+            "hasTunnelDiameter": 7.32,
+            "hasTunnelType": "MountainTunnelProject",
+            "hasGeologicalCondition": "III",
+            "hasHydroCondition": "Medium",
+            "hasSoilType": "WeakSoil",
+            "hasConstructionMethod": "Shield"
+        },
+        "solution": {
+            "hasBoltLength": 2.42,
+            "hasBoltSpacing": 1.21,
+            "hasBoltRowCount": 10112,
+            "hasBoltColumnCount": 10,
+            "hasLiningThickness": 35,
+            "hasSteelArchSpacing": 0.71,
+            "hasSteelArchCount": 17233,
+            "hasSteelArchThickness": 12,
+            "hasWaterproofLayerThickness": 12
+        }
+    },
+    {
+        "id": 57,
+        "name": "SyntheticTunnel-057",
+        "condition": {
+            "hasTunnelLength": 3165,
+            "hasTunnelDiameter": 11.16,
+            "hasTunnelType": "MountainTunnelProject",
+            "hasGeologicalCondition": "II",
+            "hasHydroCondition": "Dry",
+            "hasSoilType": "WeakSoil",
+            "hasConstructionMethod": "Shield"
+        },
+        "solution": {
+            "hasBoltLength": 3.35,
+            "hasBoltSpacing": 1.68,
+            "hasBoltRowCount": 1883,
+            "hasBoltColumnCount": 11,
+            "hasLiningThickness": 45,
+            "hasSteelArchSpacing": 0.97,
+            "hasSteelArchCount": 3262,
+            "hasSteelArchThickness": 18,
+            "hasWaterproofLayerThickness": 25
+        }
+    },
+    {
+        "id": 58,
+        "name": "SyntheticTunnel-058",
+        "condition": {
+            "hasTunnelLength": 5995,
+            "hasTunnelDiameter": 9.59,
+            "hasTunnelType": "UnderwaterTunnelProject",
+            "hasGeologicalCondition": "V",
+            "hasHydroCondition": "Medium",
+            "hasSoilType": "StrongSoil",
+            "hasConstructionMethod": "Shield"
+        },
+        "solution": {
+            "hasBoltLength": 4.79,
+            "hasBoltSpacing": 2.4,
+            "hasBoltRowCount": 2497,
+            "hasBoltColumnCount": 7,
+            "hasLiningThickness": 30,
+            "hasSteelArchSpacing": 0.84,
+            "hasSteelArchCount": 7136,
+            "hasSteelArchThickness": 20,
+            "hasWaterproofLayerThickness": 10
+        }
+    },
+    {
+        "id": 59,
+        "name": "SyntheticTunnel-059",
+        "condition": {
+            "hasTunnelLength": 6766,
+            "hasTunnelDiameter": 13.07,
+            "hasTunnelType": "UrbanTunnelProject",
+            "hasGeologicalCondition": "V",
+            "hasHydroCondition": "WaterRich",
+            "hasSoilType": "StrongSoil",
+            "hasConstructionMethod": "DrillBlast"
+        },
+        "solution": {
+            "hasBoltLength": 6.54,
+            "hasBoltSpacing": 3.27,
+            "hasBoltRowCount": 2069,
+            "hasBoltColumnCount": 7,
+            "hasLiningThickness": 40,
+            "hasSteelArchSpacing": 1.07,
+            "hasSteelArchCount": 6323,
+            "hasSteelArchThickness": 20,
+            "hasWaterproofLayerThickness": 20
+        }
+    },
+    {
+        "id": 60,
+        "name": "SyntheticTunnel-060",
+        "condition": {
+            "hasTunnelLength": 2289,
+            "hasTunnelDiameter": 14.34,
+            "hasTunnelType": "ShallowTunnelProject",
+            "hasGeologicalCondition": "II",
+            "hasHydroCondition": "Medium",
+            "hasSoilType": "WeakSoil",
+            "hasConstructionMethod": "DrillBlast"
+        },
+        "solution": {
+            "hasBoltLength": 4.3,
+            "hasBoltSpacing": 2.15,
+            "hasBoltRowCount": 1064,
+            "hasBoltColumnCount": 11,
+            "hasLiningThickness": 35,
+            "hasSteelArchSpacing": 0.83,
+            "hasSteelArchCount": 2757,
+            "hasSteelArchThickness": 20,
+            "hasWaterproofLayerThickness": 25
+        }
+    },
+    {
+        "id": 61,
+        "name": "SyntheticTunnel-061",
+        "condition": {
+            "hasTunnelLength": 11182,
+            "hasTunnelDiameter": 12.78,
+            "hasTunnelType": "DeepTunnelProject",
+            "hasGeologicalCondition": "V",
+            "hasHydroCondition": "Medium",
+            "hasSoilType": "Medium Soil",
+            "hasConstructionMethod": "DrillBlast"
+        },
+        "solution": {
+            "hasBoltLength": 6.39,
+            "hasBoltSpacing": 3.19,
+            "hasBoltRowCount": 3505,
+            "hasBoltColumnCount": 7,
+            "hasLiningThickness": 40,
+            "hasSteelArchSpacing": 1.02,
+            "hasSteelArchCount": 10962,
+            "hasSteelArchThickness": 18,
+            "hasWaterproofLayerThickness": 25
+        }
+    },
+    {
+        "id": 62,
+        "name": "SyntheticTunnel-062",
+        "condition": {
+            "hasTunnelLength": 2679,
+            "hasTunnelDiameter": 8.69,
+            "hasTunnelType": "UrbanTunnelProject",
+            "hasGeologicalCondition": "V",
+            "hasHydroCondition": "WaterRich",
+            "hasSoilType": "Medium Soil",
+            "hasConstructionMethod": "DrillBlast"
+        },
+        "solution": {
+            "hasBoltLength": 4.34,
+            "hasBoltSpacing": 2.17,
+            "hasBoltRowCount": 1234,
+            "hasBoltColumnCount": 7,
+            "hasLiningThickness": 40,
+            "hasSteelArchSpacing": 0.86,
+            "hasSteelArchCount": 3115,
+            "hasSteelArchThickness": 20,
+            "hasWaterproofLayerThickness": 10
+        }
+    },
+    {
+        "id": 63,
+        "name": "SyntheticTunnel-063",
+        "condition": {
+            "hasTunnelLength": 3821,
+            "hasTunnelDiameter": 12.2,
+            "hasTunnelType": "DeepTunnelProject",
+            "hasGeologicalCondition": "III",
+            "hasHydroCondition": "WaterRich",
+            "hasSoilType": "WeakSoil",
+            "hasConstructionMethod": "DrillBlast"
+        },
+        "solution": {
+            "hasBoltLength": 4.03,
+            "hasBoltSpacing": 2.02,
+            "hasBoltRowCount": 1891,
+            "hasBoltColumnCount": 10,
+            "hasLiningThickness": 40,
+            "hasSteelArchSpacing": 0.84,
+            "hasSteelArchCount": 4548,
+            "hasSteelArchThickness": 16,
+            "hasWaterproofLayerThickness": 10
+        }
+    },
+    {
+        "id": 64,
+        "name": "SyntheticTunnel-064",
+        "condition": {
+            "hasTunnelLength": 7237,
+            "hasTunnelDiameter": 10.67,
+            "hasTunnelType": "MountainTunnelProject",
+            "hasGeologicalCondition": "V",
+            "hasHydroCondition": "Dry",
+            "hasSoilType": "WeakSoil",
+            "hasConstructionMethod": "DrillBlast"
+        },
+        "solution": {
+            "hasBoltLength": 5.33,
+            "hasBoltSpacing": 2.67,
+            "hasBoltRowCount": 2710,
+            "hasBoltColumnCount": 7,
+            "hasLiningThickness": 30,
+            "hasSteelArchSpacing": 1.16,
+            "hasSteelArchCount": 6238,
+            "hasSteelArchThickness": 18,
+            "hasWaterproofLayerThickness": 12
+        }
+    },
+    {
+        "id": 65,
+        "name": "SyntheticTunnel-065",
+        "condition": {
+            "hasTunnelLength": 14422,
+            "hasTunnelDiameter": 12.22,
+            "hasTunnelType": "ShallowTunnelProject",
+            "hasGeologicalCondition": "II",
+            "hasHydroCondition": "Dry",
+            "hasSoilType": "StrongSoil",
+            "hasConstructionMethod": "DrillBlast"
+        },
+        "solution": {
+            "hasBoltLength": 3.67,
+            "hasBoltSpacing": 1.83,
+            "hasBoltRowCount": 7880,
+            "hasBoltColumnCount": 11,
+            "hasLiningThickness": 40,
+            "hasSteelArchSpacing": 0.84,
+            "hasSteelArchCount": 17169,
+            "hasSteelArchThickness": 20,
+            "hasWaterproofLayerThickness": 15
+        }
+    },
+    {
+        "id": 66,
+        "name": "SyntheticTunnel-066",
+        "condition": {
+            "hasTunnelLength": 11919,
+            "hasTunnelDiameter": 11.98,
+            "hasTunnelType": "MountainTunnelProject",
+            "hasGeologicalCondition": "II",
+            "hasHydroCondition": "Medium",
+            "hasSoilType": "Medium Soil",
+            "hasConstructionMethod": "DrillBlast"
+        },
+        "solution": {
+            "hasBoltLength": 3.59,
+            "hasBoltSpacing": 1.79,
+            "hasBoltRowCount": 6658,
+            "hasBoltColumnCount": 11,
+            "hasLiningThickness": 35,
+            "hasSteelArchSpacing": 0.71,
+            "hasSteelArchCount": 16787,
+            "hasSteelArchThickness": 20,
+            "hasWaterproofLayerThickness": 15
+        }
+    },
+    {
+        "id": 67,
+        "name": "SyntheticTunnel-067",
+        "condition": {
+            "hasTunnelLength": 5482,
+            "hasTunnelDiameter": 7.19,
+            "hasTunnelType": "UnderwaterTunnelProject",
+            "hasGeologicalCondition": "IV",
+            "hasHydroCondition": "Medium",
+            "hasSoilType": "WeakSoil",
+            "hasConstructionMethod": "Shield"
+        },
+        "solution": {
+            "hasBoltLength": 3.24,
+            "hasBoltSpacing": 1.62,
+            "hasBoltRowCount": 3383,
+            "hasBoltColumnCount": 7,
+            "hasLiningThickness": 35,
+            "hasSteelArchSpacing": 1.07,
+            "hasSteelArchCount": 5123,
+            "hasSteelArchThickness": 12,
+            "hasWaterproofLayerThickness": 12
+        }
+    },
+    {
+        "id": 68,
+        "name": "SyntheticTunnel-068",
+        "condition": {
+            "hasTunnelLength": 1186,
+            "hasTunnelDiameter": 7.16,
+            "hasTunnelType": "UrbanTunnelProject",
+            "hasGeologicalCondition": "III",
+            "hasHydroCondition": "Dry",
+            "hasSoilType": "StrongSoil",
+            "hasConstructionMethod": "Shield"
+        },
+        "solution": {
+            "hasBoltLength": 2.36,
+            "hasBoltSpacing": 1.18,
+            "hasBoltRowCount": 1005,
+            "hasBoltColumnCount": 10,
+            "hasLiningThickness": 40,
+            "hasSteelArchSpacing": 0.9,
+            "hasSteelArchCount": 1317,
+            "hasSteelArchThickness": 12,
+            "hasWaterproofLayerThickness": 25
+        }
+    },
+    {
+        "id": 69,
+        "name": "SyntheticTunnel-069",
+        "condition": {
+            "hasTunnelLength": 4048,
+            "hasTunnelDiameter": 10.52,
+            "hasTunnelType": "UrbanTunnelProject",
+            "hasGeologicalCondition": "II",
+            "hasHydroCondition": "Medium",
+            "hasSoilType": "Medium Soil",
+            "hasConstructionMethod": "DrillBlast"
+        },
+        "solution": {
+            "hasBoltLength": 3.16,
+            "hasBoltSpacing": 1.58,
+            "hasBoltRowCount": 2562,
+            "hasBoltColumnCount": 11,
+            "hasLiningThickness": 30,
+            "hasSteelArchSpacing": 1.0,
+            "hasSteelArchCount": 4048,
+            "hasSteelArchThickness": 18,
+            "hasWaterproofLayerThickness": 12
+        }
+    },
+    {
+        "id": 70,
+        "name": "SyntheticTunnel-070",
+        "condition": {
+            "hasTunnelLength": 7506,
+            "hasTunnelDiameter": 11.75,
+            "hasTunnelType": "UnderwaterTunnelProject",
+            "hasGeologicalCondition": "II",
+            "hasHydroCondition": "Medium",
+            "hasSoilType": "StrongSoil",
+            "hasConstructionMethod": "Shield"
+        },
+        "solution": {
+            "hasBoltLength": 3.52,
+            "hasBoltSpacing": 1.76,
+            "hasBoltRowCount": 4264,
+            "hasBoltColumnCount": 11,
+            "hasLiningThickness": 30,
+            "hasSteelArchSpacing": 0.74,
+            "hasSteelArchCount": 10143,
+            "hasSteelArchThickness": 14,
+            "hasWaterproofLayerThickness": 10
+        }
+    },
+    {
+        "id": 71,
+        "name": "SyntheticTunnel-071",
+        "condition": {
+            "hasTunnelLength": 3303,
+            "hasTunnelDiameter": 7.27,
+            "hasTunnelType": "ShallowTunnelProject",
+            "hasGeologicalCondition": "III",
+            "hasHydroCondition": "Medium",
+            "hasSoilType": "Medium Soil",
+            "hasConstructionMethod": "DrillBlast"
+        },
+        "solution": {
+            "hasBoltLength": 2.4,
+            "hasBoltSpacing": 1.2,
+            "hasBoltRowCount": 2752,
+            "hasBoltColumnCount": 10,
+            "hasLiningThickness": 45,
+            "hasSteelArchSpacing": 1.04,
+            "hasSteelArchCount": 3175,
+            "hasSteelArchThickness": 20,
+            "hasWaterproofLayerThickness": 10
+        }
+    },
+    {
+        "id": 72,
+        "name": "SyntheticTunnel-072",
+        "condition": {
+            "hasTunnelLength": 13561,
+            "hasTunnelDiameter": 10.12,
+            "hasTunnelType": "DeepTunnelProject",
+            "hasGeologicalCondition": "IV",
+            "hasHydroCondition": "Dry",
+            "hasSoilType": "Medium Soil",
+            "hasConstructionMethod": "DrillBlast"
+        },
+        "solution": {
+            "hasBoltLength": 4.55,
+            "hasBoltSpacing": 2.27,
+            "hasBoltRowCount": 5974,
+            "hasBoltColumnCount": 8,
+            "hasLiningThickness": 30,
+            "hasSteelArchSpacing": 0.82,
+            "hasSteelArchCount": 16537,
+            "hasSteelArchThickness": 12,
+            "hasWaterproofLayerThickness": 25
+        }
+    },
+    {
+        "id": 73,
+        "name": "SyntheticTunnel-073",
+        "condition": {
+            "hasTunnelLength": 9923,
+            "hasTunnelDiameter": 6.22,
+            "hasTunnelType": "MountainTunnelProject",
+            "hasGeologicalCondition": "III",
+            "hasHydroCondition": "Dry",
+            "hasSoilType": "Medium Soil",
+            "hasConstructionMethod": "DrillBlast"
+        },
+        "solution": {
+            "hasBoltLength": 2.05,
+            "hasBoltSpacing": 1.02,
+            "hasBoltRowCount": 9728,
+            "hasBoltColumnCount": 10,
+            "hasLiningThickness": 45,
+            "hasSteelArchSpacing": 0.89,
+            "hasSteelArchCount": 11149,
+            "hasSteelArchThickness": 16,
+            "hasWaterproofLayerThickness": 10
+        }
+    },
+    {
+        "id": 74,
+        "name": "SyntheticTunnel-074",
+        "condition": {
+            "hasTunnelLength": 10820,
+            "hasTunnelDiameter": 6.36,
+            "hasTunnelType": "ShallowTunnelProject",
+            "hasGeologicalCondition": "I",
+            "hasHydroCondition": "Medium",
+            "hasSoilType": "StrongSoil",
+            "hasConstructionMethod": "DrillBlast"
+        },
+        "solution": {
+            "hasBoltLength": 1.59,
+            "hasBoltSpacing": 0.8,
+            "hasBoltRowCount": 13525,
+            "hasBoltColumnCount": 13,
+            "hasLiningThickness": 35,
+            "hasSteelArchSpacing": 0.96,
+            "hasSteelArchCount": 11270,
+            "hasSteelArchThickness": 14,
+            "hasWaterproofLayerThickness": 20
+        }
+    },
+    {
+        "id": 75,
+        "name": "SyntheticTunnel-075",
+        "condition": {
+            "hasTunnelLength": 5091,
+            "hasTunnelDiameter": 9.18,
+            "hasTunnelType": "ShallowTunnelProject",
+            "hasGeologicalCondition": "IV",
+            "hasHydroCondition": "WaterRich",
+            "hasSoilType": "Medium Soil",
+            "hasConstructionMethod": "DrillBlast"
+        },
+        "solution": {
+            "hasBoltLength": 4.13,
+            "hasBoltSpacing": 2.06,
+            "hasBoltRowCount": 2471,
+            "hasBoltColumnCount": 7,
+            "hasLiningThickness": 30,
+            "hasSteelArchSpacing": 0.88,
+            "hasSteelArchCount": 5785,
+            "hasSteelArchThickness": 16,
+            "hasWaterproofLayerThickness": 15
+        }
+    },
+    {
+        "id": 76,
+        "name": "SyntheticTunnel-076",
+        "condition": {
+            "hasTunnelLength": 3848,
+            "hasTunnelDiameter": 8.55,
+            "hasTunnelType": "MountainTunnelProject",
+            "hasGeologicalCondition": "III",
+            "hasHydroCondition": "Dry",
+            "hasSoilType": "Medium Soil",
+            "hasConstructionMethod": "DrillBlast"
+        },
+        "solution": {
+            "hasBoltLength": 2.82,
+            "hasBoltSpacing": 1.41,
+            "hasBoltRowCount": 2729,
+            "hasBoltColumnCount": 10,
+            "hasLiningThickness": 40,
+            "hasSteelArchSpacing": 0.78,
+            "hasSteelArchCount": 4933,
+            "hasSteelArchThickness": 14,
+            "hasWaterproofLayerThickness": 15
+        }
+    },
+    {
+        "id": 77,
+        "name": "SyntheticTunnel-077",
+        "condition": {
+            "hasTunnelLength": 7693,
+            "hasTunnelDiameter": 9.92,
+            "hasTunnelType": "UnderwaterTunnelProject",
+            "hasGeologicalCondition": "II",
+            "hasHydroCondition": "Dry",
+            "hasSoilType": "WeakSoil",
+            "hasConstructionMethod": "Shield"
+        },
+        "solution": {
+            "hasBoltLength": 2.98,
+            "hasBoltSpacing": 1.49,
+            "hasBoltRowCount": 5163,
+            "hasBoltColumnCount": 11,
+            "hasLiningThickness": 30,
+            "hasSteelArchSpacing": 0.91,
+            "hasSteelArchCount": 8453,
+            "hasSteelArchThickness": 10,
+            "hasWaterproofLayerThickness": 20
+        }
+    },
+    {
+        "id": 78,
+        "name": "SyntheticTunnel-078",
+        "condition": {
+            "hasTunnelLength": 3272,
+            "hasTunnelDiameter": 11.0,
+            "hasTunnelType": "MountainTunnelProject",
+            "hasGeologicalCondition": "III",
+            "hasHydroCondition": "Dry",
+            "hasSoilType": "Medium Soil",
+            "hasConstructionMethod": "Shield"
+        },
+        "solution": {
+            "hasBoltLength": 3.63,
+            "hasBoltSpacing": 1.81,
+            "hasBoltRowCount": 1807,
+            "hasBoltColumnCount": 10,
+            "hasLiningThickness": 45,
+            "hasSteelArchSpacing": 0.89,
+            "hasSteelArchCount": 3676,
+            "hasSteelArchThickness": 20,
+            "hasWaterproofLayerThickness": 12
+        }
+    },
+    {
+        "id": 79,
+        "name": "SyntheticTunnel-079",
+        "condition": {
+            "hasTunnelLength": 12938,
+            "hasTunnelDiameter": 10.26,
+            "hasTunnelType": "DeepTunnelProject",
+            "hasGeologicalCondition": "I",
+            "hasHydroCondition": "Medium",
+            "hasSoilType": "StrongSoil",
+            "hasConstructionMethod": "DrillBlast"
+        },
+        "solution": {
+            "hasBoltLength": 2.56,
+            "hasBoltSpacing": 1.28,
+            "hasBoltRowCount": 10107,
+            "hasBoltColumnCount": 13,
+            "hasLiningThickness": 30,
+            "hasSteelArchSpacing": 0.83,
+            "hasSteelArchCount": 15587,
+            "hasSteelArchThickness": 12,
+            "hasWaterproofLayerThickness": 20
+        }
+    },
+    {
+        "id": 80,
+        "name": "SyntheticTunnel-080",
+        "condition": {
+            "hasTunnelLength": 7016,
+            "hasTunnelDiameter": 9.2,
+            "hasTunnelType": "DeepTunnelProject",
+            "hasGeologicalCondition": "IV",
+            "hasHydroCondition": "WaterRich",
+            "hasSoilType": "StrongSoil",
+            "hasConstructionMethod": "Shield"
+        },
+        "solution": {
+            "hasBoltLength": 4.14,
+            "hasBoltSpacing": 2.07,
+            "hasBoltRowCount": 3389,
+            "hasBoltColumnCount": 7,
+            "hasLiningThickness": 35,
+            "hasSteelArchSpacing": 1.04,
+            "hasSteelArchCount": 6746,
+            "hasSteelArchThickness": 10,
+            "hasWaterproofLayerThickness": 25
+        }
+    },
+    {
+        "id": 81,
+        "name": "SyntheticTunnel-081",
+        "condition": {
+            "hasTunnelLength": 4343,
+            "hasTunnelDiameter": 13.99,
+            "hasTunnelType": "MountainTunnelProject",
+            "hasGeologicalCondition": "V",
+            "hasHydroCondition": "Dry",
+            "hasSoilType": "Medium Soil",
+            "hasConstructionMethod": "Shield"
+        },
+        "solution": {
+            "hasBoltLength": 7.0,
+            "hasBoltSpacing": 3.5,
+            "hasBoltRowCount": 1240,
+            "hasBoltColumnCount": 7,
+            "hasLiningThickness": 30,
+            "hasSteelArchSpacing": 0.74,
+            "hasSteelArchCount": 5868,
+            "hasSteelArchThickness": 18,
+            "hasWaterproofLayerThickness": 20
+        }
+    },
+    {
+        "id": 82,
+        "name": "SyntheticTunnel-082",
+        "condition": {
+            "hasTunnelLength": 4949,
+            "hasTunnelDiameter": 8.19,
+            "hasTunnelType": "DeepTunnelProject",
+            "hasGeologicalCondition": "V",
+            "hasHydroCondition": "Medium",
+            "hasSoilType": "WeakSoil",
+            "hasConstructionMethod": "Shield"
+        },
+        "solution": {
+            "hasBoltLength": 4.09,
+            "hasBoltSpacing": 2.04,
+            "hasBoltRowCount": 2425,
+            "hasBoltColumnCount": 7,
+            "hasLiningThickness": 35,
+            "hasSteelArchSpacing": 0.89,
+            "hasSteelArchCount": 5560,
+            "hasSteelArchThickness": 16,
+            "hasWaterproofLayerThickness": 25
+        }
+    },
+    {
+        "id": 83,
+        "name": "SyntheticTunnel-083",
+        "condition": {
+            "hasTunnelLength": 4208,
+            "hasTunnelDiameter": 13.89,
+            "hasTunnelType": "UrbanTunnelProject",
+            "hasGeologicalCondition": "III",
+            "hasHydroCondition": "Dry",
+            "hasSoilType": "WeakSoil",
+            "hasConstructionMethod": "DrillBlast"
+        },
+        "solution": {
+            "hasBoltLength": 4.58,
+            "hasBoltSpacing": 2.29,
+            "hasBoltRowCount": 1837,
+            "hasBoltColumnCount": 10,
+            "hasLiningThickness": 30,
+            "hasSteelArchSpacing": 1.12,
+            "hasSteelArchCount": 3757,
+            "hasSteelArchThickness": 16,
+            "hasWaterproofLayerThickness": 15
+        }
+    },
+    {
+        "id": 84,
+        "name": "SyntheticTunnel-084",
+        "condition": {
+            "hasTunnelLength": 14971,
+            "hasTunnelDiameter": 8.24,
+            "hasTunnelType": "UnderwaterTunnelProject",
+            "hasGeologicalCondition": "I",
+            "hasHydroCondition": "WaterRich",
+            "hasSoilType": "Medium Soil",
+            "hasConstructionMethod": "DrillBlast"
+        },
+        "solution": {
+            "hasBoltLength": 2.06,
+            "hasBoltSpacing": 1.03,
+            "hasBoltRowCount": 14534,
+            "hasBoltColumnCount": 13,
+            "hasLiningThickness": 45,
+            "hasSteelArchSpacing": 0.7,
+            "hasSteelArchCount": 21387,
+            "hasSteelArchThickness": 14,
+            "hasWaterproofLayerThickness": 25
+        }
+    },
+    {
+        "id": 85,
+        "name": "SyntheticTunnel-085",
+        "condition": {
+            "hasTunnelLength": 11166,
+            "hasTunnelDiameter": 6.09,
+            "hasTunnelType": "DeepTunnelProject",
+            "hasGeologicalCondition": "I",
+            "hasHydroCondition": "WaterRich",
+            "hasSoilType": "Medium Soil",
+            "hasConstructionMethod": "Shield"
+        },
+        "solution": {
+            "hasBoltLength": 1.52,
+            "hasBoltSpacing": 0.76,
+            "hasBoltRowCount": 14692,
+            "hasBoltColumnCount": 13,
+            "hasLiningThickness": 45,
+            "hasSteelArchSpacing": 1.19,
+            "hasSteelArchCount": 9383,
+            "hasSteelArchThickness": 16,
+            "hasWaterproofLayerThickness": 15
+        }
+    },
+    {
+        "id": 86,
+        "name": "SyntheticTunnel-086",
+        "condition": {
+            "hasTunnelLength": 3443,
+            "hasTunnelDiameter": 9.11,
+            "hasTunnelType": "UnderwaterTunnelProject",
+            "hasGeologicalCondition": "III",
+            "hasHydroCondition": "Dry",
+            "hasSoilType": "StrongSoil",
+            "hasConstructionMethod": "Shield"
+        },
+        "solution": {
+            "hasBoltLength": 3.01,
+            "hasBoltSpacing": 1.5,
+            "hasBoltRowCount": 2295,
+            "hasBoltColumnCount": 10,
+            "hasLiningThickness": 40,
+            "hasSteelArchSpacing": 0.91,
+            "hasSteelArchCount": 3783,
+            "hasSteelArchThickness": 12,
+            "hasWaterproofLayerThickness": 15
+        }
+    },
+    {
+        "id": 87,
+        "name": "SyntheticTunnel-087",
+        "condition": {
+            "hasTunnelLength": 4785,
+            "hasTunnelDiameter": 9.45,
+            "hasTunnelType": "UrbanTunnelProject",
+            "hasGeologicalCondition": "V",
+            "hasHydroCondition": "Medium",
+            "hasSoilType": "StrongSoil",
+            "hasConstructionMethod": "DrillBlast"
+        },
+        "solution": {
+            "hasBoltLength": 4.72,
+            "hasBoltSpacing": 2.36,
+            "hasBoltRowCount": 2027,
+            "hasBoltColumnCount": 7,
+            "hasLiningThickness": 45,
+            "hasSteelArchSpacing": 1.14,
+            "hasSteelArchCount": 4197,
+            "hasSteelArchThickness": 12,
+            "hasWaterproofLayerThickness": 25
+        }
+    },
+    {
+        "id": 88,
+        "name": "SyntheticTunnel-088",
+        "condition": {
+            "hasTunnelLength": 6184,
+            "hasTunnelDiameter": 8.13,
+            "hasTunnelType": "UrbanTunnelProject",
+            "hasGeologicalCondition": "II",
+            "hasHydroCondition": "Dry",
+            "hasSoilType": "WeakSoil",
+            "hasConstructionMethod": "DrillBlast"
+        },
+        "solution": {
+            "hasBoltLength": 2.44,
+            "hasBoltSpacing": 1.22,
+            "hasBoltRowCount": 5068,
+            "hasBoltColumnCount": 11,
+            "hasLiningThickness": 45,
+            "hasSteelArchSpacing": 0.98,
+            "hasSteelArchCount": 6310,
+            "hasSteelArchThickness": 20,
+            "hasWaterproofLayerThickness": 10
+        }
+    },
+    {
+        "id": 89,
+        "name": "SyntheticTunnel-089",
+        "condition": {
+            "hasTunnelLength": 8769,
+            "hasTunnelDiameter": 8.94,
+            "hasTunnelType": "MountainTunnelProject",
+            "hasGeologicalCondition": "II",
+            "hasHydroCondition": "Dry",
+            "hasSoilType": "WeakSoil",
+            "hasConstructionMethod": "DrillBlast"
+        },
+        "solution": {
+            "hasBoltLength": 2.68,
+            "hasBoltSpacing": 1.34,
+            "hasBoltRowCount": 6544,
+            "hasBoltColumnCount": 11,
+            "hasLiningThickness": 45,
+            "hasSteelArchSpacing": 1.0,
+            "hasSteelArchCount": 8769,
+            "hasSteelArchThickness": 14,
+            "hasWaterproofLayerThickness": 10
+        }
+    },
+    {
+        "id": 90,
+        "name": "SyntheticTunnel-090",
+        "condition": {
+            "hasTunnelLength": 10478,
+            "hasTunnelDiameter": 12.39,
+            "hasTunnelType": "DeepTunnelProject",
+            "hasGeologicalCondition": "III",
+            "hasHydroCondition": "Medium",
+            "hasSoilType": "WeakSoil",
+            "hasConstructionMethod": "Shield"
+        },
+        "solution": {
+            "hasBoltLength": 4.09,
+            "hasBoltSpacing": 2.04,
+            "hasBoltRowCount": 5136,
+            "hasBoltColumnCount": 10,
+            "hasLiningThickness": 30,
+            "hasSteelArchSpacing": 0.76,
+            "hasSteelArchCount": 13786,
+            "hasSteelArchThickness": 12,
+            "hasWaterproofLayerThickness": 12
+        }
+    },
+    {
+        "id": 91,
+        "name": "SyntheticTunnel-091",
+        "condition": {
+            "hasTunnelLength": 9203,
+            "hasTunnelDiameter": 11.45,
+            "hasTunnelType": "DeepTunnelProject",
+            "hasGeologicalCondition": "III",
+            "hasHydroCondition": "Medium",
+            "hasSoilType": "Medium Soil",
+            "hasConstructionMethod": "Shield"
+        },
+        "solution": {
+            "hasBoltLength": 3.78,
+            "hasBoltSpacing": 1.89,
+            "hasBoltRowCount": 4869,
+            "hasBoltColumnCount": 10,
+            "hasLiningThickness": 40,
+            "hasSteelArchSpacing": 0.89,
+            "hasSteelArchCount": 10340,
+            "hasSteelArchThickness": 16,
+            "hasWaterproofLayerThickness": 10
+        }
+    },
+    {
+        "id": 92,
+        "name": "SyntheticTunnel-092",
+        "condition": {
+            "hasTunnelLength": 7992,
+            "hasTunnelDiameter": 7.46,
+            "hasTunnelType": "DeepTunnelProject",
+            "hasGeologicalCondition": "III",
+            "hasHydroCondition": "Medium",
+            "hasSoilType": "WeakSoil",
+            "hasConstructionMethod": "DrillBlast"
+        },
+        "solution": {
+            "hasBoltLength": 2.46,
+            "hasBoltSpacing": 1.23,
+            "hasBoltRowCount": 6497,
+            "hasBoltColumnCount": 10,
+            "hasLiningThickness": 30,
+            "hasSteelArchSpacing": 0.84,
+            "hasSteelArchCount": 9514,
+            "hasSteelArchThickness": 10,
+            "hasWaterproofLayerThickness": 25
+        }
+    },
+    {
+        "id": 93,
+        "name": "SyntheticTunnel-093",
+        "condition": {
+            "hasTunnelLength": 4621,
+            "hasTunnelDiameter": 12.01,
+            "hasTunnelType": "UnderwaterTunnelProject",
+            "hasGeologicalCondition": "II",
+            "hasHydroCondition": "Medium",
+            "hasSoilType": "Medium Soil",
+            "hasConstructionMethod": "DrillBlast"
+        },
+        "solution": {
+            "hasBoltLength": 3.6,
+            "hasBoltSpacing": 1.8,
+            "hasBoltRowCount": 2567,
+            "hasBoltColumnCount": 11,
+            "hasLiningThickness": 30,
+            "hasSteelArchSpacing": 0.73,
+            "hasSteelArchCount": 6330,
+            "hasSteelArchThickness": 20,
+            "hasWaterproofLayerThickness": 10
+        }
+    },
+    {
+        "id": 94,
+        "name": "SyntheticTunnel-094",
+        "condition": {
+            "hasTunnelLength": 6615,
+            "hasTunnelDiameter": 8.72,
+            "hasTunnelType": "DeepTunnelProject",
+            "hasGeologicalCondition": "II",
+            "hasHydroCondition": "Dry",
+            "hasSoilType": "Medium Soil",
+            "hasConstructionMethod": "Shield"
+        },
+        "solution": {
+            "hasBoltLength": 2.62,
+            "hasBoltSpacing": 1.31,
+            "hasBoltRowCount": 5049,
+            "hasBoltColumnCount": 11,
+            "hasLiningThickness": 30,
+            "hasSteelArchSpacing": 0.83,
+            "hasSteelArchCount": 7969,
+            "hasSteelArchThickness": 12,
+            "hasWaterproofLayerThickness": 20
+        }
+    },
+    {
+        "id": 95,
+        "name": "SyntheticTunnel-095",
+        "condition": {
+            "hasTunnelLength": 5948,
+            "hasTunnelDiameter": 14.32,
+            "hasTunnelType": "MountainTunnelProject",
+            "hasGeologicalCondition": "IV",
+            "hasHydroCondition": "Medium",
+            "hasSoilType": "StrongSoil",
+            "hasConstructionMethod": "Shield"
+        },
+        "solution": {
+            "hasBoltLength": 6.44,
+            "hasBoltSpacing": 3.22,
+            "hasBoltRowCount": 1847,
+            "hasBoltColumnCount": 7,
+            "hasLiningThickness": 45,
+            "hasSteelArchSpacing": 0.97,
+            "hasSteelArchCount": 6131,
+            "hasSteelArchThickness": 20,
+            "hasWaterproofLayerThickness": 12
+        }
+    },
+    {
+        "id": 96,
+        "name": "SyntheticTunnel-096",
+        "condition": {
+            "hasTunnelLength": 1652,
+            "hasTunnelDiameter": 13.72,
+            "hasTunnelType": "UrbanTunnelProject",
+            "hasGeologicalCondition": "V",
+            "hasHydroCondition": "WaterRich",
+            "hasSoilType": "StrongSoil",
+            "hasConstructionMethod": "Shield"
+        },
+        "solution": {
+            "hasBoltLength": 6.86,
+            "hasBoltSpacing": 3.43,
+            "hasBoltRowCount": 481,
+            "hasBoltColumnCount": 7,
+            "hasLiningThickness": 30,
+            "hasSteelArchSpacing": 0.74,
+            "hasSteelArchCount": 2232,
+            "hasSteelArchThickness": 20,
+            "hasWaterproofLayerThickness": 25
+        }
+    },
+    {
+        "id": 97,
+        "name": "SyntheticTunnel-097",
+        "condition": {
+            "hasTunnelLength": 3132,
+            "hasTunnelDiameter": 14.0,
+            "hasTunnelType": "UnderwaterTunnelProject",
+            "hasGeologicalCondition": "II",
+            "hasHydroCondition": "WaterRich",
+            "hasSoilType": "WeakSoil",
+            "hasConstructionMethod": "DrillBlast"
+        },
+        "solution": {
+            "hasBoltLength": 4.2,
+            "hasBoltSpacing": 2.1,
+            "hasBoltRowCount": 1491,
+            "hasBoltColumnCount": 11,
+            "hasLiningThickness": 45,
+            "hasSteelArchSpacing": 0.94,
+            "hasSteelArchCount": 3331,
+            "hasSteelArchThickness": 12,
+            "hasWaterproofLayerThickness": 10
+        }
+    },
+    {
+        "id": 98,
+        "name": "SyntheticTunnel-098",
+        "condition": {
+            "hasTunnelLength": 8231,
+            "hasTunnelDiameter": 9.55,
+            "hasTunnelType": "MountainTunnelProject",
+            "hasGeologicalCondition": "I",
+            "hasHydroCondition": "Dry",
+            "hasSoilType": "StrongSoil",
+            "hasConstructionMethod": "DrillBlast"
+        },
+        "solution": {
+            "hasBoltLength": 2.39,
+            "hasBoltSpacing": 1.2,
+            "hasBoltRowCount": 6859,
+            "hasBoltColumnCount": 13,
+            "hasLiningThickness": 40,
+            "hasSteelArchSpacing": 0.86,
+            "hasSteelArchCount": 9570,
+            "hasSteelArchThickness": 14,
+            "hasWaterproofLayerThickness": 25
+        }
+    },
+    {
+        "id": 99,
+        "name": "SyntheticTunnel-099",
+        "condition": {
+            "hasTunnelLength": 7447,
+            "hasTunnelDiameter": 6.96,
+            "hasTunnelType": "UnderwaterTunnelProject",
+            "hasGeologicalCondition": "II",
+            "hasHydroCondition": "Dry",
+            "hasSoilType": "Medium Soil",
+            "hasConstructionMethod": "Shield"
+        },
+        "solution": {
+            "hasBoltLength": 2.09,
+            "hasBoltSpacing": 1.04,
+            "hasBoltRowCount": 7160,
+            "hasBoltColumnCount": 11,
+            "hasLiningThickness": 30,
+            "hasSteelArchSpacing": 1.12,
+            "hasSteelArchCount": 6649,
+            "hasSteelArchThickness": 20,
+            "hasWaterproofLayerThickness": 20
+        }
+    },
+    {
+        "id": 100,
+        "name": "SyntheticTunnel-100",
+        "condition": {
+            "hasTunnelLength": 2741,
+            "hasTunnelDiameter": 10.56,
+            "hasTunnelType": "ShallowTunnelProject",
+            "hasGeologicalCondition": "III",
+            "hasHydroCondition": "Dry",
+            "hasSoilType": "WeakSoil",
+            "hasConstructionMethod": "Shield"
+        },
+        "solution": {
+            "hasBoltLength": 3.48,
+            "hasBoltSpacing": 1.74,
+            "hasBoltRowCount": 1575,
+            "hasBoltColumnCount": 10,
+            "hasLiningThickness": 45,
+            "hasSteelArchSpacing": 1.0,
+            "hasSteelArchCount": 2741,
+            "hasSteelArchThickness": 18,
+            "hasWaterproofLayerThickness": 20
+        }
+    },
+    {
+        "id": 101,
+        "name": "SyntheticTunnel-101",
+        "condition": {
+            "hasTunnelLength": 3180,
+            "hasTunnelDiameter": 12.49,
+            "hasTunnelType": "UrbanTunnelProject",
+            "hasGeologicalCondition": "IV",
+            "hasHydroCondition": "WaterRich",
+            "hasSoilType": "Medium Soil",
+            "hasConstructionMethod": "Shield"
+        },
+        "solution": {
+            "hasBoltLength": 5.62,
+            "hasBoltSpacing": 2.81,
+            "hasBoltRowCount": 1131,
+            "hasBoltColumnCount": 7,
+            "hasLiningThickness": 30,
+            "hasSteelArchSpacing": 0.89,
+            "hasSteelArchCount": 3573,
+            "hasSteelArchThickness": 16,
+            "hasWaterproofLayerThickness": 20
+        }
+    },
+    {
+        "id": 102,
+        "name": "SyntheticTunnel-102",
+        "condition": {
+            "hasTunnelLength": 11982,
+            "hasTunnelDiameter": 12.85,
+            "hasTunnelType": "DeepTunnelProject",
+            "hasGeologicalCondition": "IV",
+            "hasHydroCondition": "Dry",
+            "hasSoilType": "StrongSoil",
+            "hasConstructionMethod": "Shield"
+        },
+        "solution": {
+            "hasBoltLength": 5.78,
+            "hasBoltSpacing": 2.89,
+            "hasBoltRowCount": 4146,
+            "hasBoltColumnCount": 7,
+            "hasLiningThickness": 30,
+            "hasSteelArchSpacing": 0.99,
+            "hasSteelArchCount": 12103,
+            "hasSteelArchThickness": 10,
+            "hasWaterproofLayerThickness": 20
+        }
+    },
+    {
+        "id": 103,
+        "name": "SyntheticTunnel-103",
+        "condition": {
+            "hasTunnelLength": 13030,
+            "hasTunnelDiameter": 7.94,
+            "hasTunnelType": "ShallowTunnelProject",
+            "hasGeologicalCondition": "III",
+            "hasHydroCondition": "WaterRich",
+            "hasSoilType": "Medium Soil",
+            "hasConstructionMethod": "DrillBlast"
+        },
+        "solution": {
+            "hasBoltLength": 2.62,
+            "hasBoltSpacing": 1.31,
+            "hasBoltRowCount": 9946,
+            "hasBoltColumnCount": 10,
+            "hasLiningThickness": 35,
+            "hasSteelArchSpacing": 0.7,
+            "hasSteelArchCount": 18614,
+            "hasSteelArchThickness": 12,
+            "hasWaterproofLayerThickness": 10
+        }
+    },
+    {
+        "id": 104,
+        "name": "SyntheticTunnel-104",
+        "condition": {
+            "hasTunnelLength": 13343,
+            "hasTunnelDiameter": 7.75,
+            "hasTunnelType": "MountainTunnelProject",
+            "hasGeologicalCondition": "IV",
+            "hasHydroCondition": "Dry",
+            "hasSoilType": "WeakSoil",
+            "hasConstructionMethod": "Shield"
+        },
+        "solution": {
+            "hasBoltLength": 3.49,
+            "hasBoltSpacing": 1.75,
+            "hasBoltRowCount": 7624,
+            "hasBoltColumnCount": 7,
+            "hasLiningThickness": 30,
+            "hasSteelArchSpacing": 0.9,
+            "hasSteelArchCount": 14825,
+            "hasSteelArchThickness": 20,
+            "hasWaterproofLayerThickness": 20
+        }
+    },
+    {
+        "id": 105,
+        "name": "SyntheticTunnel-105",
+        "condition": {
+            "hasTunnelLength": 3331,
+            "hasTunnelDiameter": 10.27,
+            "hasTunnelType": "DeepTunnelProject",
+            "hasGeologicalCondition": "I",
+            "hasHydroCondition": "Medium",
+            "hasSoilType": "Medium Soil",
+            "hasConstructionMethod": "Shield"
+        },
+        "solution": {
+            "hasBoltLength": 2.57,
+            "hasBoltSpacing": 1.28,
+            "hasBoltRowCount": 2602,
+            "hasBoltColumnCount": 13,
+            "hasLiningThickness": 45,
+            "hasSteelArchSpacing": 1.14,
+            "hasSteelArchCount": 2921,
+            "hasSteelArchThickness": 14,
+            "hasWaterproofLayerThickness": 15
+        }
+    },
+    {
+        "id": 106,
+        "name": "SyntheticTunnel-106",
+        "condition": {
+            "hasTunnelLength": 11764,
+            "hasTunnelDiameter": 12.55,
+            "hasTunnelType": "ShallowTunnelProject",
+            "hasGeologicalCondition": "I",
+            "hasHydroCondition": "WaterRich",
+            "hasSoilType": "WeakSoil",
+            "hasConstructionMethod": "Shield"
+        },
+        "solution": {
+            "hasBoltLength": 3.14,
+            "hasBoltSpacing": 1.57,
+            "hasBoltRowCount": 7492,
+            "hasBoltColumnCount": 13,
+            "hasLiningThickness": 35,
+            "hasSteelArchSpacing": 0.88,
+            "hasSteelArchCount": 13368,
+            "hasSteelArchThickness": 16,
+            "hasWaterproofLayerThickness": 12
+        }
+    },
+    {
+        "id": 107,
+        "name": "SyntheticTunnel-107",
+        "condition": {
+            "hasTunnelLength": 7809,
+            "hasTunnelDiameter": 10.82,
+            "hasTunnelType": "DeepTunnelProject",
+            "hasGeologicalCondition": "IV",
+            "hasHydroCondition": "WaterRich",
+            "hasSoilType": "StrongSoil",
+            "hasConstructionMethod": "Shield"
+        },
+        "solution": {
+            "hasBoltLength": 4.87,
+            "hasBoltSpacing": 2.44,
+            "hasBoltRowCount": 3200,
+            "hasBoltColumnCount": 7,
+            "hasLiningThickness": 30,
+            "hasSteelArchSpacing": 0.83,
+            "hasSteelArchCount": 9408,
+            "hasSteelArchThickness": 14,
+            "hasWaterproofLayerThickness": 12
+        }
+    },
+    {
+        "id": 108,
+        "name": "SyntheticTunnel-108",
+        "condition": {
+            "hasTunnelLength": 12760,
+            "hasTunnelDiameter": 12.99,
+            "hasTunnelType": "ShallowTunnelProject",
+            "hasGeologicalCondition": "IV",
+            "hasHydroCondition": "WaterRich",
+            "hasSoilType": "WeakSoil",
+            "hasConstructionMethod": "Shield"
+        },
+        "solution": {
+            "hasBoltLength": 5.85,
+            "hasBoltSpacing": 2.92,
+            "hasBoltRowCount": 4369,
+            "hasBoltColumnCount": 7,
+            "hasLiningThickness": 30,
+            "hasSteelArchSpacing": 0.85,
+            "hasSteelArchCount": 15011,
+            "hasSteelArchThickness": 12,
+            "hasWaterproofLayerThickness": 10
+        }
+    },
+    {
+        "id": 109,
+        "name": "SyntheticTunnel-109",
+        "condition": {
+            "hasTunnelLength": 7695,
+            "hasTunnelDiameter": 6.9,
+            "hasTunnelType": "UrbanTunnelProject",
+            "hasGeologicalCondition": "I",
+            "hasHydroCondition": "Dry",
+            "hasSoilType": "WeakSoil",
+            "hasConstructionMethod": "DrillBlast"
+        },
+        "solution": {
+            "hasBoltLength": 1.73,
+            "hasBoltSpacing": 0.86,
+            "hasBoltRowCount": 8947,
+            "hasBoltColumnCount": 13,
+            "hasLiningThickness": 40,
+            "hasSteelArchSpacing": 0.74,
+            "hasSteelArchCount": 10398,
+            "hasSteelArchThickness": 10,
+            "hasWaterproofLayerThickness": 10
+        }
+    },
+    {
+        "id": 110,
+        "name": "SyntheticTunnel-110",
+        "condition": {
+            "hasTunnelLength": 7193,
+            "hasTunnelDiameter": 8.68,
+            "hasTunnelType": "UnderwaterTunnelProject",
+            "hasGeologicalCondition": "II",
+            "hasHydroCondition": "Medium",
+            "hasSoilType": "WeakSoil",
+            "hasConstructionMethod": "Shield"
+        },
+        "solution": {
+            "hasBoltLength": 2.6,
+            "hasBoltSpacing": 1.3,
+            "hasBoltRowCount": 5533,
+            "hasBoltColumnCount": 11,
+            "hasLiningThickness": 45,
+            "hasSteelArchSpacing": 1.03,
+            "hasSteelArchCount": 6983,
+            "hasSteelArchThickness": 18,
+            "hasWaterproofLayerThickness": 12
+        }
+    },
+    {
+        "id": 111,
+        "name": "SyntheticTunnel-111",
+        "condition": {
+            "hasTunnelLength": 4634,
+            "hasTunnelDiameter": 7.13,
+            "hasTunnelType": "DeepTunnelProject",
+            "hasGeologicalCondition": "IV",
+            "hasHydroCondition": "WaterRich",
+            "hasSoilType": "WeakSoil",
+            "hasConstructionMethod": "DrillBlast"
+        },
+        "solution": {
+            "hasBoltLength": 3.21,
+            "hasBoltSpacing": 1.6,
+            "hasBoltRowCount": 2896,
+            "hasBoltColumnCount": 7,
+            "hasLiningThickness": 30,
+            "hasSteelArchSpacing": 1.06,
+            "hasSteelArchCount": 4371,
+            "hasSteelArchThickness": 16,
+            "hasWaterproofLayerThickness": 12
+        }
+    },
+    {
+        "id": 112,
+        "name": "SyntheticTunnel-112",
+        "condition": {
+            "hasTunnelLength": 9989,
+            "hasTunnelDiameter": 6.25,
+            "hasTunnelType": "UnderwaterTunnelProject",
+            "hasGeologicalCondition": "I",
+            "hasHydroCondition": "Medium",
+            "hasSoilType": "StrongSoil",
+            "hasConstructionMethod": "Shield"
+        },
+        "solution": {
+            "hasBoltLength": 1.56,
+            "hasBoltSpacing": 0.78,
+            "hasBoltRowCount": 12806,
+            "hasBoltColumnCount": 13,
+            "hasLiningThickness": 35,
+            "hasSteelArchSpacing": 0.77,
+            "hasSteelArchCount": 12972,
+            "hasSteelArchThickness": 12,
+            "hasWaterproofLayerThickness": 20
+        }
+    },
+    {
+        "id": 113,
+        "name": "SyntheticTunnel-113",
+        "condition": {
+            "hasTunnelLength": 10798,
+            "hasTunnelDiameter": 10.57,
+            "hasTunnelType": "MountainTunnelProject",
+            "hasGeologicalCondition": "I",
+            "hasHydroCondition": "WaterRich",
+            "hasSoilType": "StrongSoil",
+            "hasConstructionMethod": "DrillBlast"
+        },
+        "solution": {
+            "hasBoltLength": 2.64,
+            "hasBoltSpacing": 1.32,
+            "hasBoltRowCount": 8180,
+            "hasBoltColumnCount": 13,
+            "hasLiningThickness": 40,
+            "hasSteelArchSpacing": 0.92,
+            "hasSteelArchCount": 11736,
+            "hasSteelArchThickness": 20,
+            "hasWaterproofLayerThickness": 15
+        }
+    },
+    {
+        "id": 114,
+        "name": "SyntheticTunnel-114",
+        "condition": {
+            "hasTunnelLength": 2667,
+            "hasTunnelDiameter": 13.23,
+            "hasTunnelType": "MountainTunnelProject",
+            "hasGeologicalCondition": "V",
+            "hasHydroCondition": "Medium",
+            "hasSoilType": "StrongSoil",
+            "hasConstructionMethod": "DrillBlast"
+        },
+        "solution": {
+            "hasBoltLength": 6.62,
+            "hasBoltSpacing": 3.31,
+            "hasBoltRowCount": 805,
+            "hasBoltColumnCount": 7,
+            "hasLiningThickness": 45,
+            "hasSteelArchSpacing": 0.76,
+            "hasSteelArchCount": 3509,
+            "hasSteelArchThickness": 20,
+            "hasWaterproofLayerThickness": 25
+        }
+    },
+    {
+        "id": 115,
+        "name": "SyntheticTunnel-115",
+        "condition": {
+            "hasTunnelLength": 7748,
+            "hasTunnelDiameter": 9.99,
+            "hasTunnelType": "DeepTunnelProject",
+            "hasGeologicalCondition": "III",
+            "hasHydroCondition": "Medium",
+            "hasSoilType": "WeakSoil",
+            "hasConstructionMethod": "Shield"
+        },
+        "solution": {
+            "hasBoltLength": 3.3,
+            "hasBoltSpacing": 1.65,
+            "hasBoltRowCount": 4695,
+            "hasBoltColumnCount": 10,
+            "hasLiningThickness": 30,
+            "hasSteelArchSpacing": 0.87,
+            "hasSteelArchCount": 8905,
+            "hasSteelArchThickness": 16,
+            "hasWaterproofLayerThickness": 10
+        }
+    },
+    {
+        "id": 116,
+        "name": "SyntheticTunnel-116",
+        "condition": {
+            "hasTunnelLength": 2263,
+            "hasTunnelDiameter": 6.49,
+            "hasTunnelType": "UrbanTunnelProject",
+            "hasGeologicalCondition": "V",
+            "hasHydroCondition": "Dry",
+            "hasSoilType": "WeakSoil",
+            "hasConstructionMethod": "Shield"
+        },
+        "solution": {
+            "hasBoltLength": 3.25,
+            "hasBoltSpacing": 1.62,
+            "hasBoltRowCount": 1396,
+            "hasBoltColumnCount": 7,
+            "hasLiningThickness": 40,
+            "hasSteelArchSpacing": 1.0,
+            "hasSteelArchCount": 2263,
+            "hasSteelArchThickness": 20,
+            "hasWaterproofLayerThickness": 10
+        }
+    },
+    {
+        "id": 117,
+        "name": "SyntheticTunnel-117",
+        "condition": {
+            "hasTunnelLength": 12306,
+            "hasTunnelDiameter": 12.97,
+            "hasTunnelType": "ShallowTunnelProject",
+            "hasGeologicalCondition": "IV",
+            "hasHydroCondition": "WaterRich",
+            "hasSoilType": "WeakSoil",
+            "hasConstructionMethod": "DrillBlast"
+        },
+        "solution": {
+            "hasBoltLength": 5.84,
+            "hasBoltSpacing": 2.92,
+            "hasBoltRowCount": 4214,
+            "hasBoltColumnCount": 7,
+            "hasLiningThickness": 45,
+            "hasSteelArchSpacing": 0.79,
+            "hasSteelArchCount": 15577,
+            "hasSteelArchThickness": 16,
+            "hasWaterproofLayerThickness": 25
+        }
+    },
+    {
+        "id": 118,
+        "name": "SyntheticTunnel-118",
+        "condition": {
+            "hasTunnelLength": 11168,
+            "hasTunnelDiameter": 7.63,
+            "hasTunnelType": "MountainTunnelProject",
+            "hasGeologicalCondition": "II",
+            "hasHydroCondition": "Medium",
+            "hasSoilType": "WeakSoil",
+            "hasConstructionMethod": "DrillBlast"
+        },
+        "solution": {
+            "hasBoltLength": 2.29,
+            "hasBoltSpacing": 1.15,
+            "hasBoltRowCount": 9711,
+            "hasBoltColumnCount": 11,
+            "hasLiningThickness": 45,
+            "hasSteelArchSpacing": 1.19,
+            "hasSteelArchCount": 9384,
+            "hasSteelArchThickness": 14,
+            "hasWaterproofLayerThickness": 12
+        }
+    },
+    {
+        "id": 119,
+        "name": "SyntheticTunnel-119",
+        "condition": {
+            "hasTunnelLength": 3454,
+            "hasTunnelDiameter": 13.03,
+            "hasTunnelType": "DeepTunnelProject",
+            "hasGeologicalCondition": "I",
+            "hasHydroCondition": "Medium",
+            "hasSoilType": "StrongSoil",
+            "hasConstructionMethod": "DrillBlast"
+        },
+        "solution": {
+            "hasBoltLength": 3.26,
+            "hasBoltSpacing": 1.63,
+            "hasBoltRowCount": 2119,
+            "hasBoltColumnCount": 13,
+            "hasLiningThickness": 40,
+            "hasSteelArchSpacing": 1.15,
+            "hasSteelArchCount": 3003,
+            "hasSteelArchThickness": 18,
+            "hasWaterproofLayerThickness": 12
+        }
+    },
+    {
+        "id": 120,
+        "name": "SyntheticTunnel-120",
+        "condition": {
+            "hasTunnelLength": 6691,
+            "hasTunnelDiameter": 8.65,
+            "hasTunnelType": "DeepTunnelProject",
+            "hasGeologicalCondition": "IV",
+            "hasHydroCondition": "WaterRich",
+            "hasSoilType": "WeakSoil",
+            "hasConstructionMethod": "DrillBlast"
+        },
+        "solution": {
+            "hasBoltLength": 3.89,
+            "hasBoltSpacing": 1.95,
+            "hasBoltRowCount": 3431,
+            "hasBoltColumnCount": 7,
+            "hasLiningThickness": 30,
+            "hasSteelArchSpacing": 0.83,
+            "hasSteelArchCount": 8061,
+            "hasSteelArchThickness": 14,
+            "hasWaterproofLayerThickness": 15
+        }
+    },
+    {
+        "id": 121,
+        "name": "SyntheticTunnel-121",
+        "condition": {
+            "hasTunnelLength": 12396,
+            "hasTunnelDiameter": 6.69,
+            "hasTunnelType": "ShallowTunnelProject",
+            "hasGeologicalCondition": "IV",
+            "hasHydroCondition": "Dry",
+            "hasSoilType": "StrongSoil",
+            "hasConstructionMethod": "Shield"
+        },
+        "solution": {
+            "hasBoltLength": 3.01,
+            "hasBoltSpacing": 1.5,
+            "hasBoltRowCount": 8264,
+            "hasBoltColumnCount": 8,
+            "hasLiningThickness": 30,
+            "hasSteelArchSpacing": 1.13,
+            "hasSteelArchCount": 10969,
+            "hasSteelArchThickness": 20,
+            "hasWaterproofLayerThickness": 20
+        }
+    },
+    {
+        "id": 122,
+        "name": "SyntheticTunnel-122",
+        "condition": {
+            "hasTunnelLength": 8387,
+            "hasTunnelDiameter": 6.76,
+            "hasTunnelType": "UnderwaterTunnelProject",
+            "hasGeologicalCondition": "II",
+            "hasHydroCondition": "Dry",
+            "hasSoilType": "WeakSoil",
+            "hasConstructionMethod": "DrillBlast"
+        },
+        "solution": {
+            "hasBoltLength": 2.03,
+            "hasBoltSpacing": 1.01,
+            "hasBoltRowCount": 8303,
+            "hasBoltColumnCount": 11,
+            "hasLiningThickness": 30,
+            "hasSteelArchSpacing": 0.8,
+            "hasSteelArchCount": 10483,
+            "hasSteelArchThickness": 20,
+            "hasWaterproofLayerThickness": 20
+        }
+    },
+    {
+        "id": 123,
+        "name": "SyntheticTunnel-123",
+        "condition": {
+            "hasTunnelLength": 8592,
+            "hasTunnelDiameter": 6.44,
+            "hasTunnelType": "ShallowTunnelProject",
+            "hasGeologicalCondition": "V",
+            "hasHydroCondition": "Dry",
+            "hasSoilType": "Medium Soil",
+            "hasConstructionMethod": "DrillBlast"
+        },
+        "solution": {
+            "hasBoltLength": 3.22,
+            "hasBoltSpacing": 1.61,
+            "hasBoltRowCount": 5336,
+            "hasBoltColumnCount": 7,
+            "hasLiningThickness": 30,
+            "hasSteelArchSpacing": 0.85,
+            "hasSteelArchCount": 10108,
+            "hasSteelArchThickness": 14,
+            "hasWaterproofLayerThickness": 20
+        }
+    },
+    {
+        "id": 124,
+        "name": "SyntheticTunnel-124",
+        "condition": {
+            "hasTunnelLength": 2946,
+            "hasTunnelDiameter": 10.82,
+            "hasTunnelType": "UrbanTunnelProject",
+            "hasGeologicalCondition": "I",
+            "hasHydroCondition": "WaterRich",
+            "hasSoilType": "Medium Soil",
+            "hasConstructionMethod": "Shield"
+        },
+        "solution": {
+            "hasBoltLength": 2.71,
+            "hasBoltSpacing": 1.35,
+            "hasBoltRowCount": 2182,
+            "hasBoltColumnCount": 13,
+            "hasLiningThickness": 35,
+            "hasSteelArchSpacing": 0.76,
+            "hasSteelArchCount": 3876,
+            "hasSteelArchThickness": 16,
+            "hasWaterproofLayerThickness": 10
+        }
+    },
+    {
+        "id": 125,
+        "name": "SyntheticTunnel-125",
+        "condition": {
+            "hasTunnelLength": 4688,
+            "hasTunnelDiameter": 6.71,
+            "hasTunnelType": "DeepTunnelProject",
+            "hasGeologicalCondition": "V",
+            "hasHydroCondition": "Medium",
+            "hasSoilType": "StrongSoil",
+            "hasConstructionMethod": "DrillBlast"
+        },
+        "solution": {
+            "hasBoltLength": 3.35,
+            "hasBoltSpacing": 1.68,
+            "hasBoltRowCount": 2790,
+            "hasBoltColumnCount": 7,
+            "hasLiningThickness": 30,
+            "hasSteelArchSpacing": 1.11,
+            "hasSteelArchCount": 4223,
+            "hasSteelArchThickness": 12,
+            "hasWaterproofLayerThickness": 12
+        }
+    },
+    {
+        "id": 126,
+        "name": "SyntheticTunnel-126",
+        "condition": {
+            "hasTunnelLength": 5863,
+            "hasTunnelDiameter": 11.93,
+            "hasTunnelType": "ShallowTunnelProject",
+            "hasGeologicalCondition": "V",
+            "hasHydroCondition": "Medium",
+            "hasSoilType": "Medium Soil",
+            "hasConstructionMethod": "Shield"
+        },
+        "solution": {
+            "hasBoltLength": 5.96,
+            "hasBoltSpacing": 2.98,
+            "hasBoltRowCount": 1967,
+            "hasBoltColumnCount": 7,
+            "hasLiningThickness": 35,
+            "hasSteelArchSpacing": 0.84,
+            "hasSteelArchCount": 6979,
+            "hasSteelArchThickness": 10,
+            "hasWaterproofLayerThickness": 10
+        }
+    },
+    {
+        "id": 127,
+        "name": "SyntheticTunnel-127",
+        "condition": {
+            "hasTunnelLength": 7108,
+            "hasTunnelDiameter": 12.39,
+            "hasTunnelType": "DeepTunnelProject",
+            "hasGeologicalCondition": "I",
+            "hasHydroCondition": "Medium",
+            "hasSoilType": "StrongSoil",
+            "hasConstructionMethod": "DrillBlast"
+        },
+        "solution": {
+            "hasBoltLength": 3.1,
+            "hasBoltSpacing": 1.55,
+            "hasBoltRowCount": 4585,
+            "hasBoltColumnCount": 13,
+            "hasLiningThickness": 40,
+            "hasSteelArchSpacing": 1.04,
+            "hasSteelArchCount": 6834,
+            "hasSteelArchThickness": 12,
+            "hasWaterproofLayerThickness": 25
+        }
+    },
+    {
+        "id": 128,
+        "name": "SyntheticTunnel-128",
+        "condition": {
+            "hasTunnelLength": 3155,
+            "hasTunnelDiameter": 9.25,
+            "hasTunnelType": "DeepTunnelProject",
+            "hasGeologicalCondition": "II",
+            "hasHydroCondition": "WaterRich",
+            "hasSoilType": "Medium Soil",
+            "hasConstructionMethod": "Shield"
+        },
+        "solution": {
+            "hasBoltLength": 2.77,
+            "hasBoltSpacing": 1.39,
+            "hasBoltRowCount": 2269,
+            "hasBoltColumnCount": 11,
+            "hasLiningThickness": 45,
+            "hasSteelArchSpacing": 1.18,
+            "hasSteelArchCount": 2673,
+            "hasSteelArchThickness": 16,
+            "hasWaterproofLayerThickness": 10
+        }
+    },
+    {
+        "id": 129,
+        "name": "SyntheticTunnel-129",
+        "condition": {
+            "hasTunnelLength": 9029,
+            "hasTunnelDiameter": 13.79,
+            "hasTunnelType": "UnderwaterTunnelProject",
+            "hasGeologicalCondition": "I",
+            "hasHydroCondition": "Medium",
+            "hasSoilType": "StrongSoil",
+            "hasConstructionMethod": "Shield"
+        },
+        "solution": {
+            "hasBoltLength": 3.45,
+            "hasBoltSpacing": 1.73,
+            "hasBoltRowCount": 5219,
+            "hasBoltColumnCount": 13,
+            "hasLiningThickness": 30,
+            "hasSteelArchSpacing": 0.77,
+            "hasSteelArchCount": 11725,
+            "hasSteelArchThickness": 20,
+            "hasWaterproofLayerThickness": 12
+        }
+    },
+    {
+        "id": 130,
+        "name": "SyntheticTunnel-130",
+        "condition": {
+            "hasTunnelLength": 10387,
+            "hasTunnelDiameter": 7.78,
+            "hasTunnelType": "ShallowTunnelProject",
+            "hasGeologicalCondition": "V",
+            "hasHydroCondition": "WaterRich",
+            "hasSoilType": "StrongSoil",
+            "hasConstructionMethod": "DrillBlast"
+        },
+        "solution": {
+            "hasBoltLength": 3.89,
+            "hasBoltSpacing": 1.95,
+            "hasBoltRowCount": 5326,
+            "hasBoltColumnCount": 7,
+            "hasLiningThickness": 45,
+            "hasSteelArchSpacing": 1.05,
+            "hasSteelArchCount": 9892,
+            "hasSteelArchThickness": 14,
+            "hasWaterproofLayerThickness": 25
+        }
+    },
+    {
+        "id": 131,
+        "name": "SyntheticTunnel-131",
+        "condition": {
+            "hasTunnelLength": 7037,
+            "hasTunnelDiameter": 8.8,
+            "hasTunnelType": "ShallowTunnelProject",
+            "hasGeologicalCondition": "I",
+            "hasHydroCondition": "WaterRich",
+            "hasSoilType": "Medium Soil",
+            "hasConstructionMethod": "Shield"
+        },
+        "solution": {
+            "hasBoltLength": 2.2,
+            "hasBoltSpacing": 1.1,
+            "hasBoltRowCount": 6397,
+            "hasBoltColumnCount": 13,
+            "hasLiningThickness": 35,
+            "hasSteelArchSpacing": 0.73,
+            "hasSteelArchCount": 9639,
+            "hasSteelArchThickness": 10,
+            "hasWaterproofLayerThickness": 15
+        }
+    },
+    {
+        "id": 132,
+        "name": "SyntheticTunnel-132",
+        "condition": {
+            "hasTunnelLength": 13092,
+            "hasTunnelDiameter": 8.97,
+            "hasTunnelType": "ShallowTunnelProject",
+            "hasGeologicalCondition": "I",
+            "hasHydroCondition": "WaterRich",
+            "hasSoilType": "WeakSoil",
+            "hasConstructionMethod": "Shield"
+        },
+        "solution": {
+            "hasBoltLength": 2.24,
+            "hasBoltSpacing": 1.12,
+            "hasBoltRowCount": 11689,
+            "hasBoltColumnCount": 13,
+            "hasLiningThickness": 45,
+            "hasSteelArchSpacing": 0.98,
+            "hasSteelArchCount": 13359,
+            "hasSteelArchThickness": 18,
+            "hasWaterproofLayerThickness": 25
+        }
+    },
+    {
+        "id": 133,
+        "name": "SyntheticTunnel-133",
+        "condition": {
+            "hasTunnelLength": 11433,
+            "hasTunnelDiameter": 13.89,
+            "hasTunnelType": "DeepTunnelProject",
+            "hasGeologicalCondition": "V",
+            "hasHydroCondition": "WaterRich",
+            "hasSoilType": "WeakSoil",
+            "hasConstructionMethod": "DrillBlast"
+        },
+        "solution": {
+            "hasBoltLength": 6.95,
+            "hasBoltSpacing": 3.48,
+            "hasBoltRowCount": 3285,
+            "hasBoltColumnCount": 7,
+            "hasLiningThickness": 30,
+            "hasSteelArchSpacing": 0.85,
+            "hasSteelArchCount": 13450,
+            "hasSteelArchThickness": 16,
+            "hasWaterproofLayerThickness": 15
+        }
+    },
+    {
+        "id": 134,
+        "name": "SyntheticTunnel-134",
+        "condition": {
+            "hasTunnelLength": 9829,
+            "hasTunnelDiameter": 9.91,
+            "hasTunnelType": "MountainTunnelProject",
+            "hasGeologicalCondition": "IV",
+            "hasHydroCondition": "Medium",
+            "hasSoilType": "Medium Soil",
+            "hasConstructionMethod": "DrillBlast"
+        },
+        "solution": {
+            "hasBoltLength": 4.46,
+            "hasBoltSpacing": 2.23,
+            "hasBoltRowCount": 4407,
+            "hasBoltColumnCount": 7,
+            "hasLiningThickness": 40,
+            "hasSteelArchSpacing": 1.16,
+            "hasSteelArchCount": 8473,
+            "hasSteelArchThickness": 16,
+            "hasWaterproofLayerThickness": 12
+        }
+    },
+    {
+        "id": 135,
+        "name": "SyntheticTunnel-135",
+        "condition": {
+            "hasTunnelLength": 12501,
+            "hasTunnelDiameter": 8.89,
+            "hasTunnelType": "DeepTunnelProject",
+            "hasGeologicalCondition": "III",
+            "hasHydroCondition": "Dry",
+            "hasSoilType": "WeakSoil",
+            "hasConstructionMethod": "Shield"
+        },
+        "solution": {
+            "hasBoltLength": 2.93,
+            "hasBoltSpacing": 1.47,
+            "hasBoltRowCount": 8504,
+            "hasBoltColumnCount": 10,
+            "hasLiningThickness": 40,
+            "hasSteelArchSpacing": 0.9,
+            "hasSteelArchCount": 13890,
+            "hasSteelArchThickness": 18,
+            "hasWaterproofLayerThickness": 12
+        }
+    },
+    {
+        "id": 136,
+        "name": "SyntheticTunnel-136",
+        "condition": {
+            "hasTunnelLength": 11127,
+            "hasTunnelDiameter": 8.15,
+            "hasTunnelType": "UnderwaterTunnelProject",
+            "hasGeologicalCondition": "IV",
+            "hasHydroCondition": "Dry",
+            "hasSoilType": "WeakSoil",
+            "hasConstructionMethod": "DrillBlast"
+        },
+        "solution": {
+            "hasBoltLength": 3.67,
+            "hasBoltSpacing": 1.83,
+            "hasBoltRowCount": 6080,
+            "hasBoltColumnCount": 7,
+            "hasLiningThickness": 40,
+            "hasSteelArchSpacing": 0.97,
+            "hasSteelArchCount": 11471,
+            "hasSteelArchThickness": 12,
+            "hasWaterproofLayerThickness": 15
+        }
+    },
+    {
+        "id": 137,
+        "name": "SyntheticTunnel-137",
+        "condition": {
+            "hasTunnelLength": 7104,
+            "hasTunnelDiameter": 13.67,
+            "hasTunnelType": "UnderwaterTunnelProject",
+            "hasGeologicalCondition": "IV",
+            "hasHydroCondition": "Medium",
+            "hasSoilType": "WeakSoil",
+            "hasConstructionMethod": "Shield"
+        },
+        "solution": {
+            "hasBoltLength": 6.15,
+            "hasBoltSpacing": 3.08,
+            "hasBoltRowCount": 2306,
+            "hasBoltColumnCount": 7,
+            "hasLiningThickness": 30,
+            "hasSteelArchSpacing": 0.81,
+            "hasSteelArchCount": 8770,
+            "hasSteelArchThickness": 12,
+            "hasWaterproofLayerThickness": 10
+        }
+    },
+    {
+        "id": 138,
+        "name": "SyntheticTunnel-138",
+        "condition": {
+            "hasTunnelLength": 7251,
+            "hasTunnelDiameter": 13.13,
+            "hasTunnelType": "UrbanTunnelProject",
+            "hasGeologicalCondition": "II",
+            "hasHydroCondition": "WaterRich",
+            "hasSoilType": "Medium Soil",
+            "hasConstructionMethod": "DrillBlast"
+        },
+        "solution": {
+            "hasBoltLength": 3.94,
+            "hasBoltSpacing": 1.97,
+            "hasBoltRowCount": 3680,
+            "hasBoltColumnCount": 11,
+            "hasLiningThickness": 40,
+            "hasSteelArchSpacing": 0.79,
+            "hasSteelArchCount": 9178,
+            "hasSteelArchThickness": 12,
+            "hasWaterproofLayerThickness": 10
+        }
+    },
+    {
+        "id": 139,
+        "name": "SyntheticTunnel-139",
+        "condition": {
+            "hasTunnelLength": 10300,
+            "hasTunnelDiameter": 11.26,
+            "hasTunnelType": "DeepTunnelProject",
+            "hasGeologicalCondition": "I",
+            "hasHydroCondition": "Dry",
+            "hasSoilType": "WeakSoil",
+            "hasConstructionMethod": "DrillBlast"
+        },
+        "solution": {
+            "hasBoltLength": 2.81,
+            "hasBoltSpacing": 1.41,
+            "hasBoltRowCount": 7304,
+            "hasBoltColumnCount": 13,
+            "hasLiningThickness": 45,
+            "hasSteelArchSpacing": 0.97,
+            "hasSteelArchCount": 10618,
+            "hasSteelArchThickness": 14,
+            "hasWaterproofLayerThickness": 15
+        }
+    },
+    {
+        "id": 140,
+        "name": "SyntheticTunnel-140",
+        "condition": {
+            "hasTunnelLength": 14179,
+            "hasTunnelDiameter": 13.58,
+            "hasTunnelType": "MountainTunnelProject",
+            "hasGeologicalCondition": "II",
+            "hasHydroCondition": "Dry",
+            "hasSoilType": "WeakSoil",
+            "hasConstructionMethod": "Shield"
+        },
+        "solution": {
+            "hasBoltLength": 4.07,
+            "hasBoltSpacing": 2.04,
+            "hasBoltRowCount": 6950,
+            "hasBoltColumnCount": 11,
+            "hasLiningThickness": 35,
+            "hasSteelArchSpacing": 0.89,
+            "hasSteelArchCount": 15931,
+            "hasSteelArchThickness": 16,
+            "hasWaterproofLayerThickness": 12
+        }
+    },
+    {
+        "id": 141,
+        "name": "SyntheticTunnel-141",
+        "condition": {
+            "hasTunnelLength": 14555,
+            "hasTunnelDiameter": 12.56,
+            "hasTunnelType": "UnderwaterTunnelProject",
+            "hasGeologicalCondition": "III",
+            "hasHydroCondition": "Medium",
+            "hasSoilType": "StrongSoil",
+            "hasConstructionMethod": "DrillBlast"
+        },
+        "solution": {
+            "hasBoltLength": 4.14,
+            "hasBoltSpacing": 2.07,
+            "hasBoltRowCount": 7031,
+            "hasBoltColumnCount": 10,
+            "hasLiningThickness": 40,
+            "hasSteelArchSpacing": 0.94,
+            "hasSteelArchCount": 15484,
+            "hasSteelArchThickness": 12,
+            "hasWaterproofLayerThickness": 15
+        }
+    },
+    {
+        "id": 142,
+        "name": "SyntheticTunnel-142",
+        "condition": {
+            "hasTunnelLength": 9559,
+            "hasTunnelDiameter": 7.31,
+            "hasTunnelType": "MountainTunnelProject",
+            "hasGeologicalCondition": "V",
+            "hasHydroCondition": "WaterRich",
+            "hasSoilType": "StrongSoil",
+            "hasConstructionMethod": "DrillBlast"
+        },
+        "solution": {
+            "hasBoltLength": 3.65,
+            "hasBoltSpacing": 1.82,
+            "hasBoltRowCount": 5252,
+            "hasBoltColumnCount": 7,
+            "hasLiningThickness": 40,
+            "hasSteelArchSpacing": 1.17,
+            "hasSteelArchCount": 8170,
+            "hasSteelArchThickness": 20,
+            "hasWaterproofLayerThickness": 10
+        }
+    },
+    {
+        "id": 143,
+        "name": "SyntheticTunnel-143",
+        "condition": {
+            "hasTunnelLength": 12322,
+            "hasTunnelDiameter": 11.36,
+            "hasTunnelType": "UnderwaterTunnelProject",
+            "hasGeologicalCondition": "IV",
+            "hasHydroCondition": "Dry",
+            "hasSoilType": "WeakSoil",
+            "hasConstructionMethod": "Shield"
+        },
+        "solution": {
+            "hasBoltLength": 5.11,
+            "hasBoltSpacing": 2.56,
+            "hasBoltRowCount": 4813,
+            "hasBoltColumnCount": 7,
+            "hasLiningThickness": 45,
+            "hasSteelArchSpacing": 1.18,
+            "hasSteelArchCount": 10442,
+            "hasSteelArchThickness": 10,
+            "hasWaterproofLayerThickness": 12
+        }
+    },
+    {
+        "id": 144,
+        "name": "SyntheticTunnel-144",
+        "condition": {
+            "hasTunnelLength": 12516,
+            "hasTunnelDiameter": 14.29,
+            "hasTunnelType": "MountainTunnelProject",
+            "hasGeologicalCondition": "II",
+            "hasHydroCondition": "Medium",
+            "hasSoilType": "Medium Soil",
+            "hasConstructionMethod": "Shield"
+        },
+        "solution": {
+            "hasBoltLength": 4.29,
+            "hasBoltSpacing": 2.15,
+            "hasBoltRowCount": 5821,
+            "hasBoltColumnCount": 11,
+            "hasLiningThickness": 30,
+            "hasSteelArchSpacing": 1.15,
+            "hasSteelArchCount": 10883,
+            "hasSteelArchThickness": 16,
+            "hasWaterproofLayerThickness": 20
+        }
+    },
+    {
+        "id": 145,
+        "name": "SyntheticTunnel-145",
+        "condition": {
+            "hasTunnelLength": 11525,
+            "hasTunnelDiameter": 6.13,
+            "hasTunnelType": "ShallowTunnelProject",
+            "hasGeologicalCondition": "V",
+            "hasHydroCondition": "WaterRich",
+            "hasSoilType": "StrongSoil",
+            "hasConstructionMethod": "Shield"
+        },
+        "solution": {
+            "hasBoltLength": 3.06,
+            "hasBoltSpacing": 1.53,
+            "hasBoltRowCount": 7532,
+            "hasBoltColumnCount": 7,
+            "hasLiningThickness": 45,
+            "hasSteelArchSpacing": 0.93,
+            "hasSteelArchCount": 12392,
+            "hasSteelArchThickness": 12,
+            "hasWaterproofLayerThickness": 10
+        }
+    },
+    {
+        "id": 146,
+        "name": "SyntheticTunnel-146",
+        "condition": {
+            "hasTunnelLength": 12444,
+            "hasTunnelDiameter": 13.97,
+            "hasTunnelType": "UnderwaterTunnelProject",
+            "hasGeologicalCondition": "IV",
+            "hasHydroCondition": "Dry",
+            "hasSoilType": "StrongSoil",
+            "hasConstructionMethod": "DrillBlast"
+        },
+        "solution": {
+            "hasBoltLength": 6.29,
+            "hasBoltSpacing": 3.15,
+            "hasBoltRowCount": 3950,
+            "hasBoltColumnCount": 7,
+            "hasLiningThickness": 40,
+            "hasSteelArchSpacing": 1.01,
+            "hasSteelArchCount": 12320,
+            "hasSteelArchThickness": 10,
+            "hasWaterproofLayerThickness": 10
+        }
+    },
+    {
+        "id": 147,
+        "name": "SyntheticTunnel-147",
+        "condition": {
+            "hasTunnelLength": 11831,
+            "hasTunnelDiameter": 14.5,
+            "hasTunnelType": "MountainTunnelProject",
+            "hasGeologicalCondition": "III",
+            "hasHydroCondition": "Dry",
+            "hasSoilType": "Medium Soil",
+            "hasConstructionMethod": "Shield"
+        },
+        "solution": {
+            "hasBoltLength": 4.79,
+            "hasBoltSpacing": 2.4,
+            "hasBoltRowCount": 4929,
+            "hasBoltColumnCount": 10,
+            "hasLiningThickness": 45,
+            "hasSteelArchSpacing": 1.12,
+            "hasSteelArchCount": 10563,
+            "hasSteelArchThickness": 20,
+            "hasWaterproofLayerThickness": 20
         }
     },
     {
@@ -117,7 +3528,7 @@
             "hasTunnelType": "ShallowTunnelProject",
             "hasGeologicalCondition": "II",
             "hasHydroCondition": "Medium",
-            "hasSoilType": "Clay",
+            "hasSoilType": "StrongSoil",
             "hasConstructionMethod": "DrillBlast"
         },
         "solution": {

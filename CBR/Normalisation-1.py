@@ -19,7 +19,7 @@ new_case = {
         "hasTunnelType": "ShallowTunnelProject",
         "hasGeologicalCondition": "II",
         "hasHydroCondition": "Medium",
-        "hasSoilType": "Clay",
+        "hasSoilType": "StrongSoil",
         "hasConstructionMethod": "DrillBlast"
     },
     "solution": {
@@ -42,10 +42,10 @@ condition_fields = [
     "hasHydroCondition", "hasSoilType", "hasConstructionMethod"
 ]
 category_maps = {
-    "hasTunnelType": {"ShallowTunnelProject": 1, "MountainTunnelProject": 2},
-    "hasGeologicalCondition": {"I": 1, "II": 2, "III": 3},
+    "hasTunnelType": {"ShallowTunnelProject": 1, "MountainTunnelProject": 2, "UnderwaterTunnelProject": 3, "UrbanTunnelProject": 4, "DeepTunnelProject": 5},
+    "hasGeologicalCondition": {"I": 1, "II": 2, "III": 3, "IV": 4,"V": 5},
     "hasHydroCondition": {"Dry": 1, "Medium": 2, "WaterRich": 3},
-    "hasSoilType": {"Clay": 1, "Sand": 2, "StrongSoil": 3},
+    "hasSoilType": {"WeakSoil": 1, "Medium Soil": 2, "StrongSoil": 3},
     "hasConstructionMethod": {"DrillBlast": 1, "Shield": 2}
 }
 
