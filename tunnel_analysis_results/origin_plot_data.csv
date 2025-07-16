@@ -1,0 +1,7 @@
+FeatureName,Importance,Rank,IsTarget,Type
+hasTunnelLength,0.2525143393720589,1,Yes,Numerical
+hasTunnelDiameter,0.13570278744786113,2,Yes,Numerical
+TunnelType,0.03974723595498233,3,Yes,Categorical
+hasGeologicalCondition,0.012544368009916944,4,Yes,Categorical
+hasSoilType,0.007706086163913508,5,Yes,Categorical
+hasHydroCondition,0.007616969373224942,6,Yes,Categorical

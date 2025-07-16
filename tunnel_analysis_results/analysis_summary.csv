@@ -1,0 +1,13 @@
+Metric,Value
+Total Features,15.0
+Selected Features,6.0
+Target Features Covered,6.0
+Target Coverage Rate (%),100.0
+Categorical Features,4.0
+Numerical Features,2.0
+Highest Importance,0.2525
+Lowest Importance,0.0076
+Average Importance,0.076
+Max Correlation,0.3993
+Min Correlation,-0.5237
+Avg Abs Correlation,0.206

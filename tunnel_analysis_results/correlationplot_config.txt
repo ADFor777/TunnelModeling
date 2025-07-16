@@ -1,0 +1,14 @@
+# CorrelationPlot Configuration
+# Number of variables: 6
+# Matrix file: correlationplot_matrix.txt
+# Labels file: correlationplot_labels.txt
+# Format: Tab-delimited correlation matrix
+# Range: -1.0 to 1.0
+
+# Variable descriptions:
+# Var1: hasTunnelLength (Numerical, Target)
+# Var2: hasTunnelDiameter (Numerical, Target)
+# Var3: TunnelType (Categorical, Target)
+# Var4: hasGeologicalCondition (Categorical, Target)
+# Var5: hasSoilType (Categorical, Target)
+# Var6: hasHydroCondition (Categorical, Target)
