@@ -3,7 +3,7 @@ import numpy as np
 from sklearn.preprocessing import MinMaxScaler
 
 # 1. 加载现有文件
-with open("g:/02/TUNNEL/TunnelModeling/CBR/Casebook.json", "r", encoding="utf-8") as f:
+with open("g:/02/TUNNEL/TunnelModeling/CBR/Casebook_updated.json", "r", encoding="utf-8") as f:
     data = json.load(f)
 
 # 2. 添加或删除案例
@@ -20,7 +20,6 @@ new_case = {
         "hasGeologicalCondition": "II",
         "hasHydroCondition": "Medium",
         "hasSoilType": "StrongSoil",
-        "hasConstructionMethod": "DrillBlast"
     },
     "solution": {
         "hasBoltLength": 3.6,
@@ -30,7 +29,8 @@ new_case = {
         "hasSteelArchSpacing": 1.0,
         "hasSteelArchCount": 30,
         "hasSteelArchThickness": 9,
-        "hasWaterproofLayerThickness": 7
+        "hasWaterproofLayerThickness": 7,
+        "hasConstructionMethod": "Shield"
     }
 }
 data.append(new_case)
@@ -39,14 +39,13 @@ data.append(new_case)
 # 提取 condition 部分并转换为数值
 condition_fields = [
     "hasTunnelLength", "hasTunnelDiameter", "hasTunnelType", "hasGeologicalCondition", 
-    "hasHydroCondition", "hasSoilType", "hasConstructionMethod"
+    "hasHydroCondition", "hasSoilType"
 ]
 category_maps = {
     "hasTunnelType": {"ShallowTunnelProject": 1, "MountainTunnelProject": 2, "UnderwaterTunnelProject": 3, "UrbanTunnelProject": 4, "DeepTunnelProject": 5},
     "hasGeologicalCondition": {"I": 1, "II": 2, "III": 3, "IV": 4,"V": 5},
     "hasHydroCondition": {"Dry": 1, "Medium": 2, "WaterRich": 3},
-    "hasSoilType": {"WeakSoil": 1, "Medium Soil": 2, "StrongSoil": 3},
-    "hasConstructionMethod": {"DrillBlast": 1, "Shield": 2}
+    "hasSoilType": {"WeakSoil": 1, "Medium Soil": 2, "StrongSoil": 3}
 }
 
 # 转换为向量

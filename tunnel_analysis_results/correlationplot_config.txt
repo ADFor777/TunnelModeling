@@ -4,11 +4,18 @@
 # Labels file: correlationplot_labels.txt
 # Format: Tab-delimited correlation matrix
 # Range: -1.0 to 1.0
+# Note: Feature names have been cleaned (removed 'has' prefix)
 
 # Variable descriptions:
-# Var1: hasTunnelLength (Numerical, Target)
-# Var2: hasTunnelDiameter (Numerical, Target)
-# Var3: TunnelType (Categorical, Target)
-# Var4: hasGeologicalCondition (Categorical, Target)
-# Var5: hasSoilType (Categorical, Target)
-# Var6: hasHydroCondition (Categorical, Target)
+# Var1: Tunnel Length (Numerical, Target)
+#         Original: hasTunnelLength
+# Var2: Tunnel Diameter (Numerical, Target)
+#         Original: hasTunnelDiameter
+# Var3: Tunnel Type (Categorical, Target)
+#         Original: TunnelType
+# Var4: Geological Condition (Categorical, Target)
+#         Original: hasGeologicalCondition
+# Var5: Soil Type (Categorical, Target)
+#         Original: hasSoilType
+# Var6: Hydro Condition (Categorical, Target)
+#         Original: hasHydroCondition

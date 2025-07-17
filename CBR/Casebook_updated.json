@@ -3539,7 +3539,7 @@
             "hasSteelArchCount": 30,
             "hasSteelArchThickness": 9,
             "hasWaterproofLayerThickness": 7,
-            "hasConstructionMethod": "Shield"
+            "hasConstructionMethod": "DrillBlast"
         }
     }
 ]

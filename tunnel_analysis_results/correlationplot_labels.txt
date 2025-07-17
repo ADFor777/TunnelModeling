@@ -1,6 +1,6 @@
-hasTunnelLength
-hasTunnelDiameter
-TunnelType
-hasGeologicalCondition
-hasSoilType
-hasHydroCondition
+Tunnel Length
+Tunnel Diameter
+Tunnel Type
+Geological Condition
+Soil Type
+Hydro Condition
